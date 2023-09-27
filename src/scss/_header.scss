@@ -1,0 +1,56 @@
+.header {
+  padding-top: 5rem;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+  }
+  &__logotype {
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    .logotype {
+      width: 20.9rem;
+      height: 6rem;
+    }
+  }
+  &__menu {
+    display: flex;
+    gap: 5rem;
+    .menu {
+      &__item {
+        cursor: pointer;
+      }
+    }
+  }
+  &__socials {
+    display: flex;
+    align-items: center;
+    .socials {
+      &__phone {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        margin-right: 2rem;
+        cursor: pointer;
+      }
+      &__links {
+        display: flex;
+        gap: 1rem;
+        margin-left: 1rem;
+        .link {
+          width: 6rem;
+          height: 6rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .header {
+    display: none;
+  }
+}

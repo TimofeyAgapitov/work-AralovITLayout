@@ -1,0 +1,67 @@
+.footer {
+  &__container {
+    display: flex;
+    gap: 19.367rem;
+    height: 24rem;
+  }
+  &__logotype {
+    cursor: pointer;
+    .logotype {
+      width: 21rem;
+      height: 4.2rem;
+    }
+  }
+  &__right {
+    width: 25.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .right {
+      &__top {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+      }
+      &__text {
+        color: $grey-color;
+      }
+    }
+  }
+  &__left {
+    .left {
+      &__list-left,
+      &__list-right {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+      }
+      &__list-left {
+        width: 33.5rem;
+      }
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    &-title {
+      color: $black-color;
+      margin-bottom: 0.6rem;
+    }
+    &-left {
+      display: flex;
+      flex-direction: row;
+      gap: 19.367rem;
+    }
+  }
+  &__item {
+    color: $grey-color;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 48em) {
+  .footer {
+    display: none;
+  }
+}
