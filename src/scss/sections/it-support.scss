@@ -1,0 +1,142 @@
+.IT-support {
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    .content {
+      &-right {
+        max-width: 110.8rem;
+      }
+      &-left {
+        max-width: 37.7rem;
+        padding-top: 2.5rem;
+      }
+    }
+  }
+  &__experience {
+    max-width: 19.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6rem;
+    .experience {
+      &__title {
+        color: #050505;
+        font-family: Formular;
+        font-size: 2.4rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      &__content {
+        margin-bottom: 1.8rem;
+      }
+      &__images {
+        width: 15rem;
+      }
+    }
+  }
+  &__quote {
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+    .quote {
+      &__text {
+        color: #050505;
+        font-family: 'Formular';
+        font-size: 2.4rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      &__author {
+        display: flex;
+        align-items: center;
+        gap: 1.7rem;
+        span {
+          width: 5.6rem;
+          height: 0.1rem;
+          background-color: $grey-color;
+        }
+      }
+    }
+  }
+  &__title {
+    margin-bottom: 6.7rem;
+    &._mob {
+      display: none;
+    }
+  }
+  &__texts {
+    display: flex;
+    gap: 4rem;
+  }
+  &__text-left,
+  &__text-right {
+    max-width: 53.3rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .IT-support {
+    &__content {
+      flex-direction: column;
+      .content {
+        &-right {
+          max-width: 100%;
+        }
+        &-left {
+          max-width: 100%;
+          padding-top: 0;
+        }
+      }
+    }
+    &__experience {
+      max-width: 100%;
+      flex-direction: row;
+      margin-bottom: 8rem;
+      .experience {
+        &__title {
+          font-size: 3.6rem;
+        }
+        &__content {
+          margin-bottom: 0;
+        }
+        &__images {
+          width: 30rem;
+        }
+      }
+    }
+    &__quote {
+      gap: 3.6rem;
+      margin-bottom: 4rem;
+      .quote {
+        &__text {
+          font-size: 3.6rem;
+        }
+        &__author {
+          gap: 3.4rem;
+          span {
+            width: 11.2rem;
+            height: 0.3rem;
+          }
+        }
+      }
+    }
+    &__title {
+      margin-bottom: 4rem;
+      &._desc {
+        display: none;
+      }
+      &._mob {
+        display: block;
+      }
+    }
+    &__texts {
+      flex-direction: column;
+      gap: 4rem;
+    }
+    &__text-left,
+    &__text-right {
+      max-width: 100%;
+    }
+  }
+}

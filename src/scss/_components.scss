@@ -1,0 +1,513 @@
+// components
+
+.component--green-btn {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  width: fit-content;
+  padding: 1.9rem 3.9rem;
+  background-color: $green-color;
+  border-radius: 5rem;
+  cursor: pointer;
+  &.disactive {
+    opacity: 0.5;
+  }
+  .green-btn {
+    &__text {
+      color: $white-color;
+    }
+    &__icon {
+      width: 1.6rem;
+      height: auto;
+    }
+  }
+}
+@media (max-width: 48em) {
+  .component--green-btn {
+    gap: 2rem;
+    padding: 3.2rem 7.8rem;
+    border-radius: 10rem;
+    .green-btn {
+      &__icon {
+        width: 3.2rem;
+      }
+    }
+  }
+}
+
+.component--arrow-btn {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 2.8rem;
+  .arrow-btn {
+    &__icon {
+      width: 5rem;
+      height: auto;
+      &.desktop {
+        display: block;
+      }
+      &.mobile {
+        display: none;
+      }
+    }
+  }
+  &.type-grey {
+    .arrow-btn {
+      &__text {
+        color: $grey-color;
+      }
+      &__icon {
+        path {
+          fill: $grey-color;
+        }
+      }
+    }
+  }
+  &.type-green {
+    .arrow-btn {
+      &__text {
+        color: $green-color;
+      }
+      &__icon {
+        path {
+          fill: $green-color;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 48em) {
+  .component--arrow-btn {
+    gap: 3rem;
+    .arrow-btn {
+      &__icon {
+        width: 10rem;
+        &.desktop {
+          display: none;
+        }
+        &.mobile {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.component--services {
+  position: relative;
+  width: 53.3rem;
+  height: 36.7rem;
+  overflow: hidden;
+  &:hover {
+    .services {
+      &__background {
+        &--desktop {
+          fill: $green-color;
+        }
+        &--mobile {
+          fill: $green-color;
+        }
+      }
+      &__numbering,
+      &__title {
+        color: $white-color;
+      }
+    }
+  }
+  .services {
+    &__background {
+      &--desktop {
+        display: block;
+        width: 53.3rem;
+        height: 36.7rem;
+      }
+      &--mobile {
+        display: none;
+      }
+    }
+    &__content {
+      position: absolute;
+      width: 45.3rem;
+      height: 26.8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      top: 5rem;
+      left: 4rem;
+    }
+    &__icon-numbering {
+      position: absolute;
+      top: 0;
+      left: 35.1rem;
+      .icon-numbering {
+        width: 5.3rem;
+        height: 5.3rem;
+      }
+    }
+    &__numbering,
+    &__title {
+      font-family: 'NeueMachina';
+    }
+  }
+}
+@media (max-width: 48em) {
+  .component--services {
+    width: 56rem;
+    height: 41.4rem;
+    .services {
+      &__background {
+        &--desktop {
+          display: none;
+        }
+        &--mobile {
+          display: block;
+          width: 56rem;
+          height: 41.4rem;
+        }
+      }
+      &__content {
+        width: 50rem;
+        height: 35.5rem;
+        top: 3rem;
+        left: 3rem;
+      }
+      &__icon-numbering {
+        top: 0;
+        left: 35.4rem;
+        .icon-numbering {
+          width: 6rem;
+          height: 6rem;
+        }
+      }
+    }
+  }
+}
+
+.component--advantages {
+  position: relative;
+  width: 53.3rem;
+  height: 56.3rem;
+  &:hover {
+    .advantages {
+      &__background {
+        &--desktop,
+        &--mobile {
+          path {
+            fill: $white-color;
+            stroke: $white-color;
+            transition: all 0.25s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+  .advantages {
+    &__background {
+      &--desktop {
+        display: block;
+        width: 53.3rem;
+        height: 56.3rem;
+      }
+      &--mobile {
+        display: none;
+      }
+    }
+    &__numbering {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 12.5rem;
+      height: 12.5rem;
+      padding: 2rem;
+      background-image: url('../img/components/component-advantage/bg--white-panel.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      &-number {
+        color: $green-color;
+        text-align: right;
+        font-family: 'NeueMachina';
+        font-size: 4.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    &__content {
+      position: absolute;
+      top: 3rem;
+      left: 3rem;
+      width: 47.3rem;
+    }
+    &__text {
+      max-height: 11.6rem;
+      height: 100%;
+      margin-bottom: 3rem;
+    }
+    &__categories {
+      position: relative;
+      .categories {
+        &__large-panel {
+          width: 47.3rem;
+          height: 35rem;
+          background-image: url('../img/components/component-advantage/bg--green-large-panel-desktop.svg');
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+        &__small-panel {
+          position: absolute;
+          right: 0;
+          bottom: 5.3rem;
+          width: 17rem;
+          height: 14.7rem;
+          background-image: url('../img/components/component-advantage/bg--green-small-panel.svg');
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+        &__text {
+          position: absolute;
+          right: 0;
+          bottom: -2%;
+          font-family: 'NeueMachina';
+        }
+      }
+    }
+  }
+}
+@media (max-width: 48em) {
+  .component--advantages {
+    width: 57.6rem;
+    height: 57rem;
+    .advantages {
+      &__background {
+        &--desktop {
+          display: none;
+        }
+        &--mobile {
+          display: block;
+          width: 57.6rem;
+          height: 57rem;
+        }
+      }
+      &__content {
+        width: 51.6rem;
+        top: 3rem;
+        left: 3rem;
+      }
+      &__numbering {
+        width: 12rem;
+        height: 12rem;
+        padding: 2.4rem 2rem;
+      }
+      &__text {
+        max-height: 13.6rem;
+      }
+      &__categories {
+        .categories {
+          &__large-panel {
+            width: 51.6rem;
+            height: 34.4rem;
+            background-image: url('../img/components/component-advantage/bg--green-large-panel-mobile.svg');
+          }
+          &__small-panel {
+            width: 17.8rem;
+            height: 15.4rem;
+            bottom: 6rem;
+            background-image: url('../img/components/component-advantage/bg--green-small-panel-mobile.svg');
+            background-position: bottom;
+          }
+        }
+      }
+    }
+  }
+}
+
+.component--articles {
+  position: relative;
+  width: 53.3rem;
+  height: 47.4rem;
+  .articles {
+    &__background {
+      &--desktop {
+        display: block;
+        width: 53.3rem;
+        height: 47.4rem;
+      }
+      &--mobile {
+        display: none;
+      }
+    }
+    &__content {
+      position: absolute;
+      top: 4rem;
+      left: 4rem;
+      width: 45.7rem;
+      height: 39rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .content {
+        &__top {
+          display: flex;
+          justify-content: space-between;
+          .top {
+            &-right {
+              display: flex;
+              flex-direction: column;
+              gap: 2.8rem;
+              align-items: flex-end;
+            }
+          }
+        }
+        &__icon {
+          width: 6rem;
+          height: 6rem;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: $green-color;
+          > svg {
+            width: 3.6rem;
+            height: 3.6rem;
+            fill: none;
+            stroke: $white-color;
+          }
+        }
+        &__image {
+          width: 16.9rem;
+          height: 16.9rem;
+          border-radius: 2rem;
+          background-color: #777777;
+        }
+        &__time {
+          display: flex;
+          gap: 0.4rem;
+          .time {
+            &-value {
+              color: $grey-color;
+              font-size: 1.6rem;
+              font-style: normal;
+              font-weight: 400;
+              padding: 1rem 1.8rem;
+              border-radius: 8.5rem;
+              border: 1px solid $grey-color;
+            }
+            &-icon {
+              width: 4rem;
+              height: 4rem;
+              border-radius: 50%;
+              border: 1px solid $grey-color;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              > svg {
+                width: 2.4rem;
+                height: 2.4rem;
+                fill: none;
+                stroke: $grey-color;
+              }
+            }
+          }
+        }
+        &__date {
+          color: $grey-color;
+        }
+      }
+    }
+    &__numbering {
+      position: absolute;
+      top: -1rem;
+      left: 16.8rem;
+      > p {
+        width: 5.4rem;
+        text-align: center;
+      }
+    }
+  }
+}
+@media (max-width: 48em) {
+  .component--articles {
+    width: 57.8rem;
+    height: 62rem;
+    .articles {
+      &__background {
+        &--desktop {
+          display: none;
+        }
+        &--mobile {
+          display: block;
+          width: 57.8rem;
+          height: 62rem;
+        }
+      }
+      &__content {
+        width: 51.6rem;
+        height: 52.6rem;
+        top: 3rem;
+        left: 3rem;
+        .content {
+          &__top {
+            .top {
+              &-right {
+                gap: 5rem;
+              }
+            }
+          }
+          &__icon {
+            width: 8rem;
+            height: 8rem;
+            > svg {
+              width: 4.8rem;
+              height: 4.8rem;
+            }
+          }
+          &__image {
+            width: 21.8rem;
+            height: 21.8rem;
+          }
+          &__time {
+            .time {
+              &-value {
+                font-size: 2.8rem;
+                padding: 1.2rem 2.2rem 1rem;
+                > span {
+                  display: none;
+                }
+              }
+              &-icon {
+                width: 6rem;
+                height: 6rem;
+                > svg {
+                  width: 3.2rem;
+                  height: 3.2rem;
+                }
+              }
+            }
+          }
+        }
+      }
+      &__numbering {
+        left: 17rem;
+      }
+    }
+  }
+}
+
+.component--letters {
+  position: relative;
+  width: 53.3rem;
+  height: 55rem;
+  .letters {
+    &__background {
+      &--desktop {
+        display: block;
+        width: 53.3rem;
+        height: 55rem;
+      }
+      &--mobile {
+        display: none;
+      }
+    }
+  }
+}

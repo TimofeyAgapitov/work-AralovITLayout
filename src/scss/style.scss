@@ -1,6 +1,11 @@
 @import 'set';
 @import 'setup';
 @import 'fonts';
+@import 'components';
+@import 'elements';
 
 @import 'header';
 @import 'footer';
+
+@import './sections/it-support';
+@import './sections/our-advantages';

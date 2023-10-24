@@ -115,7 +115,7 @@ input[type='number'] {
 }
 
 section {
-  margin-bottom: 18rem;
+  margin-bottom: 20rem;
 }
 
 @media (max-width: 48em) {
@@ -131,7 +131,7 @@ section {
   }
 
   .container {
-    padding: 0 4rem; // в моб версии отступ от края задаем для всех контейнеров, а там где не нужно можем точечно убрать
+    padding: 0 2rem; // в моб версии отступ от края задаем для всех контейнеров, а там где не нужно можем точечно убрать
     width: 100%;
   }
 }

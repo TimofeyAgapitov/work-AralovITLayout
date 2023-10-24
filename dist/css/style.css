@@ -129,14 +129,24 @@ input[type=number] {
 }
 
 section {
-  margin-bottom: 18rem;
+  margin-bottom: 20rem;
+}
+
+.setup--grey {
+  color: #777777;
+}
+
+.setup--black,
+.setup--section-title {
+  color: #050505;
 }
 
 body {
   background-color: #eaeaea;
 }
 
-.setup--h1 {
+.setup--h1,
+.setup--section-title {
   font-size: 7.5rem;
   font-style: normal;
   font-weight: 400;
@@ -168,6 +178,26 @@ body {
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;
+}
+
+.setup--section-title {
+  margin-bottom: 6rem;
+}
+
+@font-face {
+  font-family: Formular;
+  font-display: swap;
+  src: url("../fonts/Formular.woff2") format("woff2"), url("../fonts/Formular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: NeueMachina;
+  font-display: swap;
+  src: url("../fonts/NeueMachina.woff2") format("woff2"), url("../fonts/NeueMachina.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
 .component--green-btn {
@@ -246,6 +276,7 @@ body {
   position: relative;
   width: 53.3rem;
   height: 36.7rem;
+  overflow: hidden;
 }
 
 .component--services:hover .services__background--desktop {
@@ -269,13 +300,22 @@ body {
 
 .component--services .services__background--mobile {
   display: none;
-  width: 56rem;
-  height: 41.4rem;
 }
 
 .component--services .services__content {
   position: absolute;
   width: 45.3rem;
+  height: 26.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   top: 5rem;
   left: 4rem;
 }
@@ -294,10 +334,6 @@ body {
 .component--services .services__numbering,
 .component--services .services__title {
   font-family: "NeueMachina";
-}
-
-.component--services .services__numbering {
-  margin-bottom: 13.8rem;
 }
 
 .component--advantages {
@@ -488,7 +524,6 @@ body {
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
   padding: 1rem 1.8rem;
   border-radius: 8.5rem;
   border: 1px solid #777777;
@@ -532,20 +567,39 @@ body {
   text-align: center;
 }
 
-@font-face {
-  font-family: Formular;
-  font-display: swap;
-  src: url("../fonts/Formular.woff2") format("woff2"), url("../fonts/Formular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
+.component--letters {
+  position: relative;
+  width: 53.3rem;
+  height: 55rem;
 }
 
-@font-face {
-  font-family: NeueMachina;
-  font-display: swap;
-  src: url("../fonts/NeueMachina.woff2") format("woff2"), url("../fonts/NeueMachina.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
+.component--letters .letters__background--desktop {
+  display: block;
+  width: 53.3rem;
+  height: 55rem;
+}
+
+.component--letters .letters__background--mobile {
+  display: none;
+}
+
+.accordion-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 1.4rem;
+}
+
+.accordion-price__line {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(119, 119, 119, 0.35);
+  margin-bottom: 0.6rem;
 }
 
 .header {
@@ -720,6 +774,116 @@ body {
   cursor: pointer;
 }
 
+.IT-support__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.IT-support__content .content-right {
+  max-width: 110.8rem;
+}
+
+.IT-support__content .content-left {
+  max-width: 37.7rem;
+  padding-top: 2.5rem;
+}
+
+.IT-support__experience {
+  max-width: 19.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 6rem;
+}
+
+.IT-support__experience .experience__title {
+  color: #050505;
+  font-family: Formular;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.IT-support__experience .experience__content {
+  margin-bottom: 1.8rem;
+}
+
+.IT-support__experience .experience__images {
+  width: 15rem;
+}
+
+.IT-support__quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.8rem;
+}
+
+.IT-support__quote .quote__text {
+  color: #050505;
+  font-family: "Formular";
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.IT-support__quote .quote__author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.7rem;
+}
+
+.IT-support__quote .quote__author span {
+  width: 5.6rem;
+  height: 0.1rem;
+  background-color: #777777;
+}
+
+.IT-support__title {
+  margin-bottom: 6.7rem;
+}
+
+.IT-support__title._mob {
+  display: none;
+}
+
+.IT-support__texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4rem;
+}
+
+.IT-support__text-left,
+.IT-support__text-right {
+  max-width: 53.3rem;
+}
+
+.our-advantages__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
 @media (max-width: 48em) {
   html {
     font-size: 5px;
@@ -733,11 +897,12 @@ body {
   }
 
   .container {
-    padding: 0 4rem;
+    padding: 0 2rem;
     width: 100%;
   }
 
-  .setup--h1 {
+  .setup--h1,
+  .setup--section-title {
     font-size: 8rem;
     line-height: 104%;
   }
@@ -754,6 +919,10 @@ body {
   .setup--text-24px,
   .setup--text-18px {
     font-size: 2.8rem;
+  }
+
+  .setup--section-title {
+    margin-bottom: 8rem;
   }
 
   .component--green-btn {
@@ -793,10 +962,13 @@ body {
 
   .component--services .services__background--mobile {
     display: block;
+    width: 56rem;
+    height: 41.4rem;
   }
 
   .component--services .services__content {
     width: 50rem;
+    height: 35.5rem;
     top: 3rem;
     left: 3rem;
   }
@@ -809,10 +981,6 @@ body {
   .component--services .services__icon-numbering .icon-numbering {
     width: 6rem;
     height: 6rem;
-  }
-
-  .component--services .services__numbering {
-    margin-bottom: 20.4rem;
   }
 
   .component--advantages {
@@ -861,8 +1029,8 @@ body {
   }
 
   .component--articles {
-    width: 71rem;
-    height: 59.6rem;
+    width: 57.8rem;
+    height: 62rem;
   }
 
   .component--articles .articles__background--desktop {
@@ -871,15 +1039,65 @@ body {
 
   .component--articles .articles__background--mobile {
     display: block;
-    width: 71rem;
-    height: 59.6rem;
+    width: 57.8rem;
+    height: 62rem;
   }
 
   .component--articles .articles__content {
-    width: 64.6rem;
+    width: 51.6rem;
     height: 52.6rem;
     top: 3rem;
     left: 3rem;
+  }
+
+  .component--articles .articles__content .content__top .top-right {
+    gap: 5rem;
+  }
+
+  .component--articles .articles__content .content__icon {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .component--articles .articles__content .content__icon > svg {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+
+  .component--articles .articles__content .content__image {
+    width: 21.8rem;
+    height: 21.8rem;
+  }
+
+  .component--articles .articles__content .content__time .time-value {
+    font-size: 2.8rem;
+    padding: 1.2rem 2.2rem 1rem;
+  }
+
+  .component--articles .articles__content .content__time .time-value > span {
+    display: none;
+  }
+
+  .component--articles .articles__content .content__time .time-icon {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .component--articles .articles__content .content__time .time-icon > svg {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+
+  .component--articles .articles__numbering {
+    left: 17rem;
+  }
+
+  .accordion-price {
+    gap: 1.2rem;
+  }
+
+  .accordion-price__line {
+    margin-bottom: 0;
   }
 
   .header {
@@ -888,5 +1106,103 @@ body {
 
   .footer {
     display: none;
+  }
+
+  .IT-support__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .IT-support__content .content-right {
+    max-width: 100%;
+  }
+
+  .IT-support__content .content-left {
+    max-width: 100%;
+    padding-top: 0;
+  }
+
+  .IT-support__experience {
+    max-width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 8rem;
+  }
+
+  .IT-support__experience .experience__title {
+    font-size: 3.6rem;
+  }
+
+  .IT-support__experience .experience__content {
+    margin-bottom: 0;
+  }
+
+  .IT-support__experience .experience__images {
+    width: 30rem;
+  }
+
+  .IT-support__quote {
+    gap: 3.6rem;
+    margin-bottom: 4rem;
+  }
+
+  .IT-support__quote .quote__text {
+    font-size: 3.6rem;
+  }
+
+  .IT-support__quote .quote__author {
+    gap: 3.4rem;
+  }
+
+  .IT-support__quote .quote__author span {
+    width: 11.2rem;
+    height: 0.3rem;
+  }
+
+  .IT-support__title {
+    margin-bottom: 4rem;
+  }
+
+  .IT-support__title._desc {
+    display: none;
+  }
+
+  .IT-support__title._mob {
+    display: block;
+  }
+
+  .IT-support__texts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 4rem;
+  }
+
+  .IT-support__text-left,
+  .IT-support__text-right {
+    max-width: 100%;
+  }
+
+  .our-advantages__container {
+    padding-right: 0;
+  }
+
+  .our-advantages__content {
+    overflow: hidden;
+  }
+
+  .our-advantages__list {
+    overflow: auto;
+    gap: 2rem;
+  }
+
+  .our-advantages__list::-webkit-scrollbar {
+    width: 0;
+    height: 0;
   }
 }

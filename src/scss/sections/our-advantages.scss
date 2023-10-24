@@ -1,0 +1,25 @@
+.our-advantages {
+  &__list {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .our-advantages {
+    &__container {
+      padding-right: 0;
+    }
+    &__content {
+      overflow: hidden;
+    }
+    &__list {
+      overflow: auto;
+      gap: 2rem;
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
+    }
+  }
+}
