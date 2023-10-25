@@ -1,0 +1,25 @@
+<section class="our-services">
+  <div class="our-services__container container">
+    <div class="our-services__head setup--section-title">
+      <div class="our-services__title">Наши услуги:</div>
+      @@include('../components/textButtonWithArrow.html', {
+        type:"type-grey",
+        text:"Смотреть все"
+      })
+    </div>
+    <div class="our-services__content">
+      <div class="our-services__list">
+        @@include('../components/services.html', {})
+        <div class="our-services__decoration-panel decoration-panel _reliability">
+          <p class="decoration-panel__text">надежность</p>
+        </div>
+        @@include('../components/services.html', {})
+        <div class="our-services__decoration-panel decoration-panel _guarantees">
+          <p class="decoration-panel__text">гарантии</p>
+        </div>
+        @@include('../components/services.html', {})
+        @@include('../components/services.html', {})
+      </div>
+    </div>
+  </div>
+</section>

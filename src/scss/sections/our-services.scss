@@ -1,0 +1,66 @@
+.our-services {
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__decoration-panel {
+    width: 53.3rem;
+    height: 36.7rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-size: contain;
+    background-repeat: no-repeat;
+    &._reliability {
+      background-image: url(../img/components/component-services/services-v1.webp);
+      padding: 0.9rem 2.3rem;
+    }
+    &._guarantees {
+      background-image: url(../img/components/component-services/services-v2.webp);
+      padding: 0.9rem 4.1rem;
+    }
+    .decoration-panel {
+      &__text {
+        font-size: 2.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: $black-color;
+      }
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .our-services {
+    &__head {
+      .component--arrow-btn {
+        display: none;
+      }
+    }
+    &__container {
+      padding-right: 0;
+    }
+    &__content {
+      overflow: hidden;
+    }
+    &__decoration-panel {
+      display: none;
+    }
+    &__list {
+      flex-wrap: nowrap;
+      overflow: auto;
+      padding-right: 2rem;
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
+    }
+  }
+}

@@ -99,6 +99,7 @@
   width: 53.3rem;
   height: 36.7rem;
   overflow: hidden;
+  flex: none;
   &:hover {
     .services {
       &__background {
@@ -188,6 +189,7 @@
   position: relative;
   width: 53.3rem;
   height: 56.3rem;
+  flex: none;
   &:hover {
     .advantages {
       &__background {
