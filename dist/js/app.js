@@ -20,5 +20,9 @@ function isWebp() {
 }
 isWebp();
 
-
-
+$(document).ready(function () {
+  $('#prices-list-accordion').accordionjs({
+    closeAble: true,
+    closeOther: false,
+  });
+});

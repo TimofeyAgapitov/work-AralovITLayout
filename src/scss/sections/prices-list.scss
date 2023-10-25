@@ -1,0 +1,122 @@
+#prices-list-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.prices-list {
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__btn {
+    &._mob {
+      display: none;
+    }
+  }
+  &-accordion {
+    &__element {
+      background-color: $white-color;
+      border-radius: 4rem;
+      &.acc_active {
+        .prices-list-accordion {
+          &__btn {
+            background-color: transparent;
+            transition: all 0.25s ease-in-out;
+            will-change: all;
+          }
+          &__arrow {
+            fill: $green-color;
+            transform: rotate(180deg);
+            transition: all 0.25s ease-in-out;
+            will-change: all;
+          }
+        }
+      }
+    }
+    &__head {
+      display: flex;
+      align-items: center;
+      padding: 4.5rem 4rem;
+    }
+    &__inner {
+      padding: 1.5rem 12.4rem 6rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 4rem;
+      column-gap: 8rem;
+    }
+    &__icon {
+      margin-right: 3rem;
+      & > svg {
+        width: 5.4rem;
+        height: 5.4rem;
+      }
+    }
+    &__title {
+      font-family: NeueMachina;
+      margin-right: auto;
+    }
+    &__btn {
+      flex: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50%;
+      border: 2px solid $green-color;
+      background-color: $green-color;
+    }
+    &__arrow {
+      width: 2.8rem;
+      height: 2.8rem;
+      fill: $white-color;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .prices-list {
+    &__btn {
+      &._desc {
+        display: none;
+      }
+      &._mob {
+        display: block;
+      }
+    }
+    &__content {
+      margin-bottom: 8rem;
+    }
+    &-accordion {
+      &__head {
+        padding: 4rem 3rem;
+      }
+      &__inner {
+        padding: 0 3rem 4rem;
+        grid-template-columns: 1fr;
+        row-gap: 4rem;
+      }
+      &__icon {
+        & > svg {
+          width: 6rem;
+          height: 6rem;
+        }
+      }
+      &__title {
+        max-width: 40rem;
+      }
+      &__btn {
+        width: 8rem;
+        height: 8rem;
+        border: 1px solid $green-color;
+      }
+      &__arrow {
+        width: 3.8rem;
+        height: 3.8rem;
+      }
+    }
+  }
+}

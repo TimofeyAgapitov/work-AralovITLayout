@@ -884,6 +884,117 @@ body {
   gap: 2rem;
 }
 
+#prices-list-accordion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4rem;
+}
+
+.prices-list__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.prices-list__btn._mob {
+  display: none;
+}
+
+.prices-list-accordion__element {
+  background-color: #ffffff;
+  border-radius: 4rem;
+}
+
+.prices-list-accordion__element.acc_active .prices-list-accordion__btn {
+  background-color: transparent;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  will-change: all;
+}
+
+.prices-list-accordion__element.acc_active .prices-list-accordion__arrow {
+  fill: #03a081;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  will-change: all;
+}
+
+.prices-list-accordion__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4.5rem 4rem;
+}
+
+.prices-list-accordion__inner {
+  padding: 1.5rem 12.4rem 6rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 4rem;
+  -webkit-column-gap: 8rem;
+     -moz-column-gap: 8rem;
+          column-gap: 8rem;
+}
+
+.prices-list-accordion__icon {
+  margin-right: 3rem;
+}
+
+.prices-list-accordion__icon > svg {
+  width: 5.4rem;
+  height: 5.4rem;
+}
+
+.prices-list-accordion__title {
+  font-family: NeueMachina;
+  margin-right: auto;
+}
+
+.prices-list-accordion__btn {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 2px solid #03a081;
+  background-color: #03a081;
+}
+
+.prices-list-accordion__arrow {
+  width: 2.8rem;
+  height: 2.8rem;
+  fill: #ffffff;
+}
+
 @media (max-width: 48em) {
   html {
     font-size: 5px;
@@ -1204,5 +1315,48 @@ body {
   .our-advantages__list::-webkit-scrollbar {
     width: 0;
     height: 0;
+  }
+
+  .prices-list__btn._desc {
+    display: none;
+  }
+
+  .prices-list__btn._mob {
+    display: block;
+  }
+
+  .prices-list__content {
+    margin-bottom: 8rem;
+  }
+
+  .prices-list-accordion__head {
+    padding: 4rem 3rem;
+  }
+
+  .prices-list-accordion__inner {
+    padding: 0 3rem 4rem;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+  }
+
+  .prices-list-accordion__icon > svg {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .prices-list-accordion__title {
+    max-width: 40rem;
+  }
+
+  .prices-list-accordion__btn {
+    width: 8rem;
+    height: 8rem;
+    border: 1px solid #03a081;
+  }
+
+  .prices-list-accordion__arrow {
+    width: 3.8rem;
+    height: 3.8rem;
   }
 }
