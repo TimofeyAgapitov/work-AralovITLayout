@@ -3,6 +3,8 @@
 @import 'fonts';
 @import 'components';
 @import 'elements';
+@import 'swiper';
+@import 'animations';
 
 @import 'header';
 @import 'footer';
@@ -10,4 +12,6 @@
 @import './sections/it-support';
 @import './sections/our-advantages';
 @import './sections/our-services';
+@import './sections/our-articles';
+@import './sections/our-teams';
 @import './sections/prices-list';

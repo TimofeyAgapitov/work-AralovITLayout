@@ -184,6 +184,25 @@ body {
   margin-bottom: 6rem;
 }
 
+.setup--section-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.setup--swiper-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
 @font-face {
   font-family: Formular;
   font-display: swap;
@@ -270,6 +289,28 @@ body {
 
 .component--arrow-btn.type-green .arrow-btn__icon path {
   fill: #03a081;
+}
+
+.component--green-arrow-btn {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: #03a081;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.component--green-arrow-btn > svg {
+  width: 3rem;
+  height: 3rem;
+  fill: #ffffff;
 }
 
 .component--services {
@@ -398,6 +439,10 @@ body {
 .component--advantages .advantages__text {
   max-height: 11.6rem;
   height: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   margin-bottom: 3rem;
 }
 
@@ -435,6 +480,27 @@ body {
   position: relative;
   width: 53.3rem;
   height: 47.4rem;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+
+.component--articles:hover .articles__background > svg {
+  fill: #03a081;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.component--articles:hover .articles__content {
+  opacity: 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.component--articles:hover .articles__content._hover {
+  opacity: 1;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .component--articles .articles__background--desktop {
@@ -445,6 +511,33 @@ body {
 
 .component--articles .articles__background--mobile {
   display: none;
+}
+
+.component--articles .articles__content._hover {
+  opacity: 0;
+}
+
+.component--articles .articles__content._hover .content__icon {
+  background-color: #ffffff;
+}
+
+.component--articles .articles__content._hover .content__icon > svg {
+  width: 2.8rem;
+  height: 2.8rem;
+  fill: #03a081;
+  stroke: #03a081;
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.component--articles .articles__content._hover .content__title {
+  margin-bottom: 2.2rem;
+}
+
+.component--articles .articles__content._hover .content__title,
+.component--articles .articles__content._hover .content__text {
+  color: #ffffff;
 }
 
 .component--articles .articles__content {
@@ -573,6 +666,99 @@ body {
   text-align: center;
 }
 
+.component--teams {
+  position: relative;
+  width: 53.3rem;
+  height: 51.1rem;
+  overflow: hidden;
+}
+
+.component--teams:hover .teams__content .content__name {
+  opacity: 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.component--teams:hover .teams__content .content__post {
+  opacity: 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.component--teams:hover .teams__content .content__quote {
+  opacity: 1;
+  -webkit-transform: translateY(-200%);
+      -ms-transform: translateY(-200%);
+          transform: translateY(-200%);
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.component--teams:hover .teams__content .content__btn {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.component--teams .teams__background--desktop {
+  width: 53.3rem;
+  height: 48.1rem;
+}
+
+.component--teams .teams__background--mobile {
+  display: none;
+}
+
+.component--teams .teams__content {
+  position: absolute;
+  top: 6rem;
+  left: 5rem;
+  width: calc(100% - 10rem);
+}
+
+.component--teams .teams__content .content__name {
+  font-family: NeueMachina;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 1.4rem;
+}
+
+.component--teams .teams__content .content__post {
+  margin-bottom: 15.5rem;
+}
+
+.component--teams .teams__content .content__quote {
+  position: absolute;
+  opacity: 0;
+  -webkit-transform: translateY(-300%);
+      -ms-transform: translateY(-300%);
+          transform: translateY(-300%);
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.component--teams .teams__content .content__btn {
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.component--teams .teams__avatar {
+  position: absolute;
+  bottom: 0;
+  right: 3rem;
+  width: 30.6rem;
+  height: 32.2rem;
+  background-color: #f7f7f7;
+  border-radius: 4rem;
+}
+
 .component--letters {
   position: relative;
   width: 53.3rem;
@@ -587,6 +773,12 @@ body {
 
 .component--letters .letters__background--mobile {
   display: none;
+}
+
+.component--letters .letters__btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .accordion-price {
@@ -606,6 +798,87 @@ body {
   width: 100%;
   border-bottom: 1px solid rgba(119, 119, 119, 0.35);
   margin-bottom: 0.6rem;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: static !important;
+  margin: 0 !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-next.btn-next {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 0.2rem solid #03a081;
+  background-color: #03a081;
+}
+
+.swiper-button-next.btn-next > svg {
+  width: 3rem;
+  height: 3rem;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  fill: #ffffff;
+}
+
+.swiper-button-next.swiper-button-disabled.btn-next {
+  opacity: 1;
+  background-color: transparent;
+}
+
+.swiper-button-next.swiper-button-disabled.btn-next > svg {
+  fill: #03a081;
+}
+
+.swiper-button-prev.btn-prev {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 0.2rem solid #03a081;
+  background-color: #03a081;
+}
+
+.swiper-button-prev.btn-prev > svg {
+  width: 3rem;
+  height: 3rem;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  fill: #ffffff;
+}
+
+.swiper-button-prev.swiper-button-disabled.btn-prev {
+  opacity: 1;
+  background-color: transparent;
+}
+
+.swiper-button-prev.swiper-button-disabled.btn-prev > svg {
+  fill: #03a081;
+}
+
+.swiper-slide.our-articles-slide {
+  width: 53.3rem;
+  margin-right: 4rem;
+}
+
+.swiper-slide.our-articles-slide:last-child {
+  margin-right: 0;
+}
+
+.swiper-slide.our-teams-slide {
+  width: 53.3rem;
+  margin-right: 4rem;
+}
+
+.swiper-slide.our-teams-slide:last-child {
+  margin-right: 0;
 }
 
 .header {
@@ -945,6 +1218,14 @@ body {
   gap: 4rem;
 }
 
+.our-articles__controls {
+  margin-top: 6rem;
+}
+
+.our-teams__controls {
+  margin-top: 6rem;
+}
+
 #prices-list-accordion {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1099,6 +1380,18 @@ body {
     margin-bottom: 8rem;
   }
 
+  .setup--section-head {
+    padding: 0 2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 4rem;
+  }
+
   .component--green-btn {
     gap: 2rem;
     padding: 3.2rem 7.8rem;
@@ -1123,6 +1416,16 @@ body {
 
   .component--arrow-btn .arrow-btn__icon.mobile {
     display: block;
+  }
+
+  .component--green-arrow-btn {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .component--green-arrow-btn > svg {
+    width: 3.6rem;
+    height: 3.6rem;
   }
 
   .component--services {
@@ -1217,6 +1520,20 @@ body {
     height: 62rem;
   }
 
+  .component--articles .articles__content._hover {
+    opacity: 0;
+  }
+
+  .component--articles .articles__content._hover .content__icon > svg {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .component--articles .articles__content._hover .content__title {
+    font-size: 3.8rem;
+    margin-bottom: 2rem;
+  }
+
   .component--articles .articles__content {
     width: 51.6rem;
     height: 52.6rem;
@@ -1266,12 +1583,59 @@ body {
     left: 17rem;
   }
 
+  .component--teams {
+    width: 58rem;
+    height: 60.4rem;
+  }
+
+  .component--teams .teams__background--desktop {
+    display: none;
+  }
+
+  .component--teams .teams__background--mobile {
+    display: block;
+    width: 58rem;
+    height: 56.4rem;
+  }
+
+  .component--teams .teams__content {
+    width: calc(100% - 6rem);
+    top: 4rem;
+    left: 3rem;
+  }
+
+  .component--teams .teams__content .content__name {
+    font-size: 5.2rem;
+  }
+
+  .component--teams .teams__avatar {
+    width: 35.6rem;
+    height: 37.6rem;
+    right: 4rem;
+  }
+
   .accordion-price {
     gap: 1.2rem;
   }
 
   .accordion-price__line {
     margin-bottom: 0;
+  }
+
+  .swiper.our-articles-swiper {
+    padding: 0 2rem;
+  }
+
+  .swiper-slide.our-articles-slide {
+    width: 57.8rem;
+  }
+
+  .swiper.our-teams-swiper {
+    padding: 0 2rem;
+  }
+
+  .swiper-slide.our-teams-slide {
+    width: 58rem;
   }
 
   .header {
@@ -1373,6 +1737,7 @@ body {
   .our-advantages__list {
     overflow: auto;
     gap: 2rem;
+    padding-right: 2rem;
   }
 
   .our-advantages__list::-webkit-scrollbar {
@@ -1406,6 +1771,24 @@ body {
   .our-services__list::-webkit-scrollbar {
     width: 0;
     height: 0;
+  }
+
+  .our-articles__container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .our-articles__controls {
+    display: none;
+  }
+
+  .our-teams__container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .our-teams__controls {
+    display: none;
   }
 
   .prices-list__btn._desc {

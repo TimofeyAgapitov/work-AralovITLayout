@@ -1,0 +1,18 @@
+.our-articles {
+  // пусто
+  &__controls {
+    margin-top: 6rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .our-articles {
+    &__container {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    &__controls {
+      display: none;
+    }
+  }
+}

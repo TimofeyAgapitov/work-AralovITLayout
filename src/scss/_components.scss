@@ -94,6 +94,31 @@
   }
 }
 
+.component--green-arrow-btn {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: $green-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & > svg {
+    width: 3rem;
+    height: 3rem;
+    fill: $white-color;
+  }
+}
+@media (max-width: 48em) {
+  .component--green-arrow-btn {
+    width: 8rem;
+    height: 8rem;
+    & > svg {
+      width: 3.6rem;
+      height: 3.6rem;
+    }
+  }
+}
+
 .component--services {
   position: relative;
   width: 53.3rem;
@@ -244,6 +269,10 @@
     &__text {
       max-height: 11.6rem;
       height: 100%;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
       margin-bottom: 3rem;
     }
     &__categories {
@@ -328,6 +357,25 @@
   position: relative;
   width: 53.3rem;
   height: 47.4rem;
+  flex: none;
+  &:hover {
+    .articles {
+      &__background {
+        & > svg {
+          fill: $green-color;
+          transition: all 0.25s ease-in-out;
+        }
+      }
+      &__content {
+        opacity: 0;
+        transition: all 0.25s ease-in-out;
+      }
+      &__content._hover {
+        opacity: 1;
+        transition: all 0.25s ease-in-out;
+      }
+    }
+  }
   .articles {
     &__background {
       &--desktop {
@@ -337,6 +385,28 @@
       }
       &--mobile {
         display: none;
+      }
+    }
+    &__content._hover {
+      opacity: 0;
+      .content {
+        &__icon {
+          background-color: $white-color;
+          & > svg {
+            width: 2.8rem;
+            height: 2.8rem;
+            fill: $green-color;
+            stroke: $green-color;
+            transform: rotate(-135deg);
+          }
+        }
+        &__title {
+          margin-bottom: 2.2rem;
+        }
+        &__title,
+        &__text {
+          color: $white-color;
+        }
       }
     }
     &__content {
@@ -443,6 +513,21 @@
           height: 62rem;
         }
       }
+      &__content._hover {
+        opacity: 0;
+        .content {
+          &__icon {
+            & > svg {
+              width: 3.5rem;
+              height: 3.5rem;
+            }
+          }
+          &__title {
+            font-size: 3.8rem;
+            margin-bottom: 2rem;
+          }
+        }
+      }
       &__content {
         width: 51.6rem;
         height: 52.6rem;
@@ -496,6 +581,120 @@
   }
 }
 
+.component--teams {
+  position: relative;
+  width: 53.3rem;
+  height: 51.1rem;
+  overflow: hidden;
+  &:hover {
+    .teams {
+      &__content {
+        .content {
+          &__name {
+            opacity: 0;
+            transition: all 0.25s ease-in-out;
+          }
+          &__post {
+            opacity: 0;
+            transition: all 0.25s ease-in-out;
+          }
+          &__quote {
+            opacity: 1;
+            transform: translateY(-200%);
+            transition: all 0.25s ease-in-out;
+          }
+          &__btn {
+            transform: rotate(-45deg);
+            transition: all 0.25s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+  .teams {
+    &__background {
+      &--desktop {
+        width: 53.3rem;
+        height: 48.1rem;
+      }
+      &--mobile {
+        display: none;
+      }
+    }
+    &__content {
+      position: absolute;
+      top: 6rem;
+      left: 5rem;
+      width: calc(100% - 10rem);
+      .content {
+        &__name {
+          font-family: NeueMachina;
+          font-size: 3.2rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin-bottom: 1.4rem;
+        }
+        &__post {
+          margin-bottom: 15.5rem;
+        }
+        &__quote {
+          position: absolute;
+          opacity: 0;
+          transform: translateY(-300%);
+          transition: all 0.25s ease-in-out;
+        }
+        &__btn {
+          transform: rotate(-135deg);
+          transition: all 0.25s ease-in-out;
+        }
+      }
+    }
+    &__avatar {
+      position: absolute;
+      bottom: 0;
+      right: 3rem;
+      width: 30.6rem;
+      height: 32.2rem;
+      background-color: #f7f7f7;
+      border-radius: 4rem;
+    }
+  }
+}
+@media (max-width: 48em) {
+  .component--teams {
+    width: 58rem;
+    height: 60.4rem;
+    .teams {
+      &__background {
+        &--desktop {
+          display: none;
+        }
+        &--mobile {
+          display: block;
+          width: 58rem;
+          height: 56.4rem;
+        }
+      }
+      &__content {
+        width: calc(100% - 6rem);
+        top: 4rem;
+        left: 3rem;
+        .content {
+          &__name {
+            font-size: 5.2rem;
+          }
+        }
+      }
+      &__avatar {
+        width: 35.6rem;
+        height: 37.6rem;
+        right: 4rem;
+      }
+    }
+  }
+}
+
 .component--letters {
   position: relative;
   width: 53.3rem;
@@ -510,6 +709,11 @@
       &--mobile {
         display: none;
       }
+    }
+    &__btn {
+      position: absolute;
+      bottom: 0;
+      right: 0;
     }
   }
 }

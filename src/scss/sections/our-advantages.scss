@@ -16,6 +16,7 @@
     &__list {
       overflow: auto;
       gap: 2rem;
+      padding-right: 2rem;
       &::-webkit-scrollbar {
         width: 0;
         height: 0;

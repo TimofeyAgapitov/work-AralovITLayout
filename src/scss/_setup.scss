@@ -77,3 +77,21 @@ body {
   }
 }
 
+.setup--section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 48em) {
+  .setup--section-head {
+    padding: 0 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+}
+
+.setup--swiper-buttons {
+  display: flex;
+  gap: 1rem;
+}
