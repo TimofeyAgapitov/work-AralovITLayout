@@ -3,6 +3,7 @@
 .component--green-btn {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1.2rem;
   width: fit-content;
   padding: 1.9rem 3.9rem;
@@ -119,6 +120,59 @@
   }
 }
 
+.component--enabled-btn {
+  .enabled-btn {
+    &__box {
+      width: 3.4rem;
+      height: 3.4rem;
+      border-radius: 50%;
+      border: 0.2rem solid;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & > svg {
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+      &.disactive {
+        border-color: $grey-color;
+      }
+      &.active {
+        border-color: $green-color;
+      }
+    }
+  }
+  &._disactive {
+    .enabled-btn__box {
+      &.active {
+        display: none;
+      }
+    }
+  }
+  &._active {
+    .enabled-btn__box {
+      &.disactive {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 48em) {
+  .component--enabled-btn {
+    .enabled-btn {
+      &__box {
+        width: 6.8rem;
+        height: 6.8rem;
+        border: 0.4rem solid;
+        & > svg {
+          width: 4.8rem;
+          height: 4.8rem;
+        }
+      }
+    }
+  }
+}
+
 .component--services {
   position: relative;
   width: 53.3rem;
@@ -136,8 +190,17 @@
         }
       }
       &__numbering,
-      &__title {
+      &__title,
+      &__text {
         color: $white-color;
+      }
+      &__numbering {
+        transform: scale(0.75);
+        transition: transform 0.25s ease-in-out;
+      }
+      &__info {
+        transform: translateY(0%);
+        transition: transform 0.25s ease-in-out;
       }
     }
   }
@@ -158,9 +221,11 @@
       height: 26.8rem;
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
       justify-content: space-between;
       top: 5rem;
       left: 4rem;
+      overflow: hidden;
     }
     &__icon-numbering {
       position: absolute;
@@ -174,6 +239,16 @@
     &__numbering,
     &__title {
       font-family: 'NeueMachina';
+    }
+    &__numbering {
+      transition: transform 0.25s ease-in-out;
+    }
+    &__title {
+      margin-bottom: 4rem;
+    }
+    &__info {
+      transform: translateY(55%);
+      transition: transform 0.25s ease-in-out;
     }
   }
 }
@@ -363,16 +438,28 @@
       &__background {
         & > svg {
           fill: $green-color;
-          transition: all 0.25s ease-in-out;
+          transition: all 1s ease-in-out;
         }
       }
       &__content {
         opacity: 0;
-        transition: all 0.25s ease-in-out;
+        transition: all 1.5s ease-in-out;
+        .content {
+          &__image {
+            height: 0;
+            transition: height 1.5s ease-in-out;
+          }
+        }
       }
       &__content._hover {
         opacity: 1;
-        transition: all 0.25s ease-in-out;
+        transition: all 2s ease-in-out;
+        .content {
+          &-bottom {
+            transform: translateY(0%);
+            transition: transform 1.5s ease-in-out;
+          }
+        }
       }
     }
   }
@@ -389,6 +476,8 @@
     }
     &__content._hover {
       opacity: 0;
+      transition: opacity 1s ease-in-out;
+      overflow: hidden;
       .content {
         &__icon {
           background-color: $white-color;
@@ -399,6 +488,10 @@
             stroke: $green-color;
             transform: rotate(-135deg);
           }
+        }
+        &-bottom {
+          transform: translateY(55%);
+          transition: transform 2s ease-in-out;
         }
         &__title {
           margin-bottom: 2.2rem;
@@ -451,6 +544,7 @@
           height: 16.9rem;
           border-radius: 2rem;
           background-color: #777777;
+          transition: height 1.5s ease-in-out;
         }
         &__time {
           display: flex;
@@ -600,7 +694,6 @@
           }
           &__quote {
             opacity: 1;
-            transform: translateY(-200%);
             transition: all 0.25s ease-in-out;
           }
           &__btn {
@@ -641,7 +734,7 @@
         &__quote {
           position: absolute;
           opacity: 0;
-          transform: translateY(-300%);
+          transform: translateY(-200%);
           transition: all 0.25s ease-in-out;
         }
         &__btn {
@@ -710,10 +803,73 @@
         display: none;
       }
     }
+    &__content {
+      width: calc(100% - 8rem);
+      position: absolute;
+      top: 4rem;
+      left: 4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      .content {
+        &__date {
+          text-align: right;
+        }
+        &__image {
+          width: 24.4rem;
+          margin: 0 auto;
+        }
+      }
+    }
+    &__numbering {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 12.5rem;
+      height: 12.5rem;
+      padding: 2rem 0;
+      background-image: url('../img/components/component-letters/bg--white-panel.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      &-number {
+        width: 8rem;
+        color: $green-color;
+        text-align: center;
+        font-family: 'NeueMachina';
+        font-size: 4.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
     &__btn {
       position: absolute;
       bottom: 0;
       right: 0;
+      transform: rotate(-90deg);
+    }
+  }
+}
+@media (max-width: 48em) {
+  .component--letters {
+    width: 57.6rem;
+    height: 57rem;
+    .letters {
+      &__background {
+        &--desktop {
+          display: none;
+        }
+        &--mobile {
+          display: block;
+          width: 57.6rem;
+          height: 57rem;
+        }
+      }
+      &__numbering {
+        width: 12rem;
+        height: 12rem;
+        padding: 2.4rem 0;
+      }
     }
   }
 }

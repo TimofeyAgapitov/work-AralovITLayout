@@ -1,19 +1,130 @@
-.accordion-price {
+.accordion-price-box {
   display: flex;
   align-items: flex-end;
   gap: 1.4rem;
+  flex: 1 0;
   &__line {
     flex: 1 0;
     width: 100%;
     border-bottom: 1px solid rgba(119, 119, 119, 0.35);
     margin-bottom: 0.6rem;
   }
+  &__price {
+    flex: none;
+  }
 }
 @media (max-width: 48em) {
-  .accordion-price {
+  .accordion-price-box {
     gap: 1.2rem;
     &__line {
       margin-bottom: 0;
     }
+  }
+}
+
+.accordion-range-box {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  .range {
+    &-btn {
+      width: 3.4rem;
+      height: 3.4rem;
+      border-radius: 50%;
+      border: 0.15rem solid $green-color;
+      position: relative;
+      &._disactive {
+        opacity: 0.5;
+        pointer-events: none;
+      }
+      &-minus {
+        &::before {
+          content: '';
+          width: 1.3rem;
+          height: 0.15rem;
+          border-radius: 0.15rem;
+          background-color: $green-color;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      &-plus {
+        &::before {
+          content: '';
+          width: 1.3rem;
+          height: 0.15rem;
+          border-radius: 0.15rem;
+          background-color: $green-color;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        &::after {
+          content: '';
+          width: 0.15rem;
+          height: 1.3rem;
+          border-radius: 0.15rem;
+          background-color: $green-color;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+    &-value {
+      width: 3rem;
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 48em) {
+  .accordion-range-box {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    .range {
+      &-btn {
+        width: 5.6rem;
+        height: 5.6rem;
+        border: 0.3rem solid $green-color;
+        &-minus {
+          &::before {
+            width: 2.2rem;
+            height: 0.25rem;
+            border-radius: 0.15rem;
+          }
+        }
+        &-plus {
+          &::before {
+            width: 2.2rem;
+            height: 0.25rem;
+            border-radius: 0.15rem;
+          }
+          &::after {
+            width: 0.25rem;
+            height: 2.2rem;
+            border-radius: 0.15rem;
+          }
+        }
+      }
+      &-value {
+        width: 4rem;
+      }
+    }
+  }
+}
+
+.accordion-range-price-box {
+  display: flex;
+  align-items: center;
+  gap: 2.8rem;
+}
+@media (max-width: 48em) {
+  .accordion-range-price-box {
+    gap: 1.2rem;
   }
 }

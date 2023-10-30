@@ -1,0 +1,28 @@
+.our-letters {
+  // пусто
+  &__title {
+    &._mob {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .our-letters {
+    &__container {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    &__title {
+      &._desc {
+        display: none;
+      }
+      &._mob {
+        display: block;
+      }
+    }
+    &__controls {
+      display: none;
+    }
+  }
+}

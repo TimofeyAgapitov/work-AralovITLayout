@@ -1,0 +1,83 @@
+.cost-calculation-accordion {
+  &__result {
+    font-family: NeueMachina;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 12.4rem 6rem;
+    gap: 5.6rem;
+    span {
+      font-family: Formular;
+    }
+  }
+  &__selected {
+    display: flex;
+    gap: 1.2rem;
+    margin-right: 4.8rem;
+  }
+  &__title {
+    margin-right: auto;
+  }
+  &__arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 48em) {
+  .cost-calculation-accordion {
+    &__result {
+      display: none;
+    }
+    &__title {
+      width: 53rem;
+    }
+  }
+}
+
+.prices-list-accordion {
+  &__title {
+    &._cost-calculation-accordion {
+      flex: 1 0;
+      display: flex;
+      align-items: center;
+      margin-right: 0;
+    }
+  }
+  &__icon {
+    &._cost-calculation-accordion {
+      &._mob {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .prices-list-accordion {
+    &__title {
+      &._cost-calculation-accordion {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3rem;
+      }
+    }
+    &__icon {
+      &._cost-calculation-accordion {
+        &._desc {
+          display: none;
+        }
+        &._mob {
+          display: block;
+        }
+      }
+    }
+    &__head {
+      &._cost-calculation-accordion {
+        align-items: stretch;
+        justify-content: space-between;
+      }
+    }
+  }
+}

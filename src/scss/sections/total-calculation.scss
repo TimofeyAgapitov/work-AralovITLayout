@@ -1,0 +1,80 @@
+.total-calculation {
+  &__content {
+    display: flex;
+    background-color: $green-color;
+    border-radius: 4rem;
+    padding: 0.4rem;
+    overflow: hidden;
+    .content {
+      &-left,
+      &-right {
+        border-radius: 3.8rem;
+        background-color: $white-color;
+      }
+      &-left {
+        flex: 1 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4.5rem 6rem;
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          top: -0.6rem;
+          right: -0.2rem;
+          width: 10rem;
+          height: 100%;
+          border-right: 0.4rem dashed $green-color;
+        }
+      }
+      &-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4rem;
+      }
+    }
+  }
+  &__title {
+    font-family: NeueMachina;
+  }
+  &__total {
+    font-family: NeueMachina;
+    span {
+      font-family: Formular;
+    }
+  }
+}
+@media (max-width: 48em) {
+  .total-calculation {
+    &__content {
+      flex-direction: column;
+      .content {
+        &-left {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 4rem;
+          padding: 4rem 3rem;
+          &::before {
+            width: 100%;
+            height: 1rem;
+            top: 97.45%;
+            right: 0;
+            border-right: none;
+            border-bottom: 0.3rem dashed $green-color;
+          }
+        }
+      }
+    }
+    &__title {
+      margin-bottom: 2.4rem;
+    }
+    &__btn {
+      flex: 1 0;
+      .component--green-btn {
+        width: 100%;
+      }
+    }
+  }
+}

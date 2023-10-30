@@ -11,6 +11,9 @@ $green-color: #03a081;
 .setup--black {
   color: $black-color;
 }
+.setup--green {
+  color: $green-color;
+}
 
 body {
   background-color: $light-grey-color;
@@ -94,4 +97,18 @@ body {
 .setup--swiper-buttons {
   display: flex;
   gap: 1rem;
+}
+
+.clip-path-svg {
+  width: 0;
+  height: 0;
+}
+
+.tooltip {
+  clip-path: url(#modal); /* Применяем обрезку из SVG */
+  background-color: #333; /* Цвет фона tooltip */
+  color: #fff; /* Цвет текста tooltip */
+  width: 100px; /* Ширина tooltip */
+  height: 100px; /* Высота tooltip */
+  position: relative;
 }
