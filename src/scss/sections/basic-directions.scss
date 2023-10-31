@@ -1,0 +1,81 @@
+.basic-direction {
+  &__element {
+    width: 53.3rem;
+    height: 68.8rem;
+    padding: 4rem;
+    border-radius: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    &._v1 {
+      background-image: url('../img/sections/basic-directions/basic-direction-bg-v1.webp');
+    }
+    &._v2 {
+      background-image: url('../img/sections/basic-directions/basic-direction-bg-v2.webp');
+      flex-direction: column-reverse;
+    }
+    &._v3 {
+      background-image: url('../img/sections/basic-directions/basic-direction-bg-v3.webp');
+    }
+  }
+  &__numbering {
+    width: 12.5rem;
+    height: 12.5rem;
+    position: absolute;
+    padding: 2rem 0;
+    display: flex;
+    background-size: contain;
+    background-repeat: no-repeat;
+    & > p {
+      width: 8rem;
+      text-align: center;
+      font-family: NeueMachina;
+      font-size: 4.5rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      color: $green-color;
+    }
+    &._v1 {
+      top: 0;
+      right: 0;
+      background-image: url('../img/sections/basic-directions/basic-direction-panel-v1.svg');
+      align-items: flex-start;
+      justify-content: flex-end;
+    }
+    &._v2 {
+      bottom: 0;
+      right: 0;
+      background-image: url('../img/sections/basic-directions/basic-direction-panel-v2.svg');
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+  }
+  &__text {
+    color: $white-color;
+  }
+}
+
+@media (max-width: 48em) {
+  .basic-direction {
+    &__container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &__controls {
+      display: none;
+    }
+    &__element {
+      width: 57.6rem;
+      height: 74.4rem;
+    }
+    &__numbering {
+      width: 14rem;
+      height: 14rem;
+      padding: 2rem 0;
+    }
+  }
+}

@@ -26,6 +26,11 @@ $(document).ready(function () {
     closeOther: false,
   });
 
+  $('#ask-questions-accordion').accordionjs({
+    closeAble: true,
+    closeOther: false,
+  });
+
   // Убавляем кол-во по клику
   $('.accordion-range-box .range-btn-minus').click(function () {
     let $input = $(this).parent().find('.range-value');

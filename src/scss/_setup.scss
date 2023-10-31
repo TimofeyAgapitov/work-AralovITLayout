@@ -73,6 +73,7 @@ body {
   @extend .setup--h1;
   @extend .setup--black;
   margin-bottom: 6rem;
+  font-family: NeueMachina;
 }
 @media (max-width: 48em) {
   .setup--section-title {
@@ -84,6 +85,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: NeueMachina;
 }
 @media (max-width: 48em) {
   .setup--section-head {

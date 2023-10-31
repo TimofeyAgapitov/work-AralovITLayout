@@ -1,0 +1,15 @@
+.grid-articles {
+  // пусто
+}
+
+@media (max-width: 48em) {
+  .grid-articles {
+    &__container {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    &__controls {
+      display: none;
+    }
+  }
+}

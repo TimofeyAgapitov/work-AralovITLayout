@@ -69,6 +69,7 @@ if (document.querySelector('.grid-articles-swiper')) {
   new Swiper('.grid-articles-swiper', {
     slidesPerView: 'auto',
     freemode: true,
+    spaceBetween: remToPx(4),
     speed: 1000,
     breakpoints: {
       769: {
@@ -81,6 +82,49 @@ if (document.querySelector('.grid-articles-swiper')) {
         navigation: {
           nextEl: '.grid-articles__controls .btn-next',
           prevEl: '.grid-articles__controls .btn-prev',
+        },
+      },
+    },
+  });
+}
+
+if (document.querySelector('.grid-teams-swiper')) {
+  new Swiper('.grid-teams-swiper', {
+    slidesPerView: 'auto',
+    freemode: true,
+    spaceBetween: remToPx(4),
+    speed: 1000,
+    breakpoints: {
+      769: {
+        slidesPerView: 3,
+        grid: {
+          rows: 2,
+        },
+        spaceBetween: remToPx(4),
+        speed: 1000,
+        navigation: {
+          nextEl: '.grid-teams__controls .btn-next',
+          prevEl: '.grid-teams__controls .btn-prev',
+        },
+      },
+    },
+  });
+}
+
+if (document.querySelector('.basic-direction-swiper')) {
+  new Swiper('.basic-direction-swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: remToPx(4),
+    freemode: true,
+    speed: 1000,
+    breakpoints: {
+      769: {
+        slidesPerView: 3,
+        spaceBetween: remToPx(4),
+        speed: 1000,
+        navigation: {
+          nextEl: '.basic-direction__controls .btn-next',
+          prevEl: '.basic-direction__controls .btn-prev',
         },
       },
     },

@@ -1,0 +1,67 @@
+.service-price {
+  &__content {
+    background-color: $white-color;
+    border-radius: 4rem;
+    &-head {
+      padding: 4.5rem 4rem;
+      display: flex;
+      align-items: center;
+    }
+    &-inner {
+      padding: 1.5rem 12.4rem 6rem;
+    }
+    &-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 8rem;
+      row-gap: 4rem;
+      margin-bottom: 4rem;
+    }
+    &-icon {
+      margin-right: 3rem;
+      & > svg {
+        width: 5.4rem;
+        height: 5.4rem;
+      }
+    }
+    &-btn {
+      margin-left: auto;
+    }
+    &-result {
+      display: flex;
+      gap: 2rem;
+      justify-content: flex-end;
+    }
+    &-price {
+      font-family: NeueMachina;
+      span {
+        font-family: Formular;
+      }
+    }
+  }
+}
+@media (max-width: 48em) {
+  .service-price {
+    &__content {
+      &-inner {
+        padding: 0 3rem 4rem;
+      }
+      &-list {
+        grid-template-columns: 1fr;
+        margin-bottom: 8rem;
+      }
+      &-icon {
+        & > svg {
+          width: 8rem;
+          height: 8rem;
+        }
+      }
+      &-btn {
+        display: none;
+      }
+      &-result {
+        justify-content: flex-start;
+      }
+    }
+  }
+}

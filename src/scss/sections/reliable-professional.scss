@@ -1,0 +1,143 @@
+.reliable-professional {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    .content {
+      &-top {
+        display: flex;
+        gap: 4rem;
+        &__right {
+          width: 73.2rem;
+          align-self: center;
+        }
+      }
+      &-bottom {
+        display: flex;
+        justify-content: space-between;
+        &__left {
+          width: 50.4rem;
+          align-self: center;
+        }
+        &__right {
+          display: flex;
+          align-items: flex-end;
+          gap: 4rem;
+        }
+      }
+    }
+  }
+  &__image-box {
+    width: 82rem;
+    height: 43rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    &._top {
+      background-image: url('../img/sections/reliable-professional/rp-bg-top-desc.webp');
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+    &._bottom {
+      background-image: url('../img/sections/reliable-professional/rp-bg-bottom-desc.webp');
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+  }
+  &__image-text {
+    &._top {
+      padding-right: 4rem;
+      padding-bottom: 1rem;
+    }
+    &._bottom {
+      padding-left: 4rem;
+      padding-top: 1rem;
+    }
+  }
+  &__decoration {
+    width: 24.7rem;
+    height: 24.7rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../img/sections/reliable-professional/rp-bg-decoration.webp');
+  }
+  &__title {
+    margin-bottom: 4rem;
+  }
+  &__text {
+    margin-bottom: 4rem;
+  }
+  &__btn {
+    &._top {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .reliable-professional {
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 12rem;
+      .content {
+        &-top {
+          flex-direction: column;
+          gap: 6rem;
+          &__right {
+            width: 100%;
+            align-self: center;
+          }
+        }
+        &-bottom {
+          flex-direction: column-reverse;
+          gap: 6rem;
+          &__left {
+            width: 100%;
+            align-self: center;
+          }
+          &__right {
+            display: flex;
+            align-items: flex-end;
+            gap: 4rem;
+          }
+        }
+      }
+    }
+    &__image-box {
+      width: 71rem;
+      height: 37.2rem;
+      &._top {
+        background-image: url('../img/sections/reliable-professional/rp-bg-top-mob.webp');
+      }
+      &._bottom {
+        background-image: url('../img/sections/reliable-professional/rp-bg-bottom-mob.webp');
+      }
+    }
+    &__image-text {
+      font-size: 3.6rem;
+      &._top {
+        padding-right: 2rem;
+        padding-bottom: 1rem;
+      }
+      &._bottom {
+        padding-left: 2rem;
+        padding-top: 1rem;
+      }
+    }
+    &__decoration {
+      display: none;
+    }
+    &__title {
+      margin-bottom: 4.4rem;
+    }
+    &__btn {
+      &._top {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+}

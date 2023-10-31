@@ -195,12 +195,12 @@
         color: $white-color;
       }
       &__numbering {
-        transform: scale(0.75);
-        transition: transform 0.25s ease-in-out;
+        transform: scale(0.75) translateX(-1rem);
+        transition: transform 0.5s ease-in-out;
       }
       &__info {
         transform: translateY(0%);
-        transition: transform 0.25s ease-in-out;
+        transition: transform 0.5s ease-in-out;
       }
     }
   }
@@ -241,14 +241,14 @@
       font-family: 'NeueMachina';
     }
     &__numbering {
-      transition: transform 0.25s ease-in-out;
+      transition: transform 0.5s ease-in-out;
     }
     &__title {
       margin-bottom: 4rem;
     }
     &__info {
       transform: translateY(55%);
-      transition: transform 0.25s ease-in-out;
+      transition: transform 0.5s ease-in-out;
     }
   }
 }
@@ -298,7 +298,7 @@
           path {
             fill: $white-color;
             stroke: $white-color;
-            transition: all 0.25s ease-in-out;
+            transition: all 0.5s ease-in-out;
           }
         }
       }
@@ -438,16 +438,16 @@
       &__background {
         & > svg {
           fill: $green-color;
-          transition: all 1s ease-in-out;
+          transition: all 0.5s ease-in-out;
         }
       }
       &__content {
         opacity: 0;
-        transition: all 1.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
         .content {
           &__image {
             height: 0;
-            transition: height 1.5s ease-in-out;
+            transition: height 1s ease-in-out;
           }
         }
       }
@@ -457,7 +457,7 @@
         .content {
           &-bottom {
             transform: translateY(0%);
-            transition: transform 1.5s ease-in-out;
+            transition: transform 1s ease-in-out;
           }
         }
       }
@@ -476,7 +476,7 @@
     }
     &__content._hover {
       opacity: 0;
-      transition: opacity 1s ease-in-out;
+      transition: opacity 0.25s ease-in-out;
       overflow: hidden;
       .content {
         &__icon {
@@ -491,7 +491,7 @@
         }
         &-bottom {
           transform: translateY(55%);
-          transition: transform 2s ease-in-out;
+          transition: transform 1s ease-in-out;
         }
         &__title {
           margin-bottom: 2.2rem;
@@ -544,7 +544,7 @@
           height: 16.9rem;
           border-radius: 2rem;
           background-color: #777777;
-          transition: height 1.5s ease-in-out;
+          transition: height 1s ease-in-out;
         }
         &__time {
           display: flex;
