@@ -130,3 +130,22 @@ if (document.querySelector('.basic-direction-swiper')) {
     },
   });
 }
+
+if (document.querySelector('.completing-tasks-swiper')) {
+  new Swiper('.completing-tasks-swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: remToPx(2),
+    freemode: true,
+    speed: 1000,
+    breakpoints: {
+      769: {
+        slidesPerView: 2,
+        grid: {
+          rows: 2,
+        },
+        spaceBetween: remToPx(2),
+        speed: 1000,
+      },
+    },
+  });
+}

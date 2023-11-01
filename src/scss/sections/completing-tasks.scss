@@ -1,0 +1,124 @@
+.completing-tasks {
+  &__title {
+    width: 110.5rem;
+  }
+  &__content {
+    display: flex;
+    gap: 4rem;
+    .content {
+      &-left {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        width: 55.3rem;
+        padding: 4rem 2rem 2rem 4rem;
+        background-image: url('../img/sections/completing-tasks/completing-tasks-bg.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      &-right {
+        width: 111rem;
+      }
+    }
+  }
+  &__box {
+    display: flex;
+    align-items: flex-end;
+    &._v1 {
+      gap: 13rem;
+    }
+    &._v2 {
+      gap: 4rem;
+    }
+  }
+  &__image {
+    width: 22.6rem;
+    border-radius: 3rem;
+  }
+}
+@media (max-width: 48em) {
+  .completing-tasks {
+    &__content {
+      flex-direction: column-reverse;
+      .content {
+        &-left {
+          width: 100%;
+          padding: 4.6rem 2rem 4rem 4.6rem;
+          background-image: url('../img/sections/completing-tasks/completing-tasks-bg-mob.svg');
+        }
+        &-right {
+          width: 100%;
+        }
+      }
+    }
+    &__box {
+      &._v1 {
+        justify-content: space-between;
+      }
+      &._v2 {
+        gap: 6.4rem;
+      }
+    }
+    &__image {
+      width: 29rem;
+      height: 29.6rem;
+      & > img {
+        object-fit: cover;
+        height: 29.6rem;
+        border-radius: 4rem;
+      }
+    }
+    &__title {
+      width: 100%;
+    }
+  }
+}
+
+.component--services {
+  &._completing-tasks {
+    width: 53.3rem;
+    height: 32.2rem;
+    &:hover {
+      .services {
+        &__numbering {
+          transform: none;
+        }
+      }
+    }
+    .services {
+      &__background {
+        &--desktop {
+          width: 53.3rem;
+          height: 32.2rem;
+        }
+      }
+      &__content {
+        top: 5rem;
+        left: 4rem;
+        height: 23.2rem;
+      }
+    }
+  }
+}
+@media (max-width: 48em) {
+  .component--services {
+    &._completing-tasks {
+      width: 56rem;
+      height: 41.4rem;
+      .services {
+        &__background {
+          &--mobile {
+            width: 56rem;
+            height: 41.4rem;
+          }
+        }
+        &__content {
+          width: 50rem;
+          height: 35rem;
+          top: 3rem;
+          left: 3rem;
+        }
+      }
+    }
+  }
+}
