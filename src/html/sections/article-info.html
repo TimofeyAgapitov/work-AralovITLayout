@@ -5,12 +5,25 @@
         <div class="article-info__image">
           <img src="@img/sections/article-info/article-info.webp" alt="" />
         </div>
+        <div class="article-info__head _mob">
+          <p class="article-info__date setup--text-18px setup--grey">
+            26.05.2023
+          </p>
+          <div class="article-info__time time">
+            <div class="time-value">14 минут <span>на прочтение</span></div>
+            <div class="time-icon">
+              <svg>
+                <use xlink:href="@img/sprite.svg#timer"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
         <p class="article-info__text _size setup--text-18px setup--grey">
           Статья разработана маркетинговыми специалистами Aralov
         </p>
-        <!-- <div class="article-info__btn">
+        <div class="article-info__btn">
           @@include('../components/greenArrowButton.html', {})
-        </div> -->
+        </div>
       </div>
       <div class="content-right">
         <div class="article-info__head _desc">
@@ -80,7 +93,7 @@
                 </p>
               </li>
             </ul>
-            <p class="article-info__text setup--text-24px setup--green">
+            <p class="article-info__text setup--text-24px setup--green _allot">
               Виртуализация серверов позволяет более эффективно использовать
               аппаратные ресурсы, позволяя одному физическому серверу выполнять
               работу нескольких виртуальных серверов. Это позволяет сократить

@@ -217,10 +217,10 @@ body {
 }
 
 .tooltip {
-  -webkit-clip-path: url(#modal);
-          clip-path: url(#modal);
+  -webkit-clip-path: url("#modal");
+          clip-path: url("#modal");
   /* Применяем обрезку из SVG */
-  background-color: #333;
+  background-color: #fff;
   /* Цвет фона tooltip */
   color: #fff;
   /* Цвет текста tooltip */
@@ -1406,6 +1406,247 @@ body {
   cursor: pointer;
 }
 
+.baner-teams__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 8.5rem;
+}
+
+.baner-teams__title {
+  width: calc(100% - 6rem);
+  font-family: NeueMachina;
+  line-height: 120%;
+}
+
+.baner-teams__title ._important {
+  padding: 0.8rem;
+  border: 1px solid #050505;
+  border-radius: 8rem;
+  position: relative;
+}
+
+.baner-teams__title ._important::before {
+  content: "";
+  width: 4rem;
+  height: 4rem;
+  background-image: url("../img/sections/baner-teams/icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: -8rem;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.baner-teams__title p:nth-child(2) {
+  padding-left: 33.5rem;
+}
+
+.baner-teams__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 39rem 1fr;
+  grid-template-columns: 39rem 1fr;
+  gap: 4rem;
+}
+
+.baner-teams__content .content-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4rem;
+  margin-top: 9rem;
+}
+
+.baner-teams__content .content-left__icon-box {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: #03a081;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.baner-teams__content .content-left__icon-box > svg {
+  width: 3.8rem;
+  height: 3.8rem;
+}
+
+.baner-teams__content .content-left__btn._mob {
+  display: none;
+}
+
+.baner-teams__content .content-right {
+  position: relative;
+  padding-bottom: 10.5rem;
+}
+
+.baner-teams__content .content-right__image {
+  height: 40rem;
+  border-radius: 4rem;
+  background-image: url("../img/sections/baner-teams/baner-teams-bg.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+}
+
+.baner-teams__content .content-right__decoration {
+  width: 14.8rem;
+  height: 14.8rem;
+  background-image: url("../img/sections/baner-teams/baner-teams-dec.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -4.4rem;
+  left: -4.4rem;
+}
+
+.baner-teams__content .content-right__icon-box {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.baner-teams__content .content-right__icon-box > svg {
+  width: 3.8rem;
+  height: 3.8rem;
+}
+
+.baner-teams__content .content-right__experiences {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 8.5rem;
+}
+
+.baner-teams__content .content-right__experiences-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+.baner-teams__content .content-right__experience {
+  padding: 1.4rem 2.2rem;
+  border: 1px solid rgba(119, 119, 119, 0.4);
+  border-radius: 10rem;
+}
+
+.baner-teams__content .content-right__experience-panel {
+  width: 39rem;
+  height: 27rem;
+  padding: 5rem 4rem 4rem;
+  background-image: url("../img/sections/baner-teams/baner-teams-panel-desc.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.baner-teams__content .content-right__experience-panel .experience-panel__texts {
+  color: #ffffff;
+}
+
+.baner-teams__content .content-right__experience-panel .experience-panel__title {
+  font-family: NeueMachina;
+}
+
+.baner-teams__content .content-right__experience-panel .experience-panel__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.baner-teams__content .content-right__experience-panel .experience-panel__image {
+  width: 15rem;
+}
+
+.baner-teams__content .content-right__experience-panel .experience-panel__icon > svg {
+  width: 6rem;
+  height: 6rem;
+}
+
+.baner-teams__content .content-right__experience-panel .experience-panel__icon-box {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+}
+
+.baner-teams__content .content-right__experience-panel .experience-panel__icon-box > svg {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
 .IT-support__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2414,6 +2655,10 @@ body {
   margin-bottom: 14.2rem;
 }
 
+.article-info__head._mob {
+  display: none;
+}
+
 .article-info__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2427,14 +2672,43 @@ body {
 
 .article-info__content::before {
   content: "";
-  width: 100.2%;
+  width: 168rem;
   height: 14.8rem;
   border-radius: 4rem;
   border: 2px solid #03a081;
   position: absolute;
-  top: -0.2rem;
-  left: -0.2rem;
+  top: -2px;
+  left: -2px;
   z-index: -1;
+}
+
+.article-info__content .content-left {
+  position: relative;
+}
+
+.article-info__btn {
+  width: 8rem;
+  height: 8rem;
+  border-bottom-right-radius: 2rem;
+  background-color: #eaeaea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.article-info__btn .component--green-arrow-btn {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .article-info__image {
@@ -2961,6 +3235,180 @@ body {
 
   .footer {
     display: none;
+  }
+
+  .baner-teams__head {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-bottom: 8rem;
+  }
+
+  .baner-teams__title {
+    width: 100%;
+    line-height: 120%;
+  }
+
+  .baner-teams__title ._important {
+    padding: 0.8rem;
+    border: 1px solid #050505;
+    border-radius: 8rem;
+    position: relative;
+  }
+
+  .baner-teams__title ._important::before {
+    width: 6rem;
+    height: 6rem;
+    left: calc(100% + 4rem);
+  }
+
+  .baner-teams__title p:nth-child(2) {
+    padding-left: 0;
+  }
+
+  .baner-teams__content {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 7.2rem;
+  }
+
+  .baner-teams__content .content-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 4.8rem;
+    margin-top: 0;
+  }
+
+  .baner-teams__content .content-left__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .baner-teams__content .content-left__icon-box {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .baner-teams__content .content-left__icon-box > svg {
+    width: 6.4rem;
+    height: 6.4rem;
+  }
+
+  .baner-teams__content .content-left__btn._desc {
+    display: none;
+  }
+
+  .baner-teams__content .content-left__btn._mob {
+    display: block;
+  }
+
+  .baner-teams__content .content-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 6rem;
+    padding-bottom: 10.5rem;
+  }
+
+  .baner-teams__content .content-right__image {
+    height: 20.4rem;
+    background-size: cover;
+    padding: 2rem;
+  }
+
+  .baner-teams__content .content-right__decoration {
+    width: 13.6rem;
+    height: 13.6rem;
+    top: -7rem;
+    left: calc(100% - 13.6rem);
+  }
+
+  .baner-teams__content .content-right__icon-box {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .baner-teams__content .content-right__icon-box > svg {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .baner-teams__content .content-right__experiences {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 6rem;
+  }
+
+  .baner-teams__content .content-right__experiences-left {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .baner-teams__content .content-right__experience {
+    padding: 2rem 4.4rem;
+    border-radius: 20rem;
+  }
+
+  .baner-teams__content .content-right__experience-panel {
+    width: 69rem;
+    height: 24.4rem;
+    padding: 4rem;
+    background-image: url("../img/sections/baner-teams/baner-teams-panel-mob.svg");
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .baner-teams__content .content-right__experience-panel .experience-panel__title {
+    margin-bottom: 2.4rem;
+  }
+
+  .baner-teams__content .content-right__experience-panel .experience-panel__image {
+    width: 22rem;
+    margin-top: 8rem;
+  }
+
+  .baner-teams__content .content-right__experience-panel .experience-panel__icon {
+    display: none;
+  }
+
+  .baner-teams__content .content-right__experience-panel .experience-panel__icon-box {
+    width: 8rem;
+    height: 8rem;
+    top: -2rem;
+    right: -2rem;
+  }
+
+  .baner-teams__content .content-right__experience-panel .experience-panel__icon-box > svg {
+    width: 4.2rem;
+    height: 4.2rem;
   }
 
   .IT-support__content {
@@ -3558,6 +4006,89 @@ body {
     height: 35rem;
     top: 3rem;
     left: 3rem;
+  }
+
+  .article-info__head {
+    margin-bottom: 4rem;
+  }
+
+  .article-info__head._desc {
+    display: none;
+  }
+
+  .article-info__head._mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .article-info__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 7rem;
+    padding: 3rem;
+  }
+
+  .article-info__content::before {
+    width: 71rem;
+    height: 20rem;
+  }
+
+  .article-info__title {
+    font-size: 8rem;
+    margin-bottom: 6rem;
+  }
+
+  .article-info__btn {
+    width: 11rem;
+    height: 11rem;
+    border-bottom-right-radius: 4rem;
+  }
+
+  .article-info__image {
+    width: 100%;
+    margin-bottom: 6rem;
+  }
+
+  .article-info__list .list-item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .article-info__time .time-value {
+    font-size: 2.8rem;
+    padding: 1.2rem 2.2rem 1rem;
+  }
+
+  .article-info__time .time-value > span {
+    display: none;
+  }
+
+  .article-info__time .time-icon {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .article-info__time .time-icon > svg {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+
+  .article-info__texts {
+    gap: 2.4rem;
+  }
+
+  .article-info__text._allot {
+    font-family: NeueMachina;
+    font-size: 4.4rem;
+    padding: 3.6rem 0;
+  }
+
+  .article-info__text._size {
+    width: 100%;
   }
 
   .grid-articles__container {

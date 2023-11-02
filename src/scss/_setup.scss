@@ -107,8 +107,8 @@ body {
 }
 
 .tooltip {
-  clip-path: url(#modal); /* Применяем обрезку из SVG */
-  background-color: #333; /* Цвет фона tooltip */
+  clip-path: url('#modal'); /* Применяем обрезку из SVG */
+  background-color: #fff; /* Цвет фона tooltip */
   color: #fff; /* Цвет текста tooltip */
   width: 100px; /* Ширина tooltip */
   height: 100px; /* Высота tooltip */
