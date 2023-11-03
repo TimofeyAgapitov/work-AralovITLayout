@@ -1,0 +1,177 @@
+.order-callback {
+  &__head {
+    width: 67.7rem;
+    margin-bottom: 6rem;
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: 82rem auto;
+    gap: 4rem;
+    .content {
+      &-left {
+        width: 82rem;
+        height: 57.7rem;
+        background-image: url('../img/sections/order-callback/order-callback-bg.webp');
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 8rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        gap: 6rem;
+        &__panel {
+          width: 39rem;
+          height: 23.8rem;
+          background-image: url('../img/sections/order-callback/order-callback-panel-desc.svg');
+          background-size: contain;
+          background-repeat: no-repeat;
+          position: relative;
+          padding: 2.4rem;
+        }
+        &__icon-box {
+          width: 5.6rem;
+          height: 5.6rem;
+          border-radius: 50%;
+          background-color: $green-color;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 2.9rem;
+          & > svg {
+            width: 3.2rem;
+            height: 3.2rem;
+          }
+        }
+        &__data {
+          width: fit-content;
+          padding: 1rem 1.8rem;
+          border: 1px solid rgba(5, 5, 5, 0.25);
+          border-radius: 8.5rem;
+          margin-bottom: 1.9rem;
+        }
+        &__btn {
+          position: absolute;
+          top: -2rem;
+          right: 0;
+        }
+      }
+    }
+  }
+  &__title {
+    font-family: NeueMachina;
+    margin-bottom: 2.4rem;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-bottom: 4rem;
+  }
+  &__inputs {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  &__textarea {
+    height: 12rem;
+    border-radius: 2rem;
+    resize: none;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+  }
+  &__policy {
+    width: 42rem;
+    span {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .order-callback {
+    &__head {
+      width: 100%;
+      margin-bottom: 4rem;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column-reverse;
+      grid-template-columns: 1fr;
+      gap: 8rem;
+      .content {
+        &-left {
+          width: 100%;
+          height: 50rem;
+          background-image: url('../img/sections/order-callback/order-callback-bg-mob.webp');
+          padding: 6rem;
+          gap: 7.2rem;
+          &__panel {
+            width: 39rem;
+            height: 23.8rem;
+            background-image: url('../img/sections/order-callback/order-callback-panel-desc.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: relative;
+            padding: 2.4rem;
+          }
+          &__icon-box {
+            width: 5.6rem;
+            height: 5.6rem;
+            border-radius: 50%;
+            background-color: $green-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2.9rem;
+            & > svg {
+              width: 3.2rem;
+              height: 3.2rem;
+            }
+          }
+          &__data {
+            width: fit-content;
+            padding: 1rem 1.8rem;
+            border: 1px solid rgba(5, 5, 5, 0.25);
+            border-radius: 8.5rem;
+            margin-bottom: 1.9rem;
+          }
+          &__btn {
+            position: absolute;
+            top: -2rem;
+            right: 0;
+          }
+        }
+      }
+    }
+    &__title {
+      margin-bottom: 4rem;
+    }
+    &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      margin-bottom: 4rem;
+    }
+    &__inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    &__textarea {
+      display: none;
+    }
+    &__box {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4rem;
+    }
+    &__policy {
+      width: 100%;
+    }
+  }
+}

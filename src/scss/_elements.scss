@@ -128,3 +128,33 @@
     gap: 1.2rem;
   }
 }
+
+.input {
+  width: 100%;
+  padding: 1.8rem 4rem;
+  border-radius: 50rem;
+  background-color: #fff;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  &::placeholder {
+    font-family: Formular;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: rgba(119, 119, 119, 0.5);
+  }
+}
+
+@media (max-width: 48em) {
+  .input {
+    padding: 3.2rem 8rem 3.2rem 4rem;
+    font-size: 2.8rem;
+    border-radius: 100rem;
+    &::placeholder {
+      font-size: 2.8rem;
+    }
+  }
+}

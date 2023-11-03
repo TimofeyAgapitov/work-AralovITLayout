@@ -149,3 +149,15 @@ if (document.querySelector('.completing-tasks-swiper')) {
     },
   });
 }
+
+if (document.querySelector('.order-callback-swiper')) {
+  new Swiper('.order-callback-swiper', {
+    slidesPerView: 1,
+    // effect: 'fade',
+    speed: 1000,
+    navigation: {
+      nextEl: '.order-callback__controls .btn-next',
+      prevEl: '.order-callback__controls .btn-prev',
+    },
+  });
+}

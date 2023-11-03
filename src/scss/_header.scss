@@ -22,6 +22,31 @@
     .menu {
       &__item {
         cursor: pointer;
+        overflow: hidden;
+        &:hover {
+          .menu__link {
+            transform: translateY(-4rem);
+            transition: transform 0.25s ease-in-out;
+            &::before {
+              transform: translateY(0rem);
+            }
+          }
+        }
+      }
+      &__link {
+        display: inline-block;
+        transition: transform 0.25s ease-in-out;
+        position: relative;
+        &::before {
+          content: attr(data-hover);
+          position: absolute;
+          top: 4rem;
+          left: 0;
+          color: $green-color;
+          text-decoration: underline;
+          transform: translateY(4rem);
+          transition: transform 0.25s ease-in-out;
+        }
       }
     }
   }

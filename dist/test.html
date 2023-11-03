@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.min.css?_V=20231102202500" />
+  <link rel="stylesheet" href="css/style.min.css?_V=20231103174910" />
   <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_V=20231102202500"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_V=20231103174910"
   />
   <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_V=20231102202500"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_V=20231103174910"
   />
   <title>Главная</title>
 </head>
@@ -25,10 +25,18 @@
       </svg>
     </div>
     <ul class="header__menu menu">
-      <li class="menu__item setup--text-24px">О нас</li>
-      <li class="menu__item setup--text-24px">Услуги</li>
-      <li class="menu__item setup--text-24px">Рассчет цены</li>
-      <li class="menu__item setup--text-24px">Контакты</li>
+      <li class="menu__item setup--text-24px">
+        <a href="#" class="menu__link" data-hover="О нас">О нас</a>
+      </li>
+      <li class="menu__item setup--text-24px">
+        <a href="#" class="menu__link" data-hover="Услуги">Услуги</a>
+      </li>
+      <li class="menu__item setup--text-24px">
+        <a href="#" class="menu__link" data-hover="Рассчет цены">Рассчет цены</a>
+      </li>
+      <li class="menu__item setup--text-24px">
+        <a href="#" class="menu__link" data-hover="Контакты">Контакты</a>
+      </li>
     </ul>
     <div class="header__socials socials">
       <div class="socials__phone phone">
@@ -48,7 +56,7 @@
         <p class="phone__text setup--text-18px">+7 (999) 999-99-99</p>
       </div>
       <div class="component--green-btn green-btn @@status">
-    <p class="green-btn__text setup--text-18px">Заказать звонок</p>
+    <p class="green-btn__text setup--text-18px" data-hover="Заказать звонок">Заказать звонок</p>
 </div>
       <div class="socials__links">
         <svg
@@ -85,97 +93,114 @@
 </header>
 
     <main>
-      <section class="baner-teams">
-  <div class="baner-teams__container container">
-    <div class="baner-teams__head">
-      <div class="baner-teams__title setup--h1">
-        <p>Познакомьтесь с нашей командой</p>
-        <p>
-          <span class="_important">лучших</span> специалистов
-          <span class="_delete">в сфере IT</span>
-        </p>
-      </div>
-    </div>
-    <div class="baner-teams__content content">
+      <section class="order-callback">
+  <div class="order-callback__container container">
+    <div class="order-callback__content">
       <div class="content-left">
-        <div class="content-left__box">
+        <div class="content-left__panel">
           <div class="content-left__icon-box">
-            <svg>
-              <use xlink:href="img/sprite.svg#cpu"></use>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <path
+                d="M29.2927 24.4398C29.2927 24.9198 29.186 25.4132 28.9593 25.8932C28.7327 26.3732 28.4394 26.8265 28.0527 27.2532C27.3994 27.9732 26.6793 28.4932 25.866 28.8265C25.066 29.1598 24.1994 29.3332 23.266 29.3332C21.906 29.3332 20.4527 29.0132 18.9193 28.3598C17.386 27.7065 15.8527 26.8265 14.3327 25.7198C12.7993 24.5998 11.346 23.3598 9.95935 21.9865C8.58602 20.5998 7.34602 19.1465 6.23935 17.6265C5.14602 16.1065 4.26602 14.5865 3.62602 13.0798C2.98602 11.5598 2.66602 10.1065 2.66602 8.71984C2.66602 7.81317 2.82602 6.9465 3.14602 6.1465C3.46602 5.33317 3.97268 4.5865 4.67935 3.91984C5.53268 3.07984 6.46602 2.6665 7.45268 2.6665C7.82602 2.6665 8.19935 2.7465 8.53268 2.9065C8.87935 3.0665 9.18602 3.3065 9.42602 3.65317L12.5193 8.01317C12.7593 8.3465 12.9327 8.65317 13.0527 8.9465C13.1727 9.2265 13.2393 9.5065 13.2393 9.75984C13.2393 10.0798 13.146 10.3998 12.9593 10.7065C12.786 11.0132 12.5327 11.3332 12.2127 11.6532L11.1993 12.7065C11.0527 12.8532 10.986 13.0265 10.986 13.2398C10.986 13.3465 10.9993 13.4398 11.026 13.5465C11.066 13.6532 11.106 13.7332 11.1327 13.8132C11.3727 14.2532 11.786 14.8265 12.3727 15.5198C12.9727 16.2132 13.6127 16.9198 14.306 17.6265C15.026 18.3332 15.7193 18.9865 16.426 19.5865C17.1193 20.1732 17.6927 20.5732 18.146 20.8132C18.2127 20.8398 18.2927 20.8798 18.386 20.9198C18.4927 20.9598 18.5993 20.9732 18.7193 20.9732C18.946 20.9732 19.1193 20.8932 19.266 20.7465L20.2793 19.7465C20.6127 19.4132 20.9327 19.1598 21.2393 18.9998C21.546 18.8132 21.8527 18.7198 22.186 18.7198C22.4393 18.7198 22.706 18.7732 22.9993 18.8932C23.2927 19.0132 23.5994 19.1865 23.9327 19.4132L28.346 22.5465C28.6927 22.7865 28.9327 23.0665 29.0793 23.3998C29.2127 23.7332 29.2927 24.0665 29.2927 24.4398Z"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+              />
             </svg>
           </div>
-          <div class="content-left__btn _mob">
+          <div class="order-callback-swiper swiper">
+            <div class="swiper-wrapper">
+              <div class="order-callback-slide swiper-slide">
+                <div class="content-left__data setup--text-18px setup--grey">
+                  4 (989) 595-14-54
+                </div>
+                <div class="content-left__text setup--text-18px setup--black">
+                  Номер телефона для звонков<br />
+                  по России
+                </div>
+              </div>
+              <div class="order-callback-slide swiper-slide">
+                <div class="content-left__data setup--text-18px setup--grey">
+                  4 (989) 595-54-28
+                </div>
+                <div class="content-left__text setup--text-18px setup--black">
+                  Номер телефона для звонков<br />за территорией РФ
+                </div>
+              </div>
+              <div class="order-callback-slide swiper-slide">
+                <div class="content-left__data setup--text-18px setup--grey">
+                  infoaralov@gmail.com
+                </div>
+                <div class="content-left__text setup--text-18px setup--black">
+                  Наша почта для связи<br />по email
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-left__btn">
             <div class="component--green-btn green-btn @@status">
-    <p class="green-btn__text setup--text-18px">Оставить заявку</p>
+    <p class="green-btn__text setup--text-18px" data-hover="Контакты">Контакты</p>
 </div>
           </div>
         </div>
-        <p class="content-left__text setup--text-18px">
-          Мы приглашаем талантливых и преданных профессионалов присоединиться к
-          нам в увлекательном путешествии, направленном на трансформацию
-          современных технологических решений.
-        </p>
-        <div class="content-left__btn _desc">
-          <div class="component--green-btn green-btn @@status">
-    <p class="green-btn__text setup--text-18px">Оставить заявку</p>
-</div>
+        <div class="order-callback__controls setup--swiper-buttons">
+          <button type="button" class="swiper-button-prev btn-prev">
+            <svg class="swiper-button-arrow">
+              <use xlink:href="img/sprite.svg#arrowline"></use>
+            </svg>
+          </button>
+          <button type="button" class="swiper-button-next btn-next">
+            <svg class="swiper-button-arrow">
+              <use xlink:href="img/sprite.svg#arrowline"></use>
+            </svg>
+          </button>
         </div>
       </div>
       <div class="content-right">
-        <div class="content-right__image">
-          <div class="content-right__decoration"></div>
-          <div class="content-right__icon-box">
-            <svg>
-              <use xlink:href="img/sprite.svg#global"></use>
-            </svg>
-          </div>
+        <div class="order-callback__head">
+          <p class="order-callback__title setup--h1">
+            Закажите обратный звонок
+          </p>
+          <p class="order-callback__text setup--text-18px setup--grey">
+            Или свяжитесь с нами любым удобным для Вас способом: по телефону,
+            почте или в мессенджерах.
+          </p>
         </div>
-        <div class="content-right__experiences">
-          <div class="content-right__experiences-left">
-            <div class="content-right__experience setup--text-18px">
-              15 клиентов с нами более 5 лет
-            </div>
-            <div class="content-right__experience setup--text-18px">
-              8 клиентов с нами более 10 лет
-            </div>
+        <form action="" method="post" class="order-callback__form">
+          <div class="order-callback__inputs">
+            <input
+              type="text"
+              class="order-callback__input input"
+              placeholder="Имя"
+            />
+            <input
+              type="text"
+              class="order-callback__input input"
+              placeholder="Телефон"
+            />
           </div>
-          <div class="content-right__experiences-right">
-            <div class="content-right__experience-panel">
-              <div class="experience-panel__texts">
-                <p class="experience-panel__title setup--h1">5+</p>
-                <p class="experience-panel__text setup--text-18px">
-                  лет средний опыт работы
-                </p>
-              </div>
-              <div class="experience-panel__images">
-                <div class="experience-panel__image">
-                  <img
-                    src="img/sections/baner-teams/baner-teams-img.webp"
-                    alt=""
-                  />
-                </div>
-                <div class="experience-panel__icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="60"
-                    height="60"
-                    viewBox="0 0 60 60"
-                    fill="none"
-                  >
-                    <path
-                      d="M28.9709 3.03182C29.486 2.34694 30.514 2.34694 31.0291 3.03182C32.1435 4.51351 34.262 4.78114 35.71 3.62315C36.3792 3.0879 37.3748 3.34353 37.7035 4.135L38.627 3.75154L37.7035 4.13501C38.4144 5.84729 40.3998 6.63336 42.0902 5.87184C42.8716 5.51984 43.7723 6.01504 43.8938 6.86337C44.1566 8.69867 45.8841 9.9538 47.7108 9.63659C48.5552 9.48996 49.3045 10.1936 49.2112 11.0455C49.0093 12.8885 50.3704 14.5338 52.2186 14.6808C53.0729 14.7488 53.6236 15.6167 53.3214 16.4186C52.6675 18.1535 53.5767 20.0856 55.3303 20.6877C56.1408 20.9659 56.4584 21.9435 55.9663 22.6451C54.9015 24.1629 55.3016 26.2604 56.8503 27.2796C57.5662 27.7507 57.6308 28.7766 56.9796 29.3337C55.5708 30.539 55.4367 32.6701 56.6833 34.0425C57.2596 34.6768 57.0669 35.6865 56.2977 36.0642C54.6334 36.8813 53.9735 38.9121 54.8397 40.5513C55.2401 41.3091 54.8024 42.2391 53.9634 42.4136C52.1482 42.7911 51.004 44.5941 51.4353 46.3972C51.6347 47.2307 50.9794 48.0227 50.1234 47.9831C48.2713 47.8973 46.7147 49.3591 46.684 51.2128C46.6699 52.0697 45.8383 52.6739 45.0189 52.4226C43.2464 51.8789 41.3752 52.9076 40.8845 54.6955C40.6576 55.522 39.7019 55.9004 38.9708 55.4532C37.3892 54.4858 35.3209 55.0169 34.401 56.6265C33.9757 57.3706 32.9559 57.4994 32.359 56.8845C31.0677 55.5542 28.9323 55.5542 27.641 56.8845C27.0441 57.4994 26.0243 57.3706 25.599 56.6265C24.6791 55.0169 22.6108 54.4858 21.0292 55.4532C20.2981 55.9004 19.3424 55.522 19.1155 54.6955C18.6248 52.9077 16.7536 51.8789 14.9811 52.4226C14.1617 52.6739 13.3301 52.0697 13.316 51.2128C13.2853 49.3591 11.7287 47.8973 9.87663 47.9831C9.02056 48.0227 8.36535 47.2307 8.5647 46.3972C8.99598 44.5941 7.8518 42.7911 6.03663 42.4136C5.1976 42.2391 4.75993 41.3091 5.1603 40.5513C6.02646 38.9121 5.3666 36.8813 3.70234 36.0642C2.93306 35.6865 2.74045 34.6768 3.31667 34.0425C4.56329 32.6701 4.42921 30.539 3.02042 29.3337C2.36924 28.7766 2.43378 27.7507 3.14966 27.2796C4.69839 26.2604 5.09852 24.1629 4.03373 22.6451C3.54156 21.9435 3.8592 20.9659 4.66975 20.6877C6.42329 20.0856 7.33248 18.1535 6.6786 16.4186C6.37636 15.6167 6.92714 14.7488 7.78143 14.6808C9.62961 14.5338 10.9907 12.8885 10.7888 11.0455C10.6955 10.1936 11.4448 9.48996 12.2892 9.63659C14.1159 9.9538 15.8434 8.69867 16.1062 6.86337C16.2277 6.01504 17.1284 5.51984 17.9098 5.87184C19.6002 6.63336 21.5856 5.84729 22.2965 4.135C22.6252 3.34353 23.6208 3.0879 24.29 3.62315C25.738 4.78114 27.8565 4.51351 28.9709 3.03182Z"
-                      stroke="white"
-                      stroke-width="2"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div class="experience-panel__icon-box">
-                <svg>
-                  <use xlink:href="img/sprite.svg#profiles"></use>
-                </svg>
-              </div>
-            </div>
+          <textarea
+            class="order-callback__textarea input"
+            placeholder="Сообщение"
+          ></textarea>
+        </form>
+        <div class="order-callback__box">
+          <div class="order-callback__btn">
+            <div class="component--green-btn green-btn @@status">
+    <p class="green-btn__text setup--text-18px" data-hover="Оставить заявку">Оставить заявку</p>
+</div>
+          </div>
+          <div class="order-callback__policy">
+            <p class="setup--text-18px setup--grey">
+              Отправляя заявку, вы соглашаетесь<br />
+              с <span>политикой конфиденциальности</span>
+            </p>
           </div>
         </div>
       </div>
@@ -272,13 +297,13 @@
     </div>
   </div>
 </footer>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js?_V=20231102202500"></script>
-<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU&_V=20231102202500"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_V=20231102202500"></script>
-<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js?_V=20231102202500"></script>
-<script src="./js/accordion.min.js?_V=20231102202500"></script>
-<script src="./js/swiper.js?_V=20231102202500"></script>
-<script src="./js/app.js?_V=20231102202500"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js?_V=20231103174910"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU&_V=20231103174910"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_V=20231103174910"></script>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js?_V=20231103174910"></script>
+<script src="./js/accordion.min.js?_V=20231103174910"></script>
+<script src="./js/swiper.js?_V=20231103174910"></script>
+<script src="./js/app.js?_V=20231103174910"></script>
 
   </body>
 </html>
