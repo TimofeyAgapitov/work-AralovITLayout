@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.min.css?_V=20231103174910" />
+  <link rel="stylesheet" href="css/style.min.css?_V=20231105201008" />
   <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_V=20231103174910"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_V=20231105201008"
   />
   <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_V=20231103174910"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_V=20231105201008"
   />
   <title>Главная</title>
 </head>
@@ -93,121 +93,259 @@
 </header>
 
     <main>
-      <section class="order-callback">
-  <div class="order-callback__container container">
-    <div class="order-callback__content">
+      <section class="baner-articles">
+  <div class="baner-articles__container container">
+    <div class="baner-articles__content">
       <div class="content-left">
-        <div class="content-left__panel">
-          <div class="content-left__icon-box">
+        <div class="baner-articles__count">
+          <div class="baner-articles__count-icon-box">
+            <svg>
+              <use xlink:href="img/sprite.svg#book"></use>
+            </svg>
+          </div>
+          <p class="baner-articles__count-text setup--text-18px setup--green">
+            10 статей
+          </p>
+        </div>
+        <p class="baner-articles__title setup--h1">
+          Наши статьи про область IT обслуживания
+        </p>
+        <p class="baner-articles__text setup--text-18px">
+          Мы - команда экспертов, специализирующихся на предоставлении
+          комплексныхрешений в области IT обслуживания
+        </p>
+        <div class="baner-articles__contacts">
+          <div class="component--contact-us">
+  <div class="contact-us__content">
+    <p class="contact-us__text setup--text-18px" data-hover="Связаться с нами">Связаться с нами</p>
+    <div class="contact-us__circle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="15"
+        height="15"
+        viewBox="0 0 15 15"
+        fill="none"
+      >
+        <path
+          d="M1.70711 0.292893C1.31658 -0.0976311 0.683418 -0.0976311 0.292893 0.292893C-0.0976311 0.683418 -0.0976311 1.31658 0.292893 1.70711L1.70711 0.292893ZM13.5714 14.5714C14.1237 14.5714 14.5714 14.1237 14.5714 13.5714V4.57143C14.5714 4.01914 14.1237 3.57143 13.5714 3.57143C13.0191 3.57143 12.5714 4.01914 12.5714 4.57143V12.5714H4.57143C4.01914 12.5714 3.57143 13.0191 3.57143 13.5714C3.57143 14.1237 4.01914 14.5714 4.57143 14.5714H13.5714ZM0.292893 1.70711L12.8643 14.2785L14.2785 12.8643L1.70711 0.292893L0.292893 1.70711Z"
+          fill="#EAEAEA"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+
+          <p class="baner-articles__contacts-text setup--text-18px setup--grey">
+            Мы ответим на все ваши вопросы
+          </p>
+        </div>
+        <div class="content-decoration _mob">
+          <div class="content-decoration__green-panel"></div>
+          <div class="content-decoration__white-panel">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
+              width="42"
+              height="42"
+              viewBox="0 0 42 42"
               fill="none"
             >
               <path
-                d="M29.2927 24.4398C29.2927 24.9198 29.186 25.4132 28.9593 25.8932C28.7327 26.3732 28.4394 26.8265 28.0527 27.2532C27.3994 27.9732 26.6793 28.4932 25.866 28.8265C25.066 29.1598 24.1994 29.3332 23.266 29.3332C21.906 29.3332 20.4527 29.0132 18.9193 28.3598C17.386 27.7065 15.8527 26.8265 14.3327 25.7198C12.7993 24.5998 11.346 23.3598 9.95935 21.9865C8.58602 20.5998 7.34602 19.1465 6.23935 17.6265C5.14602 16.1065 4.26602 14.5865 3.62602 13.0798C2.98602 11.5598 2.66602 10.1065 2.66602 8.71984C2.66602 7.81317 2.82602 6.9465 3.14602 6.1465C3.46602 5.33317 3.97268 4.5865 4.67935 3.91984C5.53268 3.07984 6.46602 2.6665 7.45268 2.6665C7.82602 2.6665 8.19935 2.7465 8.53268 2.9065C8.87935 3.0665 9.18602 3.3065 9.42602 3.65317L12.5193 8.01317C12.7593 8.3465 12.9327 8.65317 13.0527 8.9465C13.1727 9.2265 13.2393 9.5065 13.2393 9.75984C13.2393 10.0798 13.146 10.3998 12.9593 10.7065C12.786 11.0132 12.5327 11.3332 12.2127 11.6532L11.1993 12.7065C11.0527 12.8532 10.986 13.0265 10.986 13.2398C10.986 13.3465 10.9993 13.4398 11.026 13.5465C11.066 13.6532 11.106 13.7332 11.1327 13.8132C11.3727 14.2532 11.786 14.8265 12.3727 15.5198C12.9727 16.2132 13.6127 16.9198 14.306 17.6265C15.026 18.3332 15.7193 18.9865 16.426 19.5865C17.1193 20.1732 17.6927 20.5732 18.146 20.8132C18.2127 20.8398 18.2927 20.8798 18.386 20.9198C18.4927 20.9598 18.5993 20.9732 18.7193 20.9732C18.946 20.9732 19.1193 20.8932 19.266 20.7465L20.2793 19.7465C20.6127 19.4132 20.9327 19.1598 21.2393 18.9998C21.546 18.8132 21.8527 18.7198 22.186 18.7198C22.4393 18.7198 22.706 18.7732 22.9993 18.8932C23.2927 19.0132 23.5994 19.1865 23.9327 19.4132L28.346 22.5465C28.6927 22.7865 28.9327 23.0665 29.0793 23.3998C29.2127 23.7332 29.2927 24.0665 29.2927 24.4398Z"
-                stroke="white"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4.33317 0.166626C2.03198 0.166626 0.166504 2.03211 0.166504 4.33329V8.49996C0.166504 10.8011 2.03198 12.6666 4.33317 12.6666H4.854V29.3333H4.33317C2.03198 29.3333 0.166504 31.1988 0.166504 33.5V37.6666C0.166504 39.9678 2.03198 41.8333 4.33317 41.8333H8.49984C10.801 41.8333 12.6665 39.9678 12.6665 37.6666V37.1458H29.3332V37.6666C29.3332 39.9678 31.1987 41.8333 33.4998 41.8333H37.6665C39.9677 41.8333 41.8332 39.9678 41.8332 37.6666V33.5C41.8332 31.1988 39.9677 29.3333 37.6665 29.3333H37.1457V12.6666H37.6665C39.9677 12.6666 41.8332 10.8011 41.8332 8.49996V4.33329C41.8332 2.03211 39.9677 0.166626 37.6665 0.166626H33.4998C31.1987 0.166626 29.3332 2.03211 29.3332 4.33329V4.85413L12.6665 4.85413V4.33329C12.6665 2.03211 10.801 0.166626 8.49984 0.166626H4.33317ZM12.6665 7.97912V8.49996C12.6665 10.8011 10.801 12.6666 8.49984 12.6666H7.979V29.3333H8.49984C10.801 29.3333 12.6665 31.1988 12.6665 33.5V34.0208H29.3332V33.5C29.3332 31.1988 31.1987 29.3333 33.4998 29.3333H34.0207V12.6666H33.4998C31.1987 12.6666 29.3332 10.8011 29.3332 8.49996V7.97913L12.6665 7.97912Z"
+                fill="white"
               />
             </svg>
           </div>
-          <div class="order-callback-swiper swiper">
-            <div class="swiper-wrapper">
-              <div class="order-callback-slide swiper-slide">
-                <div class="content-left__data setup--text-18px setup--grey">
-                  4 (989) 595-14-54
-                </div>
-                <div class="content-left__text setup--text-18px setup--black">
-                  Номер телефона для звонков<br />
-                  по России
-                </div>
-              </div>
-              <div class="order-callback-slide swiper-slide">
-                <div class="content-left__data setup--text-18px setup--grey">
-                  4 (989) 595-54-28
-                </div>
-                <div class="content-left__text setup--text-18px setup--black">
-                  Номер телефона для звонков<br />за территорией РФ
-                </div>
-              </div>
-              <div class="order-callback-slide swiper-slide">
-                <div class="content-left__data setup--text-18px setup--grey">
-                  infoaralov@gmail.com
-                </div>
-                <div class="content-left__text setup--text-18px setup--black">
-                  Наша почта для связи<br />по email
-                </div>
-              </div>
+          <div class="content-decoration__robot-panel"></div>
+          <div class="content-decoration__content-panel">
+            <p class="setup--text-18px">
+              У нас есть калькулятор расчета стоимости услуг
+            </p>
+            <div class="component--arrow-btn arrow-btn @@type">
+  <p class="arrow-btn__text setup--text-18px">Рассчитать</p>
+  <svg
+    class="arrow-btn__icon desktop"
+    xmlns="http://www.w3.org/2000/svg"
+    width="52"
+    height="12"
+    viewBox="0 0 52 12"
+    fill="none"
+  >
+    <path
+      d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75V5.25ZM51.5303 6.53033C51.8232 6.23744 51.8232 5.76256 51.5303 5.46967L46.7574 0.696699C46.4645 0.403806 45.9896 0.403806 45.6967 0.696699C45.4038 0.989593 45.4038 1.46447 45.6967 1.75736L49.9393 6L45.6967 10.2426C45.4038 10.5355 45.4038 11.0104 45.6967 11.3033C45.9896 11.5962 46.4645 11.5962 46.7574 11.3033L51.5303 6.53033ZM1 6.75H51V5.25H1V6.75Z"
+      fill="#777777"
+    />
+  </svg>
+  <svg
+    class="arrow-btn__icon mobile"
+    xmlns="http://www.w3.org/2000/svg"
+    width="52"
+    height="9"
+    viewBox="0 0 52 9"
+    fill="none"
+  >
+    <path
+      d="M1 4C0.723858 4 0.5 4.22386 0.5 4.5C0.5 4.77614 0.723858 5 1 5V4ZM51.3535 4.85355C51.5488 4.65829 51.5488 4.34171 51.3535 4.14645L48.1716 0.964466C47.9763 0.769204 47.6597 0.769204 47.4645 0.964466C47.2692 1.15973 47.2692 1.47631 47.4645 1.67157L50.2929 4.5L47.4645 7.32843C47.2692 7.52369 47.2692 7.84027 47.4645 8.03553C47.6597 8.2308 47.9763 8.2308 48.1716 8.03553L51.3535 4.85355ZM1 5H51V4H1V5Z"
+      fill="#777777"
+    />
+  </svg>
+</div>
+
+          </div>
+        </div>
+        <div class="baner-articles__services">
+          <div class="baner-articles__services-element _el1">
+            <div class="services-element__icon-box">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+              >
+                <circle cx="7.49986" cy="7.5001" r="7.49986" fill="#03A081" />
+                <circle
+                  cx="22.4999"
+                  cy="7.49986"
+                  r="6.99986"
+                  stroke="#03A081"
+                />
+                <circle
+                  cx="22.4999"
+                  cy="22.4999"
+                  r="6.99986"
+                  stroke="#03A081"
+                />
+                <circle
+                  cx="7.49986"
+                  cy="22.4997"
+                  r="6.99986"
+                  stroke="#03A081"
+                />
+              </svg>
             </div>
-          </div>
-          <div class="content-left__btn">
-            <div class="component--green-btn green-btn @@status">
-    <p class="green-btn__text setup--text-18px" data-hover="Контакты">Контакты</p>
-</div>
-          </div>
-        </div>
-        <div class="order-callback__controls setup--swiper-buttons">
-          <button type="button" class="swiper-button-prev btn-prev">
-            <svg class="swiper-button-arrow">
-              <use xlink:href="img/sprite.svg#arrowline"></use>
-            </svg>
-          </button>
-          <button type="button" class="swiper-button-next btn-next">
-            <svg class="swiper-button-arrow">
-              <use xlink:href="img/sprite.svg#arrowline"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-      <div class="content-right">
-        <div class="order-callback__head">
-          <p class="order-callback__title setup--h1">
-            Закажите обратный звонок
-          </p>
-          <p class="order-callback__text setup--text-18px setup--grey">
-            Или свяжитесь с нами любым удобным для Вас способом: по телефону,
-            почте или в мессенджерах.
-          </p>
-        </div>
-        <form action="" method="post" class="order-callback__form">
-          <div class="order-callback__inputs">
-            <input
-              type="text"
-              class="order-callback__input input"
-              placeholder="Имя"
-            />
-            <input
-              type="text"
-              class="order-callback__input input"
-              placeholder="Телефон"
-            />
-          </div>
-          <textarea
-            class="order-callback__textarea input"
-            placeholder="Сообщение"
-          ></textarea>
-        </form>
-        <div class="order-callback__box">
-          <div class="order-callback__btn">
-            <div class="component--green-btn green-btn @@status">
-    <p class="green-btn__text setup--text-18px" data-hover="Оставить заявку">Оставить заявку</p>
-</div>
-          </div>
-          <div class="order-callback__policy">
-            <p class="setup--text-18px setup--grey">
-              Отправляя заявку, вы соглашаетесь<br />
-              с <span>политикой конфиденциальности</span>
+            <p class="services-element__text setup--text-18px _el1">
+              Успех клиентов
             </p>
           </div>
+          <div class="baner-articles__services-element _el2">
+            <div class="services-element__icon-box">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+              >
+                <circle cx="7.49986" cy="7.5001" r="7.49986" fill="white" />
+                <circle
+                  cx="22.5003"
+                  cy="7.49986"
+                  r="6.99986"
+                  fill="white"
+                  stroke="white"
+                />
+                <circle cx="22.5003" cy="22.4999" r="6.99986" stroke="white" />
+                <circle cx="7.50034" cy="22.4997" r="6.99986" stroke="white" />
+              </svg>
+            </div>
+            <p class="services-element__text setup--text-18px _el2">
+              Наш успех
+            </p>
+          </div>
+          <div class="baner-articles__services-link">
+            <div class="component--arrow-btn arrow-btn @@type">
+  <p class="arrow-btn__text setup--text-18px">Наши услуги</p>
+  <svg
+    class="arrow-btn__icon desktop"
+    xmlns="http://www.w3.org/2000/svg"
+    width="52"
+    height="12"
+    viewBox="0 0 52 12"
+    fill="none"
+  >
+    <path
+      d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75V5.25ZM51.5303 6.53033C51.8232 6.23744 51.8232 5.76256 51.5303 5.46967L46.7574 0.696699C46.4645 0.403806 45.9896 0.403806 45.6967 0.696699C45.4038 0.989593 45.4038 1.46447 45.6967 1.75736L49.9393 6L45.6967 10.2426C45.4038 10.5355 45.4038 11.0104 45.6967 11.3033C45.9896 11.5962 46.4645 11.5962 46.7574 11.3033L51.5303 6.53033ZM1 6.75H51V5.25H1V6.75Z"
+      fill="#777777"
+    />
+  </svg>
+  <svg
+    class="arrow-btn__icon mobile"
+    xmlns="http://www.w3.org/2000/svg"
+    width="52"
+    height="9"
+    viewBox="0 0 52 9"
+    fill="none"
+  >
+    <path
+      d="M1 4C0.723858 4 0.5 4.22386 0.5 4.5C0.5 4.77614 0.723858 5 1 5V4ZM51.3535 4.85355C51.5488 4.65829 51.5488 4.34171 51.3535 4.14645L48.1716 0.964466C47.9763 0.769204 47.6597 0.769204 47.4645 0.964466C47.2692 1.15973 47.2692 1.47631 47.4645 1.67157L50.2929 4.5L47.4645 7.32843C47.2692 7.52369 47.2692 7.84027 47.4645 8.03553C47.6597 8.2308 47.9763 8.2308 48.1716 8.03553L51.3535 4.85355ZM1 5H51V4H1V5Z"
+      fill="#777777"
+    />
+  </svg>
+</div>
+
+          </div>
+        </div>
+      </div>
+      <div class="content-decoration _desc">
+        <div class="content-decoration__green-panel"></div>
+        <div class="content-decoration__white-panel">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="42"
+            height="42"
+            viewBox="0 0 42 42"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M4.33317 0.166626C2.03198 0.166626 0.166504 2.03211 0.166504 4.33329V8.49996C0.166504 10.8011 2.03198 12.6666 4.33317 12.6666H4.854V29.3333H4.33317C2.03198 29.3333 0.166504 31.1988 0.166504 33.5V37.6666C0.166504 39.9678 2.03198 41.8333 4.33317 41.8333H8.49984C10.801 41.8333 12.6665 39.9678 12.6665 37.6666V37.1458H29.3332V37.6666C29.3332 39.9678 31.1987 41.8333 33.4998 41.8333H37.6665C39.9677 41.8333 41.8332 39.9678 41.8332 37.6666V33.5C41.8332 31.1988 39.9677 29.3333 37.6665 29.3333H37.1457V12.6666H37.6665C39.9677 12.6666 41.8332 10.8011 41.8332 8.49996V4.33329C41.8332 2.03211 39.9677 0.166626 37.6665 0.166626H33.4998C31.1987 0.166626 29.3332 2.03211 29.3332 4.33329V4.85413L12.6665 4.85413V4.33329C12.6665 2.03211 10.801 0.166626 8.49984 0.166626H4.33317ZM12.6665 7.97912V8.49996C12.6665 10.8011 10.801 12.6666 8.49984 12.6666H7.979V29.3333H8.49984C10.801 29.3333 12.6665 31.1988 12.6665 33.5V34.0208H29.3332V33.5C29.3332 31.1988 31.1987 29.3333 33.4998 29.3333H34.0207V12.6666H33.4998C31.1987 12.6666 29.3332 10.8011 29.3332 8.49996V7.97913L12.6665 7.97912Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+        <div class="content-decoration__robot-panel"></div>
+        <div class="content-decoration__content-panel">
+          <p class="setup--text-18px">
+            У нас есть калькулятор расчета стоимости услуг
+          </p>
+          <div class="component--arrow-btn arrow-btn @@type">
+  <p class="arrow-btn__text setup--text-18px">Рассчитать</p>
+  <svg
+    class="arrow-btn__icon desktop"
+    xmlns="http://www.w3.org/2000/svg"
+    width="52"
+    height="12"
+    viewBox="0 0 52 12"
+    fill="none"
+  >
+    <path
+      d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75V5.25ZM51.5303 6.53033C51.8232 6.23744 51.8232 5.76256 51.5303 5.46967L46.7574 0.696699C46.4645 0.403806 45.9896 0.403806 45.6967 0.696699C45.4038 0.989593 45.4038 1.46447 45.6967 1.75736L49.9393 6L45.6967 10.2426C45.4038 10.5355 45.4038 11.0104 45.6967 11.3033C45.9896 11.5962 46.4645 11.5962 46.7574 11.3033L51.5303 6.53033ZM1 6.75H51V5.25H1V6.75Z"
+      fill="#777777"
+    />
+  </svg>
+  <svg
+    class="arrow-btn__icon mobile"
+    xmlns="http://www.w3.org/2000/svg"
+    width="52"
+    height="9"
+    viewBox="0 0 52 9"
+    fill="none"
+  >
+    <path
+      d="M1 4C0.723858 4 0.5 4.22386 0.5 4.5C0.5 4.77614 0.723858 5 1 5V4ZM51.3535 4.85355C51.5488 4.65829 51.5488 4.34171 51.3535 4.14645L48.1716 0.964466C47.9763 0.769204 47.6597 0.769204 47.4645 0.964466C47.2692 1.15973 47.2692 1.47631 47.4645 1.67157L50.2929 4.5L47.4645 7.32843C47.2692 7.52369 47.2692 7.84027 47.4645 8.03553C47.6597 8.2308 47.9763 8.2308 48.1716 8.03553L51.3535 4.85355ZM1 5H51V4H1V5Z"
+      fill="#777777"
+    />
+  </svg>
+</div>
+
         </div>
       </div>
     </div>
   </div>
 </section>
-
 
     </main>
     <footer class="footer">
@@ -297,13 +435,13 @@
     </div>
   </div>
 </footer>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js?_V=20231103174910"></script>
-<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU&_V=20231103174910"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_V=20231103174910"></script>
-<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js?_V=20231103174910"></script>
-<script src="./js/accordion.min.js?_V=20231103174910"></script>
-<script src="./js/swiper.js?_V=20231103174910"></script>
-<script src="./js/app.js?_V=20231103174910"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js?_V=20231105201008"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU&_V=20231105201008"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_V=20231105201008"></script>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js?_V=20231105201008"></script>
+<script src="./js/accordion.min.js?_V=20231105201008"></script>
+<script src="./js/swiper.js?_V=20231105201008"></script>
+<script src="./js/app.js?_V=20231105201008"></script>
 
   </body>
 </html>

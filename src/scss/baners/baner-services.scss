@@ -1,0 +1,331 @@
+.baner-services {
+  &__content {
+    display: grid;
+    grid-template-columns: 53.3rem auto;
+    gap: 4rem;
+    .content {
+      &-right {
+        display: flex;
+        flex-direction: column;
+        gap: 4.2rem;
+        &__inner {
+          padding: 8rem;
+          border: 1px solid rgba(119, 119, 119, 0.4);
+          border-radius: 4rem;
+        }
+        &__our-purpose {
+          display: flex;
+          align-items: center;
+          gap: 14.4rem;
+          .our-purpose {
+            &__title {
+              margin-bottom: 2rem;
+            }
+            &__image {
+              flex: none;
+              width: 24rem;
+              height: 24rem;
+              border-radius: 50%;
+              background-image: url('../img/sections/baner-services/baner-services-circle-img.webp');
+              background-size: contain;
+              background-repeat: no-repeat;
+            }
+          }
+        }
+      }
+      &-left {
+        position: relative;
+        &__white-panel {
+          width: 56.3rem;
+          height: 43.8rem;
+          position: absolute;
+          top: -17rem;
+          left: -3rem;
+          background-image: url('../img/sections/baner-services/baner-services-white-panel.svg');
+          background-size: contain;
+          background-repeat: no-repeat;
+          padding: 6.7rem 5.7rem;
+          display: flex;
+          align-items: flex-end;
+          justify-content: flex-end;
+          & > img {
+            width: 16.8rem;
+          }
+        }
+        &__robot-panel {
+          width: 24.1rem;
+          height: 52.2rem;
+          position: absolute;
+          top: 4rem;
+          left: -3rem;
+          background-image: url('../img/sections/baner-services/baner-services-robot-panel.webp');
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        &__green-panel {
+          width: 56.3rem;
+          height: 56.3rem;
+          position: absolute;
+          top: 32rem;
+          left: -3rem;
+          background-image: url('../img/sections/baner-services/baner-services-green-panel.svg');
+          background-size: contain;
+          background-repeat: no-repeat;
+          padding: 6.5rem 5.6rem 5.1rem 3rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        &__circle-panel {
+          width: 24rem;
+          height: 24rem;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          background-image: url('../img/sections/baner-services/baner-services-circle-panel.svg');
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        &__box {
+          display: flex;
+          flex-direction: column;
+          &._el1 {
+            align-self: flex-end;
+            width: 17rem;
+            align-items: center;
+            justify-content: center;
+          }
+          &._el2 {
+            align-self: flex-start;
+            justify-self: flex-end;
+            width: 19.5rem;
+          }
+        }
+        &__icon-box {
+          margin-bottom: 0.8rem;
+          & > svg {
+            width: 5.4rem;
+            height: 5.4rem;
+          }
+        }
+        &__title {
+          color: $white-color;
+          font-family: NeueMachina;
+        }
+        &__text {
+          color: $white-color;
+          &._el1 {
+            text-align: center;
+          }
+          &._el2 {
+            text-align: left;
+          }
+        }
+        &__image {
+          width: 15rem;
+          margin-top: 3rem;
+        }
+        &__btn {
+          margin-top: 2.2rem;
+          .arrow-btn__text {
+            color: $white-color;
+          }
+          .arrow-btn__icon {
+            path {
+              fill: $white-color;
+              stroke: $white-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__title {
+    width: 74rem;
+    font-family: NeueMachina;
+    margin-bottom: 4rem;
+  }
+  &__text {
+    width: 74rem;
+    margin-bottom: 7.4rem;
+  }
+  &__statistic {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    .statistic {
+      &__boxes {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+      &__box {
+        display: flex;
+        gap: 2rem;
+      }
+      &__element {
+        width: fit-content;
+        padding: 1.4rem 2.2rem;
+        border: 1px solid rgba(119, 119, 119, 0.4);
+        border-radius: 10rem;
+      }
+      &__icon {
+        width: 19rem;
+        height: 10.5rem;
+        background-image: url('../img/sections/baner-services/baner-services-dec-desc.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .baner-services {
+    &__content {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 8rem;
+      .content {
+        &-right {
+          gap: 8rem;
+          &__inner {
+            padding: 0;
+            border: none;
+          }
+          &__our-purpose {
+            gap: 0;
+            justify-content: space-between;
+            .our-purpose {
+              &__title {
+                margin-bottom: 2rem;
+              }
+              &__information {
+                flex: none;
+                width: 54.8rem;
+              }
+              &__image {
+                flex: none;
+                width: 12.4rem;
+                height: 22.4rem;
+                border-radius: 0%;
+                background-image: url('../img/sections/baner-services/baner-services-dec-mob.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+              }
+            }
+          }
+        }
+        &-left {
+          position: relative;
+          &__white-panel {
+            display: none;
+          }
+          &__robot-panel {
+            display: none;
+          }
+          &__green-panel {
+            width: 100%;
+            height: 34.4rem;
+            position: static;
+            background-image: none;
+            padding: 0;
+            flex-direction: row;
+            gap: 2rem;
+          }
+          &__circle-panel {
+            display: none;
+          }
+          &__box {
+            background-color: $green-color;
+            border-radius: 4rem;
+            padding: 5.6rem 2rem;
+            &._el1 {
+              align-self: stretch;
+              width: 100%;
+              align-items: flex-start;
+              justify-content: flex-start;
+            }
+            &._el2 {
+              align-self: stretch;
+              justify-self: stretch;
+              width: 100%;
+            }
+          }
+          &__icon-box {
+            margin-bottom: 1.6rem;
+            & > svg {
+              width: 9.2rem;
+              height: 9.2rem;
+            }
+          }
+          &__title {
+            color: $white-color;
+            font-family: NeueMachina;
+          }
+          &__text {
+            color: $white-color;
+            &._el1 {
+              text-align: left;
+            }
+            &._el2 {
+              text-align: left;
+            }
+          }
+          &__image {
+            width: 22rem;
+            margin-top: 3rem;
+          }
+          &__btn {
+            margin-top: 2.2rem;
+            .arrow-btn__text {
+              color: $white-color;
+            }
+            .arrow-btn__icon {
+              path {
+                fill: $white-color;
+                stroke: $white-color;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__title {
+      width: 100%;
+    }
+    &__text {
+      width: 100%;
+      margin-bottom: 6rem;
+    }
+    &__statistic {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      overflow: hidden;
+      .statistic {
+        &__boxes {
+          flex: none;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          gap: 2rem;
+          overflow-x: auto;
+        }
+        &__box {
+          display: flex;
+          gap: 2rem;
+        }
+        &__element {
+          width: fit-content;
+          padding: 1.4rem 2.2rem;
+          border: 1px solid rgba(119, 119, 119, 0.4);
+          border-radius: 10rem;
+        }
+        &__icon {
+          display: none;
+        }
+      }
+    }
+  }
+}

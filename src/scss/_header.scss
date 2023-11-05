@@ -1,6 +1,8 @@
 .header {
   padding-top: 5rem;
   margin-bottom: 6rem;
+  position: relative;
+  z-index: 100;
   &__container {
     display: flex;
     align-items: center;

@@ -1035,6 +1035,105 @@ body {
           transform: rotate(-90deg);
 }
 
+.component--contact-us {
+  width: 30.6rem;
+  border: 2px solid #03a081;
+  border-radius: 5.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+.component--contact-us:hover .contact-us__circle {
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+  will-change: width;
+}
+
+.component--contact-us:hover .contact-us__text {
+  -webkit-transform: translateY(-5.25rem);
+      -ms-transform: translateY(-5.25rem);
+          transform: translateY(-5.25rem);
+  -webkit-transition: -webkit-transform 0.75s ease-in-out;
+  transition: -webkit-transform 0.75s ease-in-out;
+  transition: transform 0.75s ease-in-out;
+  transition: transform 0.75s ease-in-out, -webkit-transform 0.75s ease-in-out;
+}
+
+.component--contact-us .contact-us__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+
+.component--contact-us .contact-us__text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding-left: 1.8rem;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.component--contact-us .contact-us__text::before {
+  content: attr(data-hover);
+  color: #fff;
+  position: absolute;
+  top: 4rem;
+  left: 1.8rem;
+}
+
+.component--contact-us .contact-us__circle {
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 5rem;
+  background-color: #03a081;
+  padding: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.component--contact-us .contact-us__circle > svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
 .accordion-price-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1354,6 +1453,8 @@ body {
 .header {
   padding-top: 5rem;
   margin-bottom: 6rem;
+  position: relative;
+  z-index: 100;
 }
 
 .header__container {
@@ -1805,6 +1906,475 @@ body {
 .baner-teams__content .content-right__experience-panel .experience-panel__icon-box > svg {
   width: 3.2rem;
   height: 3.2rem;
+}
+
+.baner-services__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 53.3rem auto;
+  grid-template-columns: 53.3rem auto;
+  gap: 4rem;
+}
+
+.baner-services__content .content-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4.2rem;
+}
+
+.baner-services__content .content-right__inner {
+  padding: 8rem;
+  border: 1px solid rgba(119, 119, 119, 0.4);
+  border-radius: 4rem;
+}
+
+.baner-services__content .content-right__our-purpose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 14.4rem;
+}
+
+.baner-services__content .content-right__our-purpose .our-purpose__title {
+  margin-bottom: 2rem;
+}
+
+.baner-services__content .content-right__our-purpose .our-purpose__image {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 24rem;
+  height: 24rem;
+  border-radius: 50%;
+  background-image: url("../img/sections/baner-services/baner-services-circle-img.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.baner-services__content .content-left {
+  position: relative;
+}
+
+.baner-services__content .content-left__white-panel {
+  width: 56.3rem;
+  height: 43.8rem;
+  position: absolute;
+  top: -17rem;
+  left: -3rem;
+  background-image: url("../img/sections/baner-services/baner-services-white-panel.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 6.7rem 5.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.baner-services__content .content-left__white-panel > img {
+  width: 16.8rem;
+}
+
+.baner-services__content .content-left__robot-panel {
+  width: 24.1rem;
+  height: 52.2rem;
+  position: absolute;
+  top: 4rem;
+  left: -3rem;
+  background-image: url("../img/sections/baner-services/baner-services-robot-panel.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.baner-services__content .content-left__green-panel {
+  width: 56.3rem;
+  height: 56.3rem;
+  position: absolute;
+  top: 32rem;
+  left: -3rem;
+  background-image: url("../img/sections/baner-services/baner-services-green-panel.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 6.5rem 5.6rem 5.1rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.baner-services__content .content-left__circle-panel {
+  width: 24rem;
+  height: 24rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-image: url("../img/sections/baner-services/baner-services-circle-panel.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.baner-services__content .content-left__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.baner-services__content .content-left__box._el1 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 17rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.baner-services__content .content-left__box._el2 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  justify-self: flex-end;
+  width: 19.5rem;
+}
+
+.baner-services__content .content-left__icon-box {
+  margin-bottom: 0.8rem;
+}
+
+.baner-services__content .content-left__icon-box > svg {
+  width: 5.4rem;
+  height: 5.4rem;
+}
+
+.baner-services__content .content-left__title {
+  color: #ffffff;
+  font-family: NeueMachina;
+}
+
+.baner-services__content .content-left__text {
+  color: #ffffff;
+}
+
+.baner-services__content .content-left__text._el1 {
+  text-align: center;
+}
+
+.baner-services__content .content-left__text._el2 {
+  text-align: left;
+}
+
+.baner-services__content .content-left__image {
+  width: 15rem;
+  margin-top: 3rem;
+}
+
+.baner-services__content .content-left__btn {
+  margin-top: 2.2rem;
+}
+
+.baner-services__content .content-left__btn .arrow-btn__text {
+  color: #ffffff;
+}
+
+.baner-services__content .content-left__btn .arrow-btn__icon path {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+
+.baner-services__title {
+  width: 74rem;
+  font-family: NeueMachina;
+  margin-bottom: 4rem;
+}
+
+.baner-services__text {
+  width: 74rem;
+  margin-bottom: 7.4rem;
+}
+
+.baner-services__statistic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.baner-services__statistic .statistic__boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.baner-services__statistic .statistic__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+.baner-services__statistic .statistic__element {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1.4rem 2.2rem;
+  border: 1px solid rgba(119, 119, 119, 0.4);
+  border-radius: 10rem;
+}
+
+.baner-services__statistic .statistic__icon {
+  width: 19rem;
+  height: 10.5rem;
+  background-image: url("../img/sections/baner-services/baner-services-dec-desc.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.baner-articles__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 96.2rem auto;
+  grid-template-columns: 96.2rem auto;
+  position: relative;
+}
+
+.baner-articles__content .content-decoration {
+  width: 92rem;
+  height: 81.6rem;
+  background-image: url("../img/sections/baner-articles/baner-articles-bg-white-panel-desc.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.baner-articles__content .content-decoration._mob {
+  display: none;
+}
+
+.no-webp .baner-articles__content .content-decoration__green-panel{
+  background-image: url("../img/sections/baner-articles/baner-articles-green-panel.png"); }
+
+.baner-articles__content .content-decoration__green-panel {
+  width: 24.9rem;
+  height: 24.9rem;
+  border-radius: 4rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 39rem;
+  left: 0;
+}
+
+.baner-articles__content .content-decoration__robot-panel {
+  width: 31.5rem;
+  height: 43rem;
+  background-image: url("../img/sections/baner-articles/baner-articles-robot-panel-desc.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 8.5rem;
+  left: 27rem;
+}
+
+.baner-articles__content .content-decoration__white-panel {
+  width: 21.4rem;
+  height: 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid #ffffff;
+  border-radius: 4rem;
+  position: absolute;
+  top: 0;
+  left: 4rem;
+}
+
+.baner-articles__content .content-decoration__white-panel > svg {
+  width: 4.2rem;
+  height: 4.2rem;
+}
+
+.baner-articles__content .content-decoration__content-panel {
+  width: 27.5rem;
+  height: 20.4rem;
+  border-radius: 4rem;
+  padding: 2.6rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #ffffff;
+  background-image: url("../img/sections/baner-articles/baner-articles-content-panel-desc.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  right: 1.8rem;
+}
+
+.baner-articles__content .content-decoration__content-panel .component--arrow-btn .arrow-btn__icon path {
+  fill: #ffffff;
+}
+
+.baner-articles__count {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  border: 1px solid #03a081;
+  border-radius: 8rem;
+  padding: 1.2rem 2.2rem 1.2rem 1.2rem;
+  margin-bottom: 6.5rem;
+  margin-top: 2.9rem;
+}
+
+.baner-articles__count-icon-box > svg {
+  width: 2.6rem;
+  height: 2.6rem;
+}
+
+.baner-articles__title {
+  font-family: NeueMachina;
+  margin-bottom: 4.4rem;
+}
+
+.baner-articles__text {
+  max-width: 53.3rem;
+  margin-bottom: 6rem;
+}
+
+.baner-articles__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 7rem;
+  margin-bottom: 16.3rem;
+}
+
+.baner-articles__services {
+  width: 67.7rem;
+  height: 13.9rem;
+  margin-top: 10.4rem;
+  background-image: url("../img/sections/baner-articles/baner-articles-white-panel-desc.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.baner-articles__services-element {
+  padding: 1.2rem 1.4rem;
+  width: 13rem;
+  height: 16.4rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+}
+
+.baner-articles__services-element._el1 {
+  background-image: url("../img/sections/baner-articles/baner-articles-white-file.svg");
+  left: 2.2rem;
+  bottom: 8rem;
+}
+
+.baner-articles__services-element._el2 {
+  background-image: url("../img/sections/baner-articles/baner-articles-green-file.svg");
+  left: 17rem;
+  bottom: 3.8rem;
+}
+
+.baner-articles__services-element .services-element__text {
+  text-transform: uppercase;
+}
+
+.baner-articles__services-element .services-element__text._el1 {
+  color: #03a081;
+}
+
+.baner-articles__services-element .services-element__text._el2 {
+  color: #ffffff;
+}
+
+.baner-articles__services-link {
+  position: absolute;
+  top: 1.6rem;
+  left: 39.8rem;
+}
+
+.baner-articles__services-link .component--arrow-btn {
+  color: #777777;
+}
+
+.baner-articles__services-link .component--arrow-btn .arrow-btn__icon path {
+  fill: #777777;
 }
 
 .IT-support__content {
@@ -3403,6 +3973,42 @@ body {
     padding: 2.4rem 0;
   }
 
+  .component--contact-us {
+    width: 41.4rem;
+    border-radius: 10.8rem;
+    padding: 0.6rem;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+
+  .component--contact-us:hover .contact-us__text {
+    -webkit-transform: translateY(-10rem);
+        -ms-transform: translateY(-10rem);
+            transform: translateY(-10rem);
+  }
+
+  .component--contact-us .contact-us__text {
+    padding-left: 3.6rem;
+  }
+
+  .component--contact-us .contact-us__text::before {
+    top: 8rem;
+    left: 3.6rem;
+  }
+
+  .component--contact-us .contact-us__circle {
+    width: 6.8rem;
+    height: 6.8rem;
+    border-radius: 10rem;
+    padding: 2.4rem;
+  }
+
+  .component--contact-us .contact-us__circle > svg {
+    width: 2rem;
+    height: 2rem;
+  }
+
   .accordion-price-box {
     gap: 1.2rem;
   }
@@ -3726,6 +4332,324 @@ body {
   .baner-teams__content .content-right__experience-panel .experience-panel__icon-box > svg {
     width: 4.2rem;
     height: 4.2rem;
+  }
+
+  .baner-services__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 8rem;
+  }
+
+  .baner-services__content .content-right {
+    gap: 8rem;
+  }
+
+  .baner-services__content .content-right__inner {
+    padding: 0;
+    border: none;
+  }
+
+  .baner-services__content .content-right__our-purpose {
+    gap: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .baner-services__content .content-right__our-purpose .our-purpose__title {
+    margin-bottom: 2rem;
+  }
+
+  .baner-services__content .content-right__our-purpose .our-purpose__information {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 54.8rem;
+  }
+
+  .baner-services__content .content-right__our-purpose .our-purpose__image {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 12.4rem;
+    height: 22.4rem;
+    border-radius: 0%;
+    background-image: url("../img/sections/baner-services/baner-services-dec-mob.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .baner-services__content .content-left {
+    position: relative;
+  }
+
+  .baner-services__content .content-left__white-panel {
+    display: none;
+  }
+
+  .baner-services__content .content-left__robot-panel {
+    display: none;
+  }
+
+  .baner-services__content .content-left__green-panel {
+    width: 100%;
+    height: 34.4rem;
+    position: static;
+    background-image: none;
+    padding: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 2rem;
+  }
+
+  .baner-services__content .content-left__circle-panel {
+    display: none;
+  }
+
+  .baner-services__content .content-left__box {
+    background-color: #03a081;
+    border-radius: 4rem;
+    padding: 5.6rem 2rem;
+  }
+
+  .baner-services__content .content-left__box._el1 {
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .baner-services__content .content-left__box._el2 {
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    width: 100%;
+  }
+
+  .baner-services__content .content-left__icon-box {
+    margin-bottom: 1.6rem;
+  }
+
+  .baner-services__content .content-left__icon-box > svg {
+    width: 9.2rem;
+    height: 9.2rem;
+  }
+
+  .baner-services__content .content-left__title {
+    color: #ffffff;
+    font-family: NeueMachina;
+  }
+
+  .baner-services__content .content-left__text {
+    color: #ffffff;
+  }
+
+  .baner-services__content .content-left__text._el1 {
+    text-align: left;
+  }
+
+  .baner-services__content .content-left__text._el2 {
+    text-align: left;
+  }
+
+  .baner-services__content .content-left__image {
+    width: 22rem;
+    margin-top: 3rem;
+  }
+
+  .baner-services__content .content-left__btn {
+    margin-top: 2.2rem;
+  }
+
+  .baner-services__content .content-left__btn .arrow-btn__text {
+    color: #ffffff;
+  }
+
+  .baner-services__content .content-left__btn .arrow-btn__icon path {
+    fill: #ffffff;
+    stroke: #ffffff;
+  }
+
+  .baner-services__title {
+    width: 100%;
+  }
+
+  .baner-services__text {
+    width: 100%;
+    margin-bottom: 6rem;
+  }
+
+  .baner-services__statistic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    overflow: hidden;
+  }
+
+  .baner-services__statistic .statistic__boxes {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 2rem;
+    overflow-x: auto;
+  }
+
+  .baner-services__statistic .statistic__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .baner-services__statistic .statistic__element {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 1.4rem 2.2rem;
+    border: 1px solid rgba(119, 119, 119, 0.4);
+    border-radius: 10rem;
+  }
+
+  .baner-services__statistic .statistic__icon {
+    display: none;
+  }
+
+  .baner-articles__content {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .baner-articles__content .content-decoration {
+    width: 100%;
+    height: 43.6rem;
+    background-image: url("../img/sections/baner-articles/baner-articles-bg-white-panel-mob.webp");
+    position: relative;
+  }
+
+  .baner-articles__content .content-decoration._desc {
+    display: none;
+  }
+
+  .baner-articles__content .content-decoration._mob {
+    display: block;
+    margin-bottom: 18rem;
+  }
+
+  .baner-articles__content .content-decoration__green-panel {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 4rem;
+    top: 0;
+    left: 23rem;
+  }
+
+  .baner-articles__content .content-decoration__robot-panel {
+    width: 21rem;
+    height: 25.4rem;
+    background-image: url("../img/sections/baner-articles/baner-articles-robot-panel-mob.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .baner-articles__content .content-decoration__white-panel {
+    display: none;
+  }
+
+  .baner-articles__content .content-decoration__content-panel {
+    width: 34.8rem;
+    height: 21.6rem;
+    border-radius: 4rem;
+    padding: 3rem 1rem 3rem 3rem;
+    background-image: url("../img/sections/baner-articles/baner-articles-content-panel-mob.webp");
+    bottom: 0;
+    right: 1.8rem;
+  }
+
+  .baner-articles__content .content-decoration__content-panel .component--arrow-btn .arrow-btn__icon path {
+    fill: #ffffff;
+  }
+
+  .baner-articles__count {
+    display: none;
+  }
+
+  .baner-articles__title {
+    margin-bottom: 4rem;
+  }
+
+  .baner-articles__text {
+    max-width: 100%;
+    margin-bottom: 4.4rem;
+  }
+
+  .baner-articles__contacts {
+    gap: 2.4rem;
+    margin-bottom: 8rem;
+  }
+
+  .baner-articles__services {
+    width: 100%;
+    height: 21.8rem;
+    margin-top: 10rem;
+    background-image: url("../img/sections/baner-articles/baner-articles-white-panel-mob.svg");
+  }
+
+  .baner-articles__services-element {
+    padding: 3rem 2rem;
+    width: 20rem;
+    height: 25.8rem;
+  }
+
+  .baner-articles__services-element._el1 {
+    left: 2rem;
+    bottom: 6rem;
+  }
+
+  .baner-articles__services-element._el2 {
+    left: 24rem;
+    bottom: 2rem;
+  }
+
+  .baner-articles__services-link {
+    top: -10rem;
+    left: 48.8rem;
+  }
+
+  .baner-articles__services-link .component--arrow-btn .arrow-btn__text {
+    width: 9.6rem;
   }
 
   .IT-support__content {
@@ -4549,3 +5473,5 @@ body {
     display: none;
   }
 }
+
+.webp .baner-articles__content .content-decoration__green-panel{ background-image: url(../img/sections/baner-articles/baner-articles-green-panel.webp); }
