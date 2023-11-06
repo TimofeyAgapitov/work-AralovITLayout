@@ -134,7 +134,7 @@ if (document.querySelector('.basic-direction-swiper')) {
 if (document.querySelector('.completing-tasks-swiper')) {
   new Swiper('.completing-tasks-swiper', {
     slidesPerView: 'auto',
-    spaceBetween: remToPx(2),
+    spaceBetween: remToPx(4),
     freemode: true,
     speed: 1000,
     breakpoints: {
@@ -143,7 +143,7 @@ if (document.querySelector('.completing-tasks-swiper')) {
         grid: {
           rows: 2,
         },
-        spaceBetween: remToPx(2),
+        spaceBetween: remToPx(4),
         speed: 1000,
       },
     },
@@ -158,6 +158,26 @@ if (document.querySelector('.order-callback-swiper')) {
     navigation: {
       nextEl: '.order-callback__controls .btn-next',
       prevEl: '.order-callback__controls .btn-prev',
+    },
+  });
+}
+
+if (document.querySelector('.providing-solutions-swiper')) {
+  new Swiper('.providing-solutions-swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: remToPx(4),
+    freemode: true,
+    speed: 1000,
+    breakpoints: {
+      769: {
+        slidesPerView: 2,
+        spaceBetween: remToPx(4),
+        speed: 1000,
+        navigation: {
+          nextEl: '.providing-solutions__controls .btn-next',
+          prevEl: '.providing-solutions__controls .btn-prev',
+        },
+      },
     },
   });
 }

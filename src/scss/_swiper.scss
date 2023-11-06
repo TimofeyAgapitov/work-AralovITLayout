@@ -229,6 +229,7 @@
 // completing-tasks-swiper
 .swiper {
   &.completing-tasks-swiper {
+    margin-top: 2rem;
     .swiper-wrapper {
       display: grid;
       grid-template-columns: 1fr;
@@ -248,6 +249,7 @@
 @media (max-width: 48em) {
   .swiper {
     &.completing-tasks-swiper {
+      margin-top: 0;
       .swiper-wrapper {
         grid-template-rows: repeat(1, auto);
       }
@@ -261,4 +263,38 @@
       }
     }
   }
+}
+
+// providing-solutions-swiper
+.swiper {
+  &.providing-solutions-swiper {
+    height: 100%;
+  }
+  &-slide {
+    &.providing-solutions-slide {
+      &.swiper-slide {
+        transform: translateY(12.5rem);
+        transition: transform 0.5s ease-in-out;
+      }
+      &.swiper-slide-active {
+        transform: translateY(0);
+        transition: transform 0.5s ease-in-out;
+      }
+    }
+  }
+}
+@media(max-width: 48em) {
+  .swiper {
+  &.providing-solutions-swiper {
+    margin-bottom: 8rem;
+  }
+  &-slide {
+    &.providing-solutions-slide {
+      width: 58rem;
+      &.swiper-slide {
+        transform: translateY(0);
+      }
+    }
+  }
+}
 }

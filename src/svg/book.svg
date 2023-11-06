@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
-<path d="M23.8337 18.135V5.05917C23.8337 3.75917 22.772 2.795 21.4828 2.90333H21.4178C19.1428 3.09833 15.687 4.2575 13.7587 5.47083L13.5745 5.59C13.2603 5.785 12.7403 5.785 12.4262 5.59L12.1553 5.4275C10.227 4.225 6.78199 3.07667 4.50699 2.8925C3.21783 2.78417 2.16699 3.75917 2.16699 5.04833V18.135C2.16699 19.175 3.01199 20.15 4.05199 20.28L4.36616 20.3233C6.71699 20.6375 10.3462 21.8292 12.4262 22.9667L12.4695 22.9883C12.762 23.1508 13.2278 23.1508 13.5095 22.9883C15.5895 21.84 19.2295 20.6375 21.5912 20.3233L21.9487 20.28C22.9887 20.15 23.8337 19.175 23.8337 18.135Z" stroke="#03A081" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M13 5.94751V22.1975" stroke="#03A081" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M8.39551 9.19751H5.95801" stroke="#03A081" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M9.20801 12.4475H5.95801" stroke="#03A081" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+<path d="M33 25.11V7.00504C33 5.20504 31.53 3.87004 29.745 4.02004H29.655C26.505 4.29004 21.72 5.89504 19.05 7.57504L18.795 7.74004C18.36 8.01004 17.64 8.01004 17.205 7.74004L16.83 7.51504C14.16 5.85004 9.39 4.26004 6.24 4.00504C4.455 3.85504 3 5.20504 3 6.99004V25.11C3 26.55 4.17 27.9 5.61 28.08L6.045 28.14C9.3 28.575 14.325 30.225 17.205 31.8L17.265 31.83C17.67 32.055 18.315 32.055 18.705 31.83C21.585 30.24 26.625 28.575 29.895 28.14L30.39 28.08C31.83 27.9 33 26.55 33 25.11Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18 8.23486V30.7349" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.625 12.7349H8.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.75 17.2349H8.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

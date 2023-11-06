@@ -1,0 +1,153 @@
+.providing-solutions {
+  &__content {
+    display: grid;
+    grid-template-columns: 49.5rem 110.7rem;
+    gap: 8rem;
+    .content {
+      &-right {
+        position: relative;
+      }
+    }
+  }
+  &__title {
+    font-family: NeueMachina;
+    margin-bottom: 6rem;
+  }
+  &__quote {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 3rem 0;
+    border-top: 2px solid $white-color;
+    border-bottom: 2px solid $white-color;
+    margin-bottom: 12.8rem;
+    &-image {
+      flex: none;
+      width: 17rem;
+      border-radius: 5rem;
+      img {
+        &._mob {
+          display: none;
+        }
+      }
+    }
+  }
+  &__controls {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &__slide {
+    width: 53.3rem;
+    height: 55.9rem;
+    background-color: $white-color;
+    border-radius: 4rem;
+    padding: 4rem 4rem 4rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    &:hover {
+      .providing-solutions {
+        &__spot {
+          transform: scale(1.23);
+          transition: transform 0.5s ease-in-out;
+        }
+      }
+    }
+  }
+  &__icon-box {
+    align-self: flex-end;
+    & > svg {
+      width: 5.3rem;
+      height: 5.3rem;
+    }
+  }
+  &__spot {
+    position: absolute;
+    top: 8.2rem;
+    left: 5rem;
+    transition: transform 0.5s ease-in-out;
+    &-image {
+      width: 23.6rem;
+    }
+    &-effect {
+      width: 8.5rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__btn {
+    &._mob {
+      display: none;
+    }
+  }
+}
+@media (max-width: 48em) {
+  .providing-solutions {
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 6rem;
+    }
+    &__quote {
+      gap: 6rem;
+      padding: 4rem 0;
+      margin-bottom: 6rem;
+      &-image {
+        width: 32rem;
+        border-radius: 10rem;
+        img {
+          &._desc {
+            display: none;
+          }
+          &._mob {
+            display: block;
+          }
+        }
+      }
+    }
+    &__controls {
+      display: none;
+    }
+    &__slide {
+      width: 58rem;
+      height: 49.6rem;
+      padding: 3rem;
+      &:hover {
+        .providing-solutions {
+          &__spot {
+            transform: scale(1.23);
+            transition: transform 0.5s ease-in-out;
+          }
+        }
+      }
+    }
+    &__icon-box {
+      & > svg {
+        width: 6rem;
+        height: 6rem;
+      }
+    }
+    &__spot {
+      top: 5rem;
+      left: 5rem;
+      &-image {
+        width: 22rem;
+      }
+      &-effect {
+        width: 8.5rem;
+      }
+    }
+    &__btn {
+      &._desc {
+        display: none;
+      }
+      &._mob {
+        display: block;
+      }
+    }
+  }
+}
