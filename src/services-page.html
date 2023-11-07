@@ -5,6 +5,29 @@
     @@include('html/header.html', {})
     <main>
       @@include('html/baners/baner-services.html', {})
+      <section class="our-services">
+        <div class="our-services__container container">
+          <div class="our-services__head setup--section-title">
+            <div class="our-services__title">Наши услуги:</div>
+            @@include('html/components/textButtonWithArrow.html', { type:"type-grey", text:"Смотреть все" })
+          </div>
+          <div class="our-services__content">
+            <div class="our-services__list">
+              @@include('html/components/services.html', {})
+              <div
+                class="our-services__decoration-panel decoration-panel _reliability"
+              >
+                <p class="decoration-panel__text">надежность</p>
+              </div>
+              @@include('html/components/services.html', {})
+              @@include('html/components/services.html', {})
+              @@include('html/components/services.html', {})
+              @@include('html/components/services.html', {})
+            </div>
+          </div>
+        </div>
+      </section>
+
       @@include('html/sections/order-callback.html', {})
       @@include('html/sections/it-support.html', {})
     </main>

@@ -31,6 +31,11 @@ $(document).ready(function () {
     closeOther: false,
   });
 
+  $('#baner-services-accordion').accordionjs({
+    closeAble: true,
+    closeOther: true,
+  });
+
   // Убавляем кол-во по клику
   $('.accordion-range-box .range-btn-minus').click(function () {
     let $input = $(this).parent().find('.range-value');

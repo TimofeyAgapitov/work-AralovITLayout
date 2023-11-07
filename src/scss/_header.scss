@@ -3,6 +3,9 @@
   margin-bottom: 6rem;
   position: relative;
   z-index: 100;
+  &._detail-services {
+    margin-bottom: 3rem;
+  }
   &__container {
     display: flex;
     align-items: center;
