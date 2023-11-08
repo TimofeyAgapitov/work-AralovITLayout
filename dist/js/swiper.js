@@ -184,16 +184,36 @@ if (document.querySelector('.providing-solutions-swiper')) {
 
 if (document.querySelector('.baner-services-swiper')) {
   new Swiper('.baner-services-swiper', {
-    slidesPerView: 3,
+    slidesPerView: 1,
     direction: 'vertical',
     loop: true,
-    autoplay: {
-      delay: 1000,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 1000,
+    //   disableOnInteraction: false,
+    // },
     speed: 1000,
     pagination: {
       el: '.baner-services-pagination',
     }
+  });
+}
+
+if (document.querySelector('.what-includes-swiper')) {
+  new Swiper('.what-includes-swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: remToPx(4),
+    freemode: true,
+    speed: 1000,
+    breakpoints: {
+      769: {
+        slidesPerView: 3,
+        spaceBetween: remToPx(4),
+        speed: 1000,
+        navigation: {
+          nextEl: '.what-includes__controls .btn-next',
+          prevEl: '.what-includes__controls .btn-prev',
+        },
+      },
+    },
   });
 }

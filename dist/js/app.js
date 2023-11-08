@@ -32,6 +32,7 @@ $(document).ready(function () {
   });
 
   $('#baner-services-accordion').accordionjs({
+    activeIndex: false,
     closeAble: true,
     closeOther: true,
   });

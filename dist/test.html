@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.min.css?_V=20231107202442" />
+  <link rel="stylesheet" href="css/style.min.css?_V=20231107222517" />
   <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_V=20231107202442"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_V=20231107222517"
   />
   <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_V=20231107202442"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_V=20231107222517"
   />
   <title>Главная</title>
 </head>
@@ -93,25 +93,102 @@
 </header>
 
     <main>
-        <section class="baner-details-services">
-  <div class="baner-details-services__container container">
-    <div class="baner-details-services__content">
-      <div class="content-left">
-        <p class="baner-details-services__title setup--h1">
-          Восстановление после сбоя
-        </p>
-        <p class="baner-details-services__text setup--text-18px setup--grey">
-          Услуга направлена на обеспечение надежной защиты и оперативного
-          восстановления вашей IT-инфраструктуры в случае непредвиденных
-          событий, таких как сбои, атаки или потеря данных.
-        </p>
-        <div class="baner-details-services__links">
-          <div class="baner-details-services__btn">
-            <div class="component--green-btn green-btn @@status">
-    <p class="green-btn__text setup--text-18px" data-hover="Оформить заявку">Оформить заявку</p>
-</div>
+        <section class="what-includes">
+  <div class="what-includes__container container">
+    <div class="what-includes__head">
+      <p class="what-includes__title setup--h1">
+        Что включает в себя аварийное восстановление:
+      </p>
+      <p class="what-includes__text setup--text-18px setup--grey">
+        Оно предусматривает не только восстановление функционирования систем, но
+        и минимизацию времени простоя, что является ключевым аспектом для
+        бизнесов, ценящих непрерывную работу.
+      </p>
+    </div>
+    <div class="what-includes__content">
+      <div class="content-left what-includes__swiper">
+        <div class="what-includes-swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="what-includes-slide swiper-slide">
+              <div class="what-includes__slide _v1">
+                <div class="what-includes-swiper__icon">
+                  <img
+                    src="img/sections/what-includes/what-includes-icon-v1.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="what-includes-swiper__text">
+                  <p class="setup--text-18px">
+                    Планирование и<br />
+                    резервное копирование
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="what-includes-slide swiper-slide">
+              <div class="what-includes__slide _v2">
+                <div class="what-includes-swiper__icon">
+                  <img
+                    src="img/sections/what-includes/what-includes-icon-v2.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="what-includes-swiper__text">
+                  <p class="setup--text-18px">
+                    Анализ рисков и<br />
+                    подготовка планов
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="what-includes-slide swiper-slide">
+              <div class="what-includes__slide _v3">
+                <div class="what-includes-swiper__icon">
+                  <img
+                    src="img/sections/what-includes/what-includes-icon-v3.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="what-includes-swiper__text">
+                  <p class="setup--text-18px">
+                    Быстрое<br />
+                    восстановление
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="what-includes-slide swiper-slide">
+              <div class="what-includes__slide _v3">
+                <div class="what-includes-swiper__icon">
+                  <img
+                    src="img/sections/what-includes/what-includes-icon-v3.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="what-includes-swiper__text">
+                  <p class="setup--text-18px">
+                    Быстрое<br />
+                    восстановление
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="baner-details-services__link">
+        </div>
+        <div class="what-includes__links">
+          <div class="what-includes__controls setup--swiper-buttons">
+            <button type="button" class="swiper-button-prev btn-prev">
+              <svg class="swiper-button-arrow">
+                <use xlink:href="img/sprite.svg#arrowline"></use>
+              </svg>
+            </button>
+            <button type="button" class="swiper-button-next btn-next">
+              <svg class="swiper-button-arrow">
+                <use xlink:href="img/sprite.svg#arrowline"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="what-includes__link">
             <div class="component--arrow-btn arrow-btn @@type">
   <p class="arrow-btn__text setup--text-18px">Задать вопрос</p>
   <svg
@@ -144,312 +221,18 @@
 
           </div>
         </div>
-        <div class="baner-details-services__accordion">
-          <ul class="accordionjs" id="baner-services-accordion">
-            <div class="baner-services-accordion__element">
-              <div class="baner-services-accordion__head">
-                <div class="baner-services-accordion__icon">
-                  <img
-                    src="img/sections/baner-details-services/baner-services-timer.svg"
-                    alt=""
-                  />
-                </div>
-                <p
-                  class="baner-services-accordion__title setup--text-24px setup--black"
-                >
-                  Быстро
-                </p>
-                <div class="prices-list-accordion__btn">
-                  <svg class="prices-list-accordion__arrow">
-                    <use xlink:href="img/sprite.svg#arrowline"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="baner-services-accordion__inner">
-                <ul class="baner-services-accordion__list">
-                  <li
-                    class="baner-services-accordion__item setup--text-18px setup--grey"
-                  >
-                    — Все платежи оговорены в договоре
-                  </li>
-                  <li
-                    class="baner-services-accordion__item setup--text-18px setup--grey"
-                  >
-                    — Все платежи оговорены в договоре
-                  </li>
-                  <li
-                    class="baner-services-accordion__item setup--text-18px setup--grey"
-                  >
-                    — Все платежи оговорены в договоре
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="baner-services-accordion__element">
-              <div class="baner-services-accordion__head">
-                <div class="baner-services-accordion__icon">
-                  <img
-                    src="img/sections/baner-details-services/baner-services-card.svg"
-                    alt=""
-                  />
-                </div>
-                <p
-                  class="baner-services-accordion__title setup--text-24px setup--black"
-                >
-                  Выгодно
-                </p>
-                <div class="prices-list-accordion__btn">
-                  <svg class="prices-list-accordion__arrow">
-                    <use xlink:href="img/sprite.svg#arrowline"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="baner-services-accordion__inner">
-                <ul class="baner-services-accordion__list">
-                  <li
-                    class="baner-services-accordion__item setup--text-18px setup--grey"
-                  >
-                    — Все платежи оговорены в договоре
-                  </li>
-                  <li
-                    class="baner-services-accordion__item setup--text-18px setup--grey"
-                  >
-                    — Все платежи оговорены в договоре
-                  </li>
-                  <li
-                    class="baner-services-accordion__item setup--text-18px setup--grey"
-                  >
-                    — Все платежи оговорены в договоре
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="baner-services-accordion__element">
-              <div class="baner-services-accordion__head">
-                <div class="baner-services-accordion__icon">
-                  <img
-                    src="img/sections/baner-details-services/baner-services-like.svg"
-                    alt=""
-                  />
-                </div>
-                <p
-                  class="baner-services-accordion__title setup--text-24px setup--black"
-                >
-                  Прозрачно
-                </p>
-                <div class="prices-list-accordion__btn">
-                  <svg class="prices-list-accordion__arrow">
-                    <use xlink:href="img/sprite.svg#arrowline"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="baner-services-accordion__inner">
-                <ul class="baner-services-accordion__list">
-                  <li
-                    class="baner-services-accordion__item setup--text-18px setup--grey"
-                  >
-                    — Все платежи оговорены в договоре
-                  </li>
-                  <li
-                    class="baner-services-accordion__item setup--text-18px setup--grey"
-                  >
-                    — Все платежи оговорены в договоре
-                  </li>
-                  <li
-                    class="baner-services-accordion__item setup--text-18px setup--grey"
-                  >
-                    — Все платежи оговорены в договоре
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </ul>
-        </div>
       </div>
       <div class="content-right">
-        <div class="baner-details-services__background"></div>
-        <div class="baner-details-services__whats-the-benefit">
-          <div class="whats-the-benefit__image">
-            <img
-              src="img/sections/baner-details-services/baner-services-dec.webp"
-              alt=""
-            />
-          </div>
-          <div class="whats-the-benefit__texts">
-            <p class="whats-the-benefit__title setup--text-24px">
-              В чем выгода?
-            </p>
-            <p class="whats-the-benefit__text setup--text-18px setup--grey">
-              Обращаясь к нам, вы получаете инструменты для эффективного
-              управления рисками и обеспечения стабильности работы своего
-              бизнеса.
-            </p>
-          </div>
-        </div>
-        <div class="baner-details-services__swiper">
-          <div class="baner-services-swiper swiper">
-            <div class="swiper-wrapper">
-              <div class="baner-services-slide swiper-slide">
-                <div class="baner-details-services__slide">
-                  <div class="baner-services-swiper__element">
-                    <div class="baner-services-swiper__inner">
-                      <p class="baner-services-swiper__title setup--text-18px">
-                        Решаем задачи дистанционно
-                      </p>
-                      <div class="baner-services-swiper__icon">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="32"
-                          height="32"
-                          viewBox="0 0 32 32"
-                          fill="none"
-                        >
-                          <path
-                            d="M8.58797 2.66602H23.4013C28.148 2.66602 29.3346 3.85268 29.3346 8.58602V17.026C29.3346 21.7727 28.148 22.946 23.4146 22.946H8.58797C3.85464 22.9593 2.66797 21.7727 2.66797 17.0393V8.58602C2.66797 3.85268 3.85464 2.66602 8.58797 2.66602Z"
-                            stroke="white"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M16 22.96V29.3333"
-                            stroke="white"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M2.66797 17.334H29.3346"
-                            stroke="white"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M10 29.333H22"
-                            stroke="white"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="baner-services-swiper__numbering">
-                    <p class="">1</p>
-                  </div>
-                </div>
-              </div>
-              <div class="baner-services-slide swiper-slide">
-                <div class="baner-details-services__slide">
-                  <div class="baner-services-swiper__element">
-                    <div class="baner-services-swiper__inner">
-                      <p class="baner-services-swiper__title setup--text-18px">
-                        Решаем задачи дистанционно
-                      </p>
-                      <div class="baner-services-swiper__icon">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="32"
-                          height="32"
-                          viewBox="0 0 32 32"
-                          fill="none"
-                        >
-                          <path
-                            d="M8.58797 2.66602H23.4013C28.148 2.66602 29.3346 3.85268 29.3346 8.58602V17.026C29.3346 21.7727 28.148 22.946 23.4146 22.946H8.58797C3.85464 22.9593 2.66797 21.7727 2.66797 17.0393V8.58602C2.66797 3.85268 3.85464 2.66602 8.58797 2.66602Z"
-                            stroke="white"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M16 22.96V29.3333"
-                            stroke="white"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M2.66797 17.334H29.3346"
-                            stroke="white"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M10 29.333H22"
-                            stroke="white"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="baner-services-swiper__numbering">
-                    <p class="">1</p>
-                  </div>
-                </div>
-              </div>
-              <div class="baner-services-slide swiper-slide">
-                <div class="baner-details-services__slide">
-                  <div class="baner-services-swiper__element">
-                    <div class="baner-services-swiper__inner">
-                      <p class="baner-services-swiper__title setup--text-18px">
-                        Решаем задачи дистанционно
-                      </p>
-                      <div class="baner-services-swiper__icon">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="32"
-                          height="32"
-                          viewBox="0 0 32 32"
-                          fill="none"
-                        >
-                          <path
-                            d="M8.58797 2.66602H23.4013C28.148 2.66602 29.3346 3.85268 29.3346 8.58602V17.026C29.3346 21.7727 28.148 22.946 23.4146 22.946H8.58797C3.85464 22.9593 2.66797 21.7727 2.66797 17.0393V8.58602C2.66797 3.85268 3.85464 2.66602 8.58797 2.66602Z"
-                            stroke="white"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M16 22.96V29.3333"
-                            stroke="white"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M2.66797 17.334H29.3346"
-                            stroke="white"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M10 29.333H22"
-                            stroke="white"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="baner-services-swiper__numbering">
-                    <p class="">1</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="baner-details-services__pagination">
-            <div class="baner-services-pagination swiper-pagination"></div>
+        <p class="content-right__text setup--text-18px setup--grey">
+          Наши специалисты готовы реагировать на любые ситуации, обеспечивая
+          высокий уровень профессионализма, а также наш подход на основе анализа
+          рисков позволяет предотвратить многие негативные сценарии и
+          обеспечивает более безопасную инфраструктуру.
+        </p>
+        <div class="what-includes__btn">
+          <div class="component--green-btn green-btn @@status">
+    <p class="green-btn__text setup--text-18px" data-hover="Подключить услугу">Подключить услугу</p>
+</div>
         </div>
       </div>
     </div>
@@ -544,13 +327,13 @@
     </div>
   </div>
 </footer>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js?_V=20231107202442"></script>
-<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU&_V=20231107202442"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_V=20231107202442"></script>
-<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js?_V=20231107202442"></script>
-<script src="./js/accordion.min.js?_V=20231107202442"></script>
-<script src="./js/swiper.js?_V=20231107202442"></script>
-<script src="./js/app.js?_V=20231107202442"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js?_V=20231107222517"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU&_V=20231107222517"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_V=20231107222517"></script>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js?_V=20231107222517"></script>
+<script src="./js/accordion.min.js?_V=20231107222517"></script>
+<script src="./js/swiper.js?_V=20231107222517"></script>
+<script src="./js/app.js?_V=20231107222517"></script>
 
   </body>
 </html>
