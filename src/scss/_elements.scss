@@ -138,6 +138,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  &._popup {
+    background-color: #F7F7F7;
+  }
   &::placeholder {
     font-family: Formular;
     font-size: 1.8rem;

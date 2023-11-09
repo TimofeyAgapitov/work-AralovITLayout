@@ -313,3 +313,14 @@
     }
   }
 }
+
+// what-includes-swiper
+@media (max-width: 48em) {
+  .swiper {
+    &-slide {
+      &.what-includes-slide {
+        width: 58rem;
+      }
+    }
+  }
+}

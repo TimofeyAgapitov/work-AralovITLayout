@@ -109,3 +109,72 @@
     }
   }
 }
+
+@media (max-width: 48em) {
+  .what-includes {
+    &__head {
+      width: 100%;
+      margin-bottom: 8rem;
+    }
+    &__title {
+      margin-bottom: 4rem;
+    }
+    &__content {
+      grid-template-columns: 71rem;
+      gap: 10rem;
+      .content {
+        &-right {
+          &__text {
+            margin-bottom: 4rem;
+          }
+        }
+      }
+    }
+    &__controls {
+      display: none;
+    }
+    &-swiper {
+      margin-bottom: 4rem;
+    }
+    &__slide {
+      width: 58rem;
+      height: 52.8rem;
+      border-radius: 4rem;
+      padding: 2rem;
+      &._v1 {
+        &::before {
+          background: url('../img/sections/what-includes/what-includes-bg-v1.webp')
+            center center no-repeat;
+          background-size: cover;
+        }
+      }
+      &._v2 {
+        &::before {
+          background: url('../img/sections/what-includes/what-includes-bg-v2.webp')
+            center center no-repeat;
+          background-size: cover;
+        }
+      }
+      &._v3 {
+        &::before {
+          background: url('../img/sections/what-includes/what-includes-bg-v3.webp')
+            center center no-repeat;
+          background-size: cover;
+        }
+      }
+      .what-includes-swiper {
+        &__icon {
+          width: 12rem;
+          height: 12rem;
+          img {
+            width: 6.4rem;
+            height: 6.4rem;
+          }
+        }
+        &__text {
+          padding: 1.6rem 4.8rem;
+        }
+      }
+    }
+  }
+}

@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.min.css?_V=20231107222517" />
+  <link rel="stylesheet" href="css/style.min.css?_V=20231108204035" />
   <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_V=20231107222517"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_V=20231108204035"
   />
   <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_V=20231107222517"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_V=20231108204035"
   />
   <title>Главная</title>
 </head>
@@ -919,13 +919,196 @@
     </div>
   </div>
 </footer>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js?_V=20231107222517"></script>
-<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU&_V=20231107222517"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_V=20231107222517"></script>
-<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js?_V=20231107222517"></script>
-<script src="./js/accordion.min.js?_V=20231107222517"></script>
-<script src="./js/swiper.js?_V=20231107222517"></script>
-<script src="./js/app.js?_V=20231107222517"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js?_V=20231108204035"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU&_V=20231108204035"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_V=20231108204035"></script>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js?_V=20231108204035"></script>
+<script src="./js/accordion.min.js?_V=20231108204035"></script>
+<script src="./js/swiper.js?_V=20231108204035"></script>
+<script src="./js/popup.js?_V=20231108204035"></script>
+<script src="./js/app.js?_V=20231108204035"></script>
+<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+
+<div id="question-popup" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button data-close type="button" class="popup__close">
+        <svg>
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <div class="popup__inner">
+        <div class="popup__head">
+          <p class="popup__title setup--h2">У вас возник вопрос?</p>
+          <p class="popup__text setup--text-18px setup--grey">
+            Заполните заявку на обратный звонок или свяжитесь с нами любым
+            удобным для Вас способом: по телефону, почте или в мессенджерах.
+          </p>
+        </div>
+        <div class="popup__forms _questions">
+          <input
+            type="text"
+            class="order-callback__input input _popup"
+            placeholder="Имя"
+          />
+          <input
+            type="text"
+            class="order-callback__input input _popup"
+            placeholder="Телефон"
+          />
+        </div>
+        <div class="popup__buttons">
+          <div class="component--green-btn green-btn @@status">
+            <p
+              class="green-btn__text setup--text-18px"
+              data-hover="Оставить заявку"
+            >
+              Оставить заявку
+            </p>
+          </div>
+          <div class="popup__policy">
+            <p class="setup--text-18px setup--grey">
+              Отправляя заявку, вы соглашаетесь<br />
+              с <span>политикой конфиденциальности</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="callback-popup" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button data-close type="button" class="popup__close">
+        <svg>
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <div class="popup__inner">
+        <div class="popup__head">
+          <p class="popup__title setup--h2">Закажите обратный звонок</p>
+          <p class="popup__text setup--text-18px setup--grey">
+            Или свяжитесь с нами любым удобным для Вас способом:<br/>по телефону,
+            почте или в мессенджерах.
+          </p>
+        </div>
+        <div class="popup__forms _questions">
+          <input
+            type="text"
+            class="order-callback__input input _popup"
+            placeholder="Имя"
+          />
+          <input
+            type="text"
+            class="order-callback__input input _popup"
+            placeholder="Телефон"
+          />
+        </div>
+        <div class="popup__buttons">
+          <div class="component--green-btn green-btn @@status">
+            <p
+              class="green-btn__text setup--text-18px"
+              data-hover="Оставить заявку"
+            >
+              Оставить заявку
+            </p>
+          </div>
+          <div class="popup__policy">
+            <p class="setup--text-18px setup--grey">
+              Отправляя заявку, вы соглашаетесь<br />
+              с <span>политикой конфиденциальности</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="services-popup" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button data-close type="button" class="popup__close">
+        <svg>
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <div class="popup__inner">
+        <div class="popup__head">
+          <p class="popup__title setup--h2">Заказать услугу</p>
+          <p class="popup__text setup--text-18px setup--grey">
+            Или свяжитесь с нами любым удобным для Вас способом:<br/>по телефону,
+            почте или в мессенджерах.
+          </p>
+        </div>
+        <div class="popup__forms _questions">
+          <input
+            type="text"
+            class="order-callback__input input _popup"
+            placeholder="Имя"
+          />
+          <input
+            type="text"
+            class="order-callback__input input _popup"
+            placeholder="Телефон"
+          />
+        </div>
+        <div class="popup__buttons">
+          <div class="component--green-btn green-btn @@status">
+            <p
+              class="green-btn__text setup--text-18px"
+              data-hover="Оставить заявку"
+            >
+              Оставить заявку
+            </p>
+          </div>
+          <div class="popup__policy">
+            <p class="setup--text-18px setup--grey">
+              Отправляя заявку, вы соглашаетесь<br />
+              с <span>политикой конфиденциальности</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="accepted-popup" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button data-close type="button" class="popup__close">
+        <svg>
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <div class="popup__inner _accepted">
+        <div class="popup__head _accepted">
+          <p class="popup__title setup--h2">Заявка принята</p>
+          <p class="popup__text setup--text-18px setup--grey">
+            Благодарим вас за заявку! Мы приняли её, и наш менеджер свяжется с вами в ближайшее время.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
 
   </body>
 </html>

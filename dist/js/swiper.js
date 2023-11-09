@@ -187,10 +187,10 @@ if (document.querySelector('.baner-services-swiper')) {
     slidesPerView: 1,
     direction: 'vertical',
     loop: true,
-    // autoplay: {
-    //   delay: 1000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false,
+    },
     speed: 1000,
     pagination: {
       el: '.baner-services-pagination',
