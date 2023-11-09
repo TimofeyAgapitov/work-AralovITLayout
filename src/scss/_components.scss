@@ -70,6 +70,18 @@
     gap: 2rem;
     padding: 3.2rem 7.8rem;
     border-radius: 10rem;
+    &:hover {
+      .green-btn {
+        &__text {
+          transform: translateY(-8rem);
+          transition: all 0.5s ease-in-out;
+          &::before {
+            top: 8rem;
+            transform: translateY(0rem);
+          }
+        }
+      }
+    }
     .green-btn {
       &__icon {
         width: 3.2rem;

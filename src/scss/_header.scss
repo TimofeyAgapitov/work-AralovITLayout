@@ -78,10 +78,125 @@
       }
     }
   }
+  &__burger {
+    display: none;
+    &-content {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 48em) {
   .header {
-    display: none;
+    padding-top: 3rem;
+    margin-bottom: 3.6rem;
+    &__menu {
+      display: none;
+      &._burger {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+      }
+      .menu {
+        &__item {
+          pointer-events: none;
+          padding: 3.6rem 0;
+          border-top: 1px solid rgba(119, 119, 119, 0.1);
+          &:last-child {
+            border-bottom: 1px solid rgba(119, 119, 119, 0.1);
+          }
+        }
+      }
+    }
+    &__socials {
+      display: none;
+      &._burger {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8rem;
+        margin-top: 8rem;
+      }
+      .socials {
+        &__links {
+          margin-left: 0;
+          gap: 2rem;
+          .link {
+            width: 10rem;
+            height: 10rem;
+          }
+        }
+      }
+    }
+    &__burger {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 6rem;
+      height: 4rem;
+      &-content {
+        display: block;
+      }
+      &._open {
+        &::before {
+          top: 2rem;
+          transform: rotate(45deg);
+          transition: top 0.15s, transform 0.15s 0.15s linear;
+        }
+        &::after {
+          bottom: 1.6rem;
+          transform: rotate(-45deg);
+          transition: bottom 0.15s, transform 0.15s 0.15s linear;
+        }
+        span {
+          display: none;
+          transition: all 0.15s 0.15s linear;
+        }
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0.4rem;
+        border-radius: 1rem;
+        background-color: $black-color;
+        transition: transform 0.15s, top 0.15s 0.15s linear;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0.4rem;
+        border-radius: 1rem;
+        background-color: $black-color;
+        transition: transform 0.15s, bottom 0.15s 0.15s linear;
+      }
+      span {
+        display: inlile-block;
+        width: 100%;
+        height: 0.4rem;
+        border-radius: 1rem;
+        background-color: $black-color;
+        transition: all 0.15s linear;
+      }
+      &-content {
+        position: fixed;
+        top: 12.6rem;
+        left: -100%;
+        width: 100%;
+        min-height: 100%;
+        padding: 2rem;
+        background-color: #eaeaea;
+        &._show {
+          left: 0;
+          transition: all 0.15s linear;
+        }
+      }
+    }
   }
 }

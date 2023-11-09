@@ -1825,12 +1825,21 @@ body::after {
   cursor: pointer;
 }
 
+.header__burger {
+  display: none;
+}
+
+.header__burger-content {
+  display: none;
+}
+
 .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 19.367rem;
   height: 24rem;
+  margin-bottom: 10rem;
 }
 
 .footer__logotype {
@@ -1869,6 +1878,18 @@ body::after {
 
 .footer__right .right__text {
   color: #777777;
+}
+
+.footer__center .center__list-left,
+.footer__center .center__list-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.2rem;
 }
 
 .footer__left .left__list-left,
@@ -1917,6 +1938,10 @@ body::after {
 .footer__item {
   color: #777777;
   cursor: pointer;
+}
+
+.footer__item._mob {
+  display: none;
 }
 
 .baner-teams__head {
@@ -4897,6 +4922,21 @@ body::after {
     border-radius: 10rem;
   }
 
+  .component--green-btn:hover .green-btn__text {
+    -webkit-transform: translateY(-8rem);
+        -ms-transform: translateY(-8rem);
+            transform: translateY(-8rem);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .component--green-btn:hover .green-btn__text::before {
+    top: 8rem;
+    -webkit-transform: translateY(0rem);
+        -ms-transform: translateY(0rem);
+            transform: translateY(0rem);
+  }
+
   .component--green-btn .green-btn__icon {
     width: 3.2rem;
   }
@@ -5440,11 +5480,234 @@ body::after {
   }
 
   .header {
+    padding-top: 3rem;
+    margin-bottom: 3.6rem;
+  }
+
+  .header__menu {
     display: none;
   }
 
-  .footer {
+  .header__menu._burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+  }
+
+  .header__menu .menu__item {
+    pointer-events: none;
+    padding: 3.6rem 0;
+    border-top: 1px solid rgba(119, 119, 119, 0.1);
+  }
+
+  .header__menu .menu__item:last-child {
+    border-bottom: 1px solid rgba(119, 119, 119, 0.1);
+  }
+
+  .header__socials {
     display: none;
+  }
+
+  .header__socials._burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 8rem;
+    margin-top: 8rem;
+  }
+
+  .header__socials .socials__links {
+    margin-left: 0;
+    gap: 2rem;
+  }
+
+  .header__socials .socials__links .link {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .header__burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    width: 6rem;
+    height: 4rem;
+  }
+
+  .header__burger-content {
+    display: block;
+  }
+
+  .header__burger._open::before {
+    top: 2rem;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transition: top 0.15s, -webkit-transform 0.15s 0.15s linear;
+    transition: top 0.15s, -webkit-transform 0.15s 0.15s linear;
+    transition: top 0.15s, transform 0.15s 0.15s linear;
+    transition: top 0.15s, transform 0.15s 0.15s linear, -webkit-transform 0.15s 0.15s linear;
+  }
+
+  .header__burger._open::after {
+    bottom: 1.6rem;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transition: bottom 0.15s, -webkit-transform 0.15s 0.15s linear;
+    transition: bottom 0.15s, -webkit-transform 0.15s 0.15s linear;
+    transition: bottom 0.15s, transform 0.15s 0.15s linear;
+    transition: bottom 0.15s, transform 0.15s 0.15s linear, -webkit-transform 0.15s 0.15s linear;
+  }
+
+  .header__burger._open span {
+    display: none;
+    -webkit-transition: all 0.15s 0.15s linear;
+    transition: all 0.15s 0.15s linear;
+  }
+
+  .header__burger::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0.4rem;
+    border-radius: 1rem;
+    background-color: #050505;
+    -webkit-transition: top 0.15s 0.15s linear, -webkit-transform 0.15s;
+    transition: top 0.15s 0.15s linear, -webkit-transform 0.15s;
+    transition: transform 0.15s, top 0.15s 0.15s linear;
+    transition: transform 0.15s, top 0.15s 0.15s linear, -webkit-transform 0.15s;
+  }
+
+  .header__burger::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.4rem;
+    border-radius: 1rem;
+    background-color: #050505;
+    -webkit-transition: bottom 0.15s 0.15s linear, -webkit-transform 0.15s;
+    transition: bottom 0.15s 0.15s linear, -webkit-transform 0.15s;
+    transition: transform 0.15s, bottom 0.15s 0.15s linear;
+    transition: transform 0.15s, bottom 0.15s 0.15s linear, -webkit-transform 0.15s;
+  }
+
+  .header__burger span {
+    display: inlile-block;
+    width: 100%;
+    height: 0.4rem;
+    border-radius: 1rem;
+    background-color: #050505;
+    -webkit-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+  }
+
+  .header__burger-content {
+    position: fixed;
+    top: 12.6rem;
+    left: -100%;
+    width: 100%;
+    min-height: 100%;
+    padding: 2rem;
+    background-color: #eaeaea;
+  }
+
+  .header__burger-content._show {
+    left: 0;
+    -webkit-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+  }
+
+  .footer__container {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 8rem;
+  }
+
+  .footer__right {
+    width: 100%;
+  }
+
+  .footer__right .right__top {
+    margin-bottom: 4rem;
+  }
+
+  .footer__center .center__list-left,
+  .footer__center .center__list-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer__left .left__list-left,
+  .footer__left .left__list-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer__list-title {
+    margin-bottom: 0;
+  }
+
+  .footer__list-center {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (32.4rem)[2];
+    grid-template-columns: repeat(2, 32.4rem);
+    gap: 6rem;
+  }
+
+  .footer__list-left {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (32.4rem)[2];
+    grid-template-columns: repeat(2, 32.4rem);
+    gap: 6rem;
+  }
+
+  .footer__item._desc {
+    display: none;
+  }
+
+  .footer__item._mob {
+    display: block;
   }
 
   .baner-teams__head {

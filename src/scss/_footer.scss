@@ -3,6 +3,7 @@
     display: flex;
     gap: 19.367rem;
     height: 24rem;
+    margin-bottom: 10rem;
   }
   &__logotype {
     cursor: pointer;
@@ -24,6 +25,16 @@
       }
       &__text {
         color: $grey-color;
+      }
+    }
+  }
+  &__center {
+    .center {
+      &__list-left,
+      &__list-right {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
       }
     }
   }
@@ -57,11 +68,69 @@
   &__item {
     color: $grey-color;
     cursor: pointer;
+    &._mob {
+      display: none;
+    }
   }
 }
 
 @media (max-width: 48em) {
   .footer {
-    display: none;
+    &__container {
+      height: auto;
+      flex-direction: column;
+      gap: 8rem;
+    }
+    &__right {
+      width: 100%;
+      .right {
+        &__top {
+          margin-bottom: 4rem;
+        }
+      }
+    }
+    &__center {
+      .center {
+        &__list-left,
+        &__list-right {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+        }
+      }
+    }
+    &__left {
+      .left {
+        &__list-left,
+        &__list-right {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+        }
+      }
+    }
+    &__list {
+      &-title {
+        margin-bottom: 0;
+      }
+      &-center {
+        display: grid;
+        grid-template-columns: repeat(2, 32.4rem);
+        gap: 6rem;
+      }
+      &-left {
+        display: grid;
+        grid-template-columns: repeat(2, 32.4rem);
+        gap: 6rem;
+      }
+    }
+    &__item {
+      &._desc {
+        display: none;
+      }
+      &._mob {
+        display: block;
+      }
+    }
   }
 }

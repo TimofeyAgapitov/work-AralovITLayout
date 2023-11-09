@@ -2,14 +2,14 @@
 <html lang="en">
   @@include('html/head.html', { title: "Главная" })
   <body>
-    @@include('html/header.html', { modificator:"_detail-services" })
+    @@include('html/header.html', {})
     <main>
-      @@include('html/sections/what-includes.html', {})
-      <div class="component--green-btn green-btn @@status">
+      <!-- @@include('html/sections/what-includes.html', {}) -->
+      <!-- <div class="component--green-btn green-btn @@status">
         <p class="green-btn__text setup--text-18px" data-popup="#popup" data-hover="@@text">
           @@text
         </p>
-      </div>
+      </div> -->
     </main>
     @@include('html/footer.html', {}) @@include('html/foot.html', {})
   </body>

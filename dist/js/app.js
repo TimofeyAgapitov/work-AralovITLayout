@@ -142,3 +142,15 @@ if (document.querySelector('.our-contacts__map')) {
 
   ymaps.ready(init);
 }
+
+if(document.querySelector('.header')) {
+  const header = document.querySelector('.header');
+  const headerBurger = header.querySelector('.header__burger');
+  const headerBurgerContent = header.querySelector('.header__burger-content');
+
+  headerBurger.addEventListener('click', function() {
+    headerBurger.classList.toggle('_open');
+    headerBurgerContent.classList.toggle('_show');
+    document.documentElement.classList.toggle('lock');
+  });
+}
