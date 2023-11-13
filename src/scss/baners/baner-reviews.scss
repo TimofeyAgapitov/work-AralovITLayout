@@ -1,0 +1,278 @@
+.baner-reviews {
+  &__content {
+    display: grid;
+    grid-template-columns: 82rem auto;
+    grid-template-rows: 73rem;
+    gap: 18.4rem;
+    margin-bottom: 5.8rem;
+    .content {
+      &-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      &-right {
+        position: relative;
+        &__background {
+          position: absolute;
+          bottom: 0;
+          right: 4rem;
+          width: 63.8rem;
+          height: 69.2rem;
+          background-image: url('../img/sections/baner-reviews/baner-reviews-bg.webp');
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        &__green-panel {
+          position: absolute;
+          top: 1rem;
+          right: 0;
+          width: 21.8rem;
+          height: 23.5rem;
+          background-image: url('../img/sections/baner-reviews/baner-reviews-green-panel-desc.svg');
+          background-size: contain;
+          background-repeat: no-repeat;
+          z-index: -1;
+        }
+        &__reviews-panel {
+          position: absolute;
+          top: 0;
+          left: -7rem;
+          width: fit-content;
+          padding: 1.6rem 2.8rem;
+          background-color: $white-color;
+          border-radius: 3rem;
+          display: flex;
+          gap: 2.4rem;
+          .reviews-panel {
+            &__image {
+              width: 14rem;
+            }
+            &__text {
+              width: 22.4rem;
+            }
+          }
+        }
+      }
+      &-mobile {
+        display: none;
+      }
+    }
+  }
+  &__title {
+    font-family: NeueMachina;
+    margin-bottom: 5.2rem;
+    .stroke-panel {
+      &::before {
+        top: 44%;
+      }
+    }
+  }
+  &__text {
+    margin-bottom: 5rem;
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    &-line {
+      max-width: 22.8rem;
+      width: 100%;
+      height: 0.1rem;
+      background-color: $green-color;
+    }
+  }
+  &__statistic {
+    display: flex;
+    align-items: flex-start;
+    .statistic {
+      &__element {
+        max-width: 21.5rem;
+        width: fit-content;
+        min-height: 14.2rem;
+        padding: 0 4rem;
+        padding-top: 2.5rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+        &:first-child {
+          padding-left: 0;
+          border-right: 1px solid $green-color;
+        }
+        &:last-child {
+          padding-right: 0;
+          border-left: 1px solid $green-color;
+        }
+      }
+      &__value {
+        font-family: NeueMachina;
+      }
+    }
+  }
+  &__support-panel {
+    position: absolute;
+    bottom: -5.8rem;
+    right: 0;
+    width: 48.2rem;
+    height: 27rem;
+    background-image: url('../img/sections/baner-reviews/baner-reviews-white-panel.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 6.8rem 2rem 2.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .support {
+      &__texts {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+      }
+      &__btn {
+        .component--green-btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .baner-reviews {
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      gap: 8rem;
+      margin-bottom: 0;
+      .content {
+        &-left {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        &-right {
+          position: relative;
+          height: 38rem;
+          margin-top: 4rem;
+          &__background {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 63rem;
+            height: 38rem;
+            background-image: url('../img/sections/baner-reviews/baner-reviews-bg-mob.webp');
+          }
+          &__green-panel {
+            position: absolute;
+            top: -4rem;
+            left: 5rem;
+            right: 0;
+            width: 32rem;
+            height: 15rem;
+            background-image: url('../img/sections/baner-reviews/baner-reviews-green-panel-mob.svg');
+          }
+          &__reviews-panel {
+            position: absolute;
+            top: -4rem;
+            left: 30rem;
+            padding: 3rem;
+            border-radius: 4rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            .reviews-panel {
+              &__image {
+                width: 15rem;
+              }
+              &__text {
+                width: 35rem;
+              }
+            }
+          }
+        }
+        &-mobile {
+          display: flex;
+          flex-direction: column-reverse;
+          gap: 8rem;
+        }
+      }
+    }
+    &__title {
+      margin-bottom: 4rem;
+    }
+    &__text {
+      margin-bottom: 4rem;
+    }
+    &__links {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      &-line {
+        max-width: 22.8rem;
+        width: 100%;
+        height: 0.1rem;
+        background-color: $green-color;
+      }
+    }
+    &__statistic {
+      display: flex;
+      align-items: flex-start;
+      &._desc {
+        display: none;
+      }
+      .statistic {
+        &__element {
+          max-width: 30.2rem;
+          width: fit-content;
+          min-height: 16rem;
+          padding: 0 7.4rem;
+          padding-top: 1.8rem;
+          &:first-child {
+            padding-left: 2rem;
+          }
+          &:last-child {
+            padding-right: 2rem;
+          }
+        }
+      }
+    }
+    &__support-panel {
+      &._desc {
+        display: none;
+      }
+      position: static;
+      width: 100%;
+      height: auto;
+      background-image: none;
+      padding: 0;
+      align-items: center;
+      flex-direction: row-reverse;
+      gap: 1rem;
+      .support {
+        &__texts {
+          flex-direction: column;
+          margin-bottom: 0;
+        }
+        &__line {
+          width: 6.4rem;
+          height: 0.2rem;
+          background-color: $green-color;
+        }
+        &__text {
+          &._mob {
+            display: none;
+          }
+        }
+        &__btn {
+          .component--green-btn {
+            width: fit-content;
+          }
+        }
+      }
+    }
+  }
+}

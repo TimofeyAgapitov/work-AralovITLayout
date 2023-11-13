@@ -143,14 +143,31 @@ if (document.querySelector('.our-contacts__map')) {
   ymaps.ready(init);
 }
 
-if(document.querySelector('.header')) {
+if (document.querySelector('.header')) {
   const header = document.querySelector('.header');
   const headerBurger = header.querySelector('.header__burger');
   const headerBurgerContent = header.querySelector('.header__burger-content');
 
-  headerBurger.addEventListener('click', function() {
+  headerBurger.addEventListener('click', function () {
     headerBurger.classList.toggle('_open');
     headerBurgerContent.classList.toggle('_show');
     document.documentElement.classList.toggle('lock');
   });
+}
+
+if (document.querySelector('.order-callback-swiper')) {
+  let arrayTexts = [
+    'Телефон<br />для звонков<br />по России',
+    'Телефон<br />для звонков<br />за территоией РФ',
+    'Наша почта<br />для связи<br />по email',
+  ];
+  const arrayElements = document.querySelectorAll(
+    '.order-callback__slide .content-left__text'
+  );
+
+  if (window.innerWidth < 769) {
+    for (let i = 0; i < arrayElements.length; i++) {
+      arrayElements[i].innerHTML = arrayTexts[i];
+    }
+  }
 }

@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.min.css?_V=20231109200710" />
+  <link rel="stylesheet" href="css/style.min.css?_V=20231113221355" />
   <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_V=20231109200710"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_V=20231113221355"
   />
   <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_V=20231109200710"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_V=20231113221355"
   />
   <title>Главная</title>
 </head>
@@ -173,7 +173,7 @@
       <div class="baner-teams__title setup--h1">
         <p>Познакомьтесь с нашей командой</p>
         <p>
-          <span class="_important">лучших</span> специалистов
+          <span class="stroke-panel">лучших</span> специалистов
           <span class="_delete">в сфере IT</span>
         </p>
       </div>
@@ -725,7 +725,7 @@
       </div>
       <div class="right__bottom">
         <div class="component--arrow-btn arrow-btn type-green">
-  <p class="arrow-btn__text setup--text-18px">Заказатьзвонок</p>
+  <p class="arrow-btn__text setup--text-18px">Заказать звонок</p>
   <svg
     class="arrow-btn__icon desktop"
     xmlns="http://www.w3.org/2000/svg"
@@ -800,14 +800,14 @@
     </div>
   </div>
 </footer>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js?_V=20231109200710"></script>
-<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU&_V=20231109200710"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_V=20231109200710"></script>
-<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js?_V=20231109200710"></script>
-<script src="./js/accordion.min.js?_V=20231109200710"></script>
-<script src="./js/swiper.js?_V=20231109200710"></script>
-<script src="./js/popup.js?_V=20231109200710"></script>
-<script src="./js/app.js?_V=20231109200710"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js?_V=20231113221355"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU&_V=20231113221355"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_V=20231113221355"></script>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js?_V=20231113221355"></script>
+<script src="./js/accordion.min.js?_V=20231113221355"></script>
+<script src="./js/swiper.js?_V=20231113221355"></script>
+<script src="./js/popup.js?_V=20231113221355"></script>
+<script src="./js/app.js?_V=20231113221355"></script>
 <!-- <div id="popup" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
@@ -836,16 +836,18 @@
           </p>
         </div>
         <div class="popup__forms _questions">
-          <input
-            type="text"
-            class="order-callback__input input _popup"
-            placeholder="Имя"
-          />
-          <input
-            type="text"
-            class="order-callback__input input _popup"
-            placeholder="Телефон"
-          />
+          <div class="popup__forms-fields">
+            <input
+              type="text"
+              class="order-callback__input input _popup"
+              placeholder="Имя"
+            />
+            <input
+              type="text"
+              class="order-callback__input input _popup"
+              placeholder="Телефон"
+            />
+          </div>
         </div>
         <div class="popup__buttons">
           <div class="component--green-btn green-btn @@status">
@@ -880,21 +882,23 @@
         <div class="popup__head">
           <p class="popup__title setup--h2">Закажите обратный звонок</p>
           <p class="popup__text setup--text-18px setup--grey">
-            Или свяжитесь с нами любым удобным для Вас способом:<br/>по телефону,
-            почте или в мессенджерах.
+            Или свяжитесь с нами любым удобным для Вас способом:<br />по
+            телефону, почте или в мессенджерах.
           </p>
         </div>
         <div class="popup__forms _questions">
-          <input
-            type="text"
-            class="order-callback__input input _popup"
-            placeholder="Имя"
-          />
-          <input
-            type="text"
-            class="order-callback__input input _popup"
-            placeholder="Телефон"
-          />
+          <div class="popup__forms-fields">
+            <input
+              type="text"
+              class="order-callback__input input _popup"
+              placeholder="Имя"
+            />
+            <input
+              type="text"
+              class="order-callback__input input _popup"
+              placeholder="Телефон"
+            />
+          </div>
         </div>
         <div class="popup__buttons">
           <div class="component--green-btn green-btn @@status">
@@ -929,21 +933,29 @@
         <div class="popup__head">
           <p class="popup__title setup--h2">Заказать услугу</p>
           <p class="popup__text setup--text-18px setup--grey">
-            Или свяжитесь с нами любым удобным для Вас способом:<br/>по телефону,
-            почте или в мессенджерах.
+            Или свяжитесь с нами любым удобным для Вас способом:<br />по
+            телефону, почте или в мессенджерах.
           </p>
         </div>
         <div class="popup__forms _questions">
-          <input
-            type="text"
-            class="order-callback__input input _popup"
-            placeholder="Имя"
-          />
-          <input
-            type="text"
-            class="order-callback__input input _popup"
-            placeholder="Телефон"
-          />
+          <div class="popup__forms-fields">
+            <input
+              type="text"
+              class="order-callback__input input _popup"
+              placeholder="Имя"
+            />
+            <input
+              type="text"
+              class="order-callback__input input _popup"
+              placeholder="Телефон"
+            />
+          </div>
+          <div class="popup__forms-1field">
+            <textarea
+              class="order-callback__textarea input _popup"
+              placeholder="Сообщение"
+            ></textarea>
+          </div>
         </div>
         <div class="popup__buttons">
           <div class="component--green-btn green-btn @@status">
@@ -978,7 +990,8 @@
         <div class="popup__head _accepted">
           <p class="popup__title setup--h2">Заявка принята</p>
           <p class="popup__text setup--text-18px setup--grey">
-            Благодарим вас за заявку! Мы приняли её, и наш менеджер свяжется с вами в ближайшее время.
+            Благодарим вас за заявку! Мы приняли её, и наш менеджер свяжется с
+            вами в ближайшее время.
           </p>
         </div>
       </div>
@@ -986,9 +999,90 @@
   </div>
 </div>
 
-
-
-
+<div id="teams-popup" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button data-close type="button" class="popup__close">
+        <svg>
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <div class="popup__inner">
+        <div class="popup__head">
+          <p class="popup__title setup--h2">Хотите стать частью команды?</p>
+          <p class="popup__text setup--text-18px setup--grey">
+            Заполните форму ниже, выберите желаемую должность, расскажите о себе
+            и прикрепите Ваше резюме документом или добавьте ссылку на него.
+          </p>
+        </div>
+        <div class="popup__forms _questions">
+          <div class="popup__forms-fields">
+            <input
+              type="text"
+              class="order-callback__input input _popup"
+              placeholder="Имя"
+            />
+            <input
+              type="text"
+              class="order-callback__input input _popup"
+              placeholder="Фамилия"
+            />
+          </div>
+          <div class="popup__forms-fields">
+            <input
+              type="text"
+              class="order-callback__input input _popup"
+              placeholder="Телефон"
+            />
+            <input
+              type="text"
+              class="order-callback__input input _popup"
+              placeholder="Email"
+            />
+          </div>
+          <div class="popup__forms-fields">
+            <div class="order-callback__input input _popup">
+              <input
+                type="file"
+				id="fileInput"
+                class="order-callback__input input _popup"
+                placeholder="Документ с резюме"
+              />
+			  <label for="fileInput">Документ с резюме</label>
+            </div>
+            <input
+              type="text"
+              class="order-callback__input input _popup"
+              placeholder="Ссылка на резюме"
+            />
+          </div>
+          <div class="popup__forms-field">
+            <textarea
+              class="order-callback__textarea input _popup"
+              placeholder="Кратко расскажите о себе, почему вам интересна вакансия и чего ожидаете от работы в компании"
+            ></textarea>
+          </div>
+        </div>
+        <div class="popup__buttons">
+          <div class="component--green-btn green-btn @@status">
+            <p
+              class="green-btn__text setup--text-18px"
+              data-hover="Оставить заявку"
+            >
+              Оставить заявку
+            </p>
+          </div>
+          <div class="popup__policy">
+            <p class="setup--text-18px setup--grey">
+              Отправляя заявку, вы соглашаетесь<br />
+              с <span>политикой конфиденциальности</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
   </body>

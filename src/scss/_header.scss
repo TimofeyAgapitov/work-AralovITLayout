@@ -186,11 +186,12 @@
       }
       &-content {
         position: fixed;
-        top: 12.6rem;
+        top: 10rem;
         left: -100%;
         width: 100%;
         min-height: 100%;
         padding: 2rem;
+        padding-top: 4.6rem;
         background-color: #eaeaea;
         &._show {
           left: 0;
