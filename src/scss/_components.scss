@@ -1026,3 +1026,133 @@
     }
   }
 }
+
+.component--reviews {
+  width: fit-content;
+  position: relative;
+  margin-top: 2rem;
+  &._v1 {
+    .reviews {
+      &__text {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 2rem;
+      }
+      &__data {
+        margin-top: 0.4rem;
+      }
+    }
+  }
+  &._v2 {
+    .component--arrow-btn {
+      display: none;
+    }
+    .reviews {
+      &__data {
+        margin-top: 2.4rem;
+      }
+    }
+  }
+  .reviews {
+    &__content {
+      width: 53.3rem;
+      height: 41rem;
+      padding: 4rem 2rem 4rem 4rem;
+      background-image: url('../img/components/component-reviews/bg--reviews.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+    }
+    &__inner {
+      flex: 1 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &__title {
+      width: 36.1rem;
+    }
+    &__data {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__site {
+      width: 9.4rem;
+      height: 9.4rem;
+      border-radius: 50%;
+      background-color: #eaeaea;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 6rem;
+      }
+    }
+    &__btn {
+      position: absolute;
+      top: -2rem;
+      right: 0;
+    }
+  }
+}
+@media (max-width: 48em) {
+  .component--reviews {
+    width: fit-content;
+    position: relative;
+    margin-top: 0;
+    &._v1 {
+      .component--arrow-btn {
+        display: none;
+      }
+      .reviews {
+        &__text {
+          display: block;
+          margin-bottom: 0;
+        }
+        &__data {
+          margin-top: 2rem;
+        }
+      }
+    }
+    &._v2 {
+      .component--arrow-btn {
+        display: none;
+      }
+      .reviews {
+        &__data {
+          margin-top: 2rem;
+        }
+      }
+    }
+    .reviews {
+      &__content {
+        width: 100%;
+        height: auto;
+        padding: 3rem;
+        background-image: none;
+        background-color: $white-color;
+        border-radius: 4rem;
+        margin-bottom: 4rem;
+      }
+      &__title {
+        width: 100%;
+        margin-bottom: 2rem;
+        br {
+          display: none;
+        }
+      }
+      &__site {
+        width: 10rem;
+        height: 10rem;
+      }
+      &__btn {
+        position: static;
+      }
+    }
+  }
+}

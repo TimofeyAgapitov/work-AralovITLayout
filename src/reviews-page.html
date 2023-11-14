@@ -4,7 +4,68 @@
   <body>
     @@include('html/header.html', {})
     <main>
-        @@include('html/baners/baner-reviews.html', {})
+      @@include('html/baners/baner-reviews.html', {})
+
+      <section class="grid-reviews">
+        <div class="grid-reviews__container container">
+          <div
+            class="grid-reviews__head setup--section-title setup--section-head"
+          >
+            <div class="grid-reviews__title">Отзывы:</div>
+            <div class="grid-reviews__controls setup--swiper-buttons">
+              <button type="button" class="swiper-button-prev btn-prev">
+                <svg class="swiper-button-arrow">
+                  <use xlink:href="@img/sprite.svg#arrowline"></use>
+                </svg>
+              </button>
+              <button type="button" class="swiper-button-next btn-next">
+                <svg class="swiper-button-arrow">
+                  <use xlink:href="@img/sprite.svg#arrowline"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="grid-reviews__content">
+            <div class="grid-reviews-swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="grid-reviews-slide swiper-slide">
+                  @@include('./html/components/reviews.html')
+                </div>
+                <div class="grid-reviews-slide swiper-slide">
+                  @@include('./html/components/reviews.html')
+                </div>
+                <div class="grid-reviews-slide swiper-slide">
+                  @@include('./html/components/reviews.html')
+                </div>
+                <div class="grid-reviews-slide swiper-slide">
+                  @@include('./html/components/reviews.html')
+                </div>
+                <div class="grid-reviews-slide swiper-slide">
+                  @@include('./html/components/reviews.html')
+                </div>
+                <div class="grid-reviews-slide swiper-slide">
+                  @@include('./html/components/reviews.html')
+                </div>
+                <div class="grid-reviews-slide swiper-slide">
+                  @@include('./html/components/reviews.html')
+                </div>
+                <div class="grid-reviews-slide swiper-slide">
+                  @@include('./html/components/reviews.html')
+                </div>
+                <div class="grid-reviews-slide swiper-slide">
+                  @@include('./html/components/reviews.html')
+                </div>
+                <div class="grid-reviews-slide swiper-slide">
+                  @@include('./html/components/reviews.html')
+                </div>
+                <div class="grid-reviews-slide swiper-slide">
+                  @@include('./html/components/reviews.html')
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     @@include('html/footer.html', {}) @@include('html/foot.html', {})
   </body>

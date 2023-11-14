@@ -202,6 +202,43 @@
   }
 }
 
+// grid-reviews-swiper
+.swiper {
+  &.grid-reviews-swiper {
+    .swiper-wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, auto);
+      grid-auto-flow: column;
+    }
+  }
+  &-slide {
+    &.grid-reviews-slide {
+      width: 53.3rem;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+@media (max-width: 48em) {
+  .swiper {
+    &.grid-reviews-swiper {
+      .swiper-wrapper {
+        grid-template-rows: repeat(1, auto);
+      }
+    }
+    &.grid-reviews-swiper {
+      padding: 0 2rem;
+    }
+    &-slide {
+      &.grid-reviews-slide {
+        width: 57.6rem;
+      }
+    }
+  }
+}
+
 // basic-direction-swiper
 .swiper {
   &-slide {
@@ -303,6 +340,15 @@
   &.baner-services-swiper {
     width: 100%;
     height: 100%;
+    &._first {
+      padding-top: 0;
+    }
+    &._second {
+      padding-top: 11rem;
+    }
+    &._third {
+      padding-top: 22rem;
+    }
   }
   &-pagination {
     &.baner-services-pagination {

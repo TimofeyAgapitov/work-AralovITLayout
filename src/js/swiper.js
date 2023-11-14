@@ -111,6 +111,29 @@ if (document.querySelector('.grid-teams-swiper')) {
   });
 }
 
+if (document.querySelector('.grid-reviews-swiper')) {
+  new Swiper('.grid-reviews-swiper', {
+    slidesPerView: 'auto',
+    freemode: true,
+    spaceBetween: remToPx(4),
+    speed: 1000,
+    breakpoints: {
+      769: {
+        slidesPerView: 3,
+        grid: {
+          rows: 3,
+        },
+        spaceBetween: remToPx(4),
+        speed: 1000,
+        navigation: {
+          nextEl: '.grid-reviews__controls .btn-next',
+          prevEl: '.grid-reviews__controls .btn-prev',
+        },
+      },
+    },
+  });
+}
+
 if (document.querySelector('.basic-direction-swiper')) {
   new Swiper('.basic-direction-swiper', {
     slidesPerView: 'auto',
@@ -186,10 +209,13 @@ if (document.querySelector('.providing-solutions-swiper')) {
 }
 
 if (document.querySelector('.baner-services-swiper')) {
-  new Swiper('.baner-services-swiper', {
+  const servicesDetailsSwiper = new Swiper('.baner-services-swiper', {
     slidesPerView: 1,
     direction: 'vertical',
-    loop: true,
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true,
+    },
     autoplay: {
       delay: 1000,
       disableOnInteraction: false,
@@ -197,6 +223,26 @@ if (document.querySelector('.baner-services-swiper')) {
     speed: 1000,
     pagination: {
       el: '.baner-services-pagination',
+    },
+  });
+
+  servicesDetailsSwiper.on('slideChange', function () {
+    const swiperDetailsServices = document.querySelector(
+      '.baner-services-swiper'
+    );
+
+    if (servicesDetailsSwiper.activeIndex == 0) {
+      swiperDetailsServices.classList.add('_first');
+      swiperDetailsServices.classList.remove('_second');
+      swiperDetailsServices.classList.remove('_third');
+    } else if (servicesDetailsSwiper.activeIndex == 1) {
+      swiperDetailsServices.classList.remove('_first');
+      swiperDetailsServices.classList.add('_second');
+      swiperDetailsServices.classList.remove('_third');
+    } else if (servicesDetailsSwiper.activeIndex == 2) {
+      swiperDetailsServices.classList.remove('_first');
+      swiperDetailsServices.classList.remove('_second');
+      swiperDetailsServices.classList.add('_third');
     }
   });
 }

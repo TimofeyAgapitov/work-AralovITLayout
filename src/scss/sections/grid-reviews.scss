@@ -1,0 +1,11 @@
+.grid-reviews {
+  // пусто
+}
+
+@media (max-width: 48em) {
+  .grid-reviews {
+    &__controls {
+      display: none;
+    }
+  }
+}
