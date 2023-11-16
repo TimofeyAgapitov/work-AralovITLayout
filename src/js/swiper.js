@@ -67,9 +67,15 @@ if (document.querySelector('.our-letters-swiper')) {
 
 if (document.querySelector('.grid-articles-swiper')) {
   new Swiper('.grid-articles-swiper', {
-    slidesPerView: 'auto',
-    freemode: true,
+    slidesPerView: 1,
     spaceBetween: remToPx(4),
+    grid: {
+      rows: 4,
+    },
+    navigation: {
+      nextEl: '.grid-articles__controls._mob .btn-next',
+      prevEl: '.grid-articles__controls._mob .btn-prev',
+    },
     speed: 1000,
     breakpoints: {
       769: {
@@ -90,9 +96,15 @@ if (document.querySelector('.grid-articles-swiper')) {
 
 if (document.querySelector('.grid-teams-swiper')) {
   new Swiper('.grid-teams-swiper', {
-    slidesPerView: 'auto',
-    freemode: true,
+    slidesPerView: 1,
     spaceBetween: remToPx(4),
+    grid: {
+      rows: 5,
+    },
+    navigation: {
+      nextEl: '.grid-teams__controls._mob .btn-next',
+      prevEl: '.grid-teams__controls._mob .btn-prev',
+    },
     speed: 1000,
     breakpoints: {
       769: {
@@ -103,8 +115,8 @@ if (document.querySelector('.grid-teams-swiper')) {
         spaceBetween: remToPx(4),
         speed: 1000,
         navigation: {
-          nextEl: '.grid-teams__controls .btn-next',
-          prevEl: '.grid-teams__controls .btn-prev',
+          nextEl: '.grid-teams__controls._desc .btn-next',
+          prevEl: '.grid-teams__controls._desc .btn-prev',
         },
       },
     },
@@ -210,40 +222,25 @@ if (document.querySelector('.providing-solutions-swiper')) {
 
 if (document.querySelector('.baner-services-swiper')) {
   const servicesDetailsSwiper = new Swiper('.baner-services-swiper', {
-    slidesPerView: 1,
-    direction: 'vertical',
-    effect: 'fade',
-    fadeEffect: {
-      crossFade: true,
+    slidesPerView: 'auto',
+    spaceBetween: remToPx(1.6),
+    direction: 'horizontal',
+    freemode: true,
+    breakpoints: {
+      769: {
+        slidesPerView: 1,
+        direction: 'vertical',
+        autoplay: {
+          delay: 1000,
+          disableOnInteraction: false,
+        },
+        spaceBetween: remToPx(0),
+        speed: 1000,
+        pagination: {
+          el: '.baner-services-pagination',
+        },
+      },
     },
-    autoplay: {
-      delay: 1000,
-      disableOnInteraction: false,
-    },
-    speed: 1000,
-    pagination: {
-      el: '.baner-services-pagination',
-    },
-  });
-
-  servicesDetailsSwiper.on('slideChange', function () {
-    const swiperDetailsServices = document.querySelector(
-      '.baner-services-swiper'
-    );
-
-    if (servicesDetailsSwiper.activeIndex == 0) {
-      swiperDetailsServices.classList.add('_first');
-      swiperDetailsServices.classList.remove('_second');
-      swiperDetailsServices.classList.remove('_third');
-    } else if (servicesDetailsSwiper.activeIndex == 1) {
-      swiperDetailsServices.classList.remove('_first');
-      swiperDetailsServices.classList.add('_second');
-      swiperDetailsServices.classList.remove('_third');
-    } else if (servicesDetailsSwiper.activeIndex == 2) {
-      swiperDetailsServices.classList.remove('_first');
-      swiperDetailsServices.classList.remove('_second');
-      swiperDetailsServices.classList.add('_third');
-    }
   });
 }
 
@@ -261,6 +258,25 @@ if (document.querySelector('.what-includes-swiper')) {
         navigation: {
           nextEl: '.what-includes__controls .btn-next',
           prevEl: '.what-includes__controls .btn-prev',
+        },
+      },
+    },
+  });
+}
+
+if (document.querySelector('.our-clients-swiper')) {
+  new Swiper('.our-clients-swiper', {
+    slidesPerView: 6,
+    spaceBetween: remToPx(4),
+    speed: 1000,
+    breakpoints: {
+      769: {
+        slidesPerView: 6,
+        spaceBetween: remToPx(4),
+        speed: 1000,
+        navigation: {
+          nextEl: '.our-clients__controls .btn-next',
+          prevEl: '.our-clients__controls .btn-prev',
         },
       },
     },

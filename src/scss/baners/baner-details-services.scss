@@ -126,6 +126,25 @@
       }
     }
   }
+  &__trade {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: $white-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 1rem;
+    bottom: 2rem;
+    img {
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+    &._mob {
+      display: none;
+    }
+  }
   &__swiper {
     width: 47rem;
     height: 32.4rem;
@@ -194,6 +213,161 @@
       &-active {
         background-color: $green-color;
       }
+    }
+  }
+}
+@media (max-width: 48em) {
+  .baner-details-services {
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      gap: 8rem;
+      .content {
+        &-left {
+          margin-top: 0;
+        }
+        &-right {
+          position: static;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+        }
+      }
+    }
+    &__title {
+      margin-bottom: 4rem;
+    }
+    &__text {
+      margin-bottom: 4rem;
+    }
+    &__links {
+      margin-bottom: 8rem;
+      justify-content: space-between;
+      gap: 0;
+      .component--green-btn {
+        padding: 3.2rem 4.6rem;
+      }
+    }
+    &__accordion {
+      position: static;
+      .baner-services-accordion {
+        &__element {
+          width: 100%;
+          padding: 1rem 1rem 1rem 4.8rem;
+          border-radius: 4rem;
+          // &.acc_active {
+          //   border-radius: 4rem;
+          // }
+        }
+        &__icon {
+          width: 4.8rem;
+          height: 4.8rem;
+        }
+        &__inner {
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+        }
+        &__list {
+          display: flex;
+          flex-direction: column;
+          gap: 0.8rem;
+        }
+      }
+    }
+    &__background {
+      width: 71rem;
+      height: 21rem;
+      position: relative;
+      right: 0;
+      top: 0;
+      background-image: url('../img/sections/baner-details-services/baner-services-bg-mob.svg');
+      z-index: 0;
+    }
+    &__whats-the-benefit {
+      width: 100%;
+      height: auto;
+      background-image: none;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      padding: 0;
+      margin: 4rem 0;
+      .whats-the-benefit {
+        &__image {
+          display: none;
+        }
+        &__title {
+          font-size: 3.6rem;
+        }
+        &__texts {
+          width: 100%;
+        }
+      }
+    }
+    &__swiper {
+      width: 71rem;
+      height: 10rem;
+      position: static;
+    }
+    &__trade {
+      width: 8rem;
+      height: 8rem;
+      right: 0;
+      bottom: 0;
+      img {
+        width: 4.2rem;
+        height: 4.2rem;
+      }
+      &._desc {
+        display: none;
+      }
+      &._mob {
+        display: flex;
+      }
+    }
+    &__slide {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .baner-services-swiper {
+        &__numbering {
+          display: none;
+        }
+        &__element {
+          width: 58rem;
+          border-radius: 8rem;
+          border: none;
+          background-color: $white-color;
+          backdrop-filter: none;
+          padding: 1rem;
+        }
+        &__inner {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 1rem 1rem 1rem 3rem;
+          border-radius: 4rem;
+          background-color: #fff;
+        }
+        &__icon {
+          width: 6rem;
+          height: 6rem;
+          border-radius: 50%;
+          background-color: $green-color;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          & > svg {
+            width: 3.2rem;
+            height: 3.2rem;
+          }
+        }
+      }
+    }
+    &__pagination {
+      display: none;
     }
   }
 }

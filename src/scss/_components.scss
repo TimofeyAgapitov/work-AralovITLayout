@@ -95,6 +95,7 @@
   display: flex;
   align-items: center;
   gap: 2.8rem;
+  cursor: pointer;
   .arrow-btn {
     &__icon {
       width: 5rem;
@@ -527,6 +528,9 @@
       &--mobile {
         display: none;
       }
+      &--grid {
+        display: none;
+      }
     }
     &__content._hover {
       opacity: 0;
@@ -650,6 +654,25 @@
   .component--articles {
     width: 57.8rem;
     height: 62rem;
+    &._grid {
+      width: 71rem;
+      height: 59.6rem;
+      .articles {
+        &__background {
+          &--mobile {
+            display: none;
+          }
+          &--grid {
+            display: block;
+            width: 71rem;
+            height: 59.6rem;
+          }
+        }
+        &__content {
+          width: calc(100% - 6rem);
+        }
+      }
+    }
     .articles {
       &__background {
         &--desktop {
@@ -767,6 +790,9 @@
       &--mobile {
         display: none;
       }
+      &--grid {
+        display: none;
+      }
     }
     &__content {
       position: absolute;
@@ -812,6 +838,40 @@
   .component--teams {
     width: 58rem;
     height: 60.4rem;
+    &._grid {
+      width: 71rem;
+      height: 73rem;
+      .teams {
+        &__background {
+          &--mobile {
+            display: none;
+          }
+          &--grid {
+            display: block;
+            width: 71rem;
+            height: 69rem;
+          }
+        }
+        &__content {
+          .content {
+            &__post {
+              margin-bottom: 20rem;
+            }
+            &__quote {
+              transform: translateY(-290%);
+            }
+            &__btn {
+              width: 9.8rem;
+              height: 9.8rem;
+              & > svg {
+                width: 4.6rem;
+                height: 4.6rem;
+              }
+            }
+          }
+        }
+      }
+    }
     .teams {
       &__background {
         &--desktop {
@@ -1152,6 +1212,88 @@
       }
       &__btn {
         position: static;
+      }
+    }
+  }
+}
+
+.component--clients {
+  width: 24.7rem;
+  height: 24.7rem;
+  border-radius: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  &:hover {
+    background-color: $green-color;
+    transition: all 0.5s ease-in-out;
+    .clients {
+      &__logotype {
+        img {
+          filter: grayscale(1) brightness(1000%);
+          will-change: filter;
+        }
+      }
+      &__name {
+        display: block;
+      }
+    }
+  }
+  .clients {
+    &__logotype {
+      img {
+        width: 19.3rem;
+      }
+    }
+    &__name {
+      display: none;
+      position: absolute;
+      bottom: -0.1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 15rem;
+      padding: 1rem 0 0;
+      text-align: center;
+      color: $green-color;
+      background-color: #eaeaea;
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem;
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 99.45%;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 0 0 5rem 0;
+        box-shadow: 1rem 1rem 0 0.5rem #eaeaea;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 99.45%;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 0 0 0 5rem;
+        box-shadow: -1rem 1rem 0 0.5rem #eaeaea;
+      }
+    }
+  }
+}
+@media (max-width: 48em) {
+  .component--clients {
+    width: 30.4rem;
+    height: 0;
+    min-height: 10.4rem;
+    pointer-events: none;
+    .clients {
+      &__logotype {
+        img {
+          width: 30.4rem;
+        }
       }
     }
   }

@@ -1,15 +1,21 @@
 .grid-articles {
-  // пусто
+  &__controls {
+    &._mob {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 48em) {
   .grid-articles {
-    &__container {
-      padding-right: 0;
-      padding-left: 0;
-    }
     &__controls {
-      display: none;
+      &._desc {
+        display: none;
+      }
+      &._mob {
+        display: flex;
+        margin-top: 8rem;
+      }
     }
   }
 }

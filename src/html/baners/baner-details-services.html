@@ -12,12 +12,10 @@
         </p>
         <div class="baner-details-services__links">
           <div class="baner-details-services__btn">
-            @@include("../components/greenButtonNotArrow.html", {
-            text:"Оформить заявку" })
+            @@include("../components/greenButtonNotArrow.html", { text:"Оформить заявку" })
           </div>
           <div class="baner-details-services__link">
-            @@include("../components/textButtonWithArrow.html", {
-            text:"Задать вопрос" })
+            @@include("../components/textButtonWithArrow.html", { text:"Задать вопрос" })
           </div>
         </div>
         <div class="baner-details-services__accordion">
@@ -143,7 +141,11 @@
         </div>
       </div>
       <div class="content-right">
-        <div class="baner-details-services__background"></div>
+        <div class="baner-details-services__background">
+          <div class="baner-details-services__trade _mob">
+            <img src="@img/sections/baner-details-services/trade.svg" alt="" />
+          </div>
+        </div>
         <div class="baner-details-services__whats-the-benefit">
           <div class="whats-the-benefit__image">
             <img
@@ -160,6 +162,9 @@
               управления рисками и обеспечения стабильности работы своего
               бизнеса.
             </p>
+          </div>
+          <div class="baner-details-services__trade _desc">
+            <img src="@img/sections/baner-details-services/trade.svg" alt="" />
           </div>
         </div>
         <div class="baner-details-services__swiper">
@@ -325,7 +330,7 @@
           </div>
         </div>
         <div class="baner-details-services__pagination">
-            <div class="baner-services-pagination swiper-pagination"></div>
+          <div class="baner-services-pagination swiper-pagination"></div>
         </div>
       </div>
     </div>
