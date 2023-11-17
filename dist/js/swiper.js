@@ -282,3 +282,19 @@ if (document.querySelector('.our-clients-swiper')) {
     },
   });
 }
+
+if (document.querySelector('.popup-letters-swiper')) {
+  new Swiper('.popup-letters-swiper', {
+    slidesPerView: 1,
+    centeredSlides: true,
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true,
+    },
+    speed: 1000,
+    navigation: {
+      nextEl: '.popup__control .btn-next',
+      prevEl: '.popup__control .btn-prev',
+    },
+  });
+}

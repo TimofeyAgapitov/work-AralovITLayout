@@ -62,6 +62,16 @@ body::after {
     width: 4rem;
     height: 4rem;
   }
+  &._controls {
+    position: static;
+    border: 2px solid $green-color;
+    background-color: transparent;
+    z-index: 1;
+    & > svg {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
 }
 .popup__content {
   width: 100%;
@@ -70,6 +80,14 @@ body::after {
   transform: scale(0);
   transition: transform 0.3s ease 0s;
   position: relative;
+  &._letters {
+    max-width: 96.3rem;
+    height: 80rem;
+    background-color: #f7f7f7;
+    border-radius: 4rem;
+    margin-bottom: 12rem;
+    padding: 6rem 0;
+  }
   .lock & {
     visibility: visible;
   }
@@ -128,7 +146,7 @@ body::after {
   gap: 2rem;
   &-fields {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
 }
@@ -143,6 +161,41 @@ body::after {
     text-decoration: underline;
   }
 }
+.popup__controls {
+  &._letters {
+    position: absolute;
+    bottom: -12rem;
+    left: 0;
+    width: 100%;
+    max-width: 96.3rem;
+    padding: 2rem;
+    border-radius: 8rem;
+    background-color: $white-color;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+}
+.popup-letters {
+  &__slide {
+    width: 49rem;
+    padding-bottom: 18rem;
+    border-radius: 2rem;
+    margin: 0 auto;
+    position: relative;
+  }
+  &__name {
+    font-family: NeueMachina;
+    width: 100%;
+    text-align: center;
+    padding: 3.5rem 0;
+    position: absolute;
+    bottom: 0;
+  }
+  &__cell {
+    display: none;
+  }
+}
 @media (max-width: 48em) {
   .popup__close {
     width: 8rem;
@@ -151,10 +204,22 @@ body::after {
       width: 4.8rem;
       height: 4.8rem;
     }
+    &._controls {
+      & > svg {
+        width: 4.8rem;
+        height: 4.8rem;
+      }
+    }
   }
   .popup__content {
     width: 100%;
     max-width: 71rem;
+    &._letters {
+      width: 71rem;
+      height: 91.4rem;
+      margin-bottom: 30rem;
+      padding: 3rem 0;
+    }
   }
   .popup__inner {
     width: 60rem;
@@ -215,5 +280,30 @@ body::after {
     width: 62rem;
     align-items: flex-start;
     flex-direction: column;
+  }
+  .popup__controls {
+    &._letters {
+      bottom: -30rem;
+    }
+  }
+  .popup-letters {
+    &__slide {
+      width: 65rem;
+      padding-bottom: 17rem;
+      img {
+        height: 85.6rem;
+      }
+    }
+    &__cell {
+      display: block;
+      width: 100%;
+      max-width: 96.3rem;
+      height: 12rem;
+      border-radius: 16rem;
+      background-color: #f7f7f7;
+      position: absolute;
+      bottom: -14rem;
+      left: 0;
+    }
   }
 }
