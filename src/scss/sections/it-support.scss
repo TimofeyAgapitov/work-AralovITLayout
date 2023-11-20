@@ -2,6 +2,7 @@
   &__content {
     display: flex;
     justify-content: space-between;
+    position: relative;
     .content {
       &-right {
         max-width: 110.8rem;
@@ -73,6 +74,11 @@
   &__text-right {
     max-width: 53.3rem;
   }
+  &__btn {
+    position: absolute;
+    bottom: 0;
+    right: -4.4rem;
+  }
 }
 
 @media (max-width: 48em) {
@@ -137,6 +143,9 @@
     &__text-left,
     &__text-right {
       max-width: 100%;
+    }
+    &__btn {
+      right: 0;
     }
   }
 }

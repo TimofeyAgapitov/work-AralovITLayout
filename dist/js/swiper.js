@@ -298,3 +298,10 @@ if (document.querySelector('.popup-letters-swiper')) {
     },
   });
 }
+
+if (document.querySelector('.baner-main-swiper')) {
+  new Swiper('.baner-main-swiper', {
+    slidesPerView: 1,
+    speed: 3000,
+  });
+}

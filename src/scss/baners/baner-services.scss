@@ -144,6 +144,7 @@
     width: 74rem;
     font-family: NeueMachina;
     margin-bottom: 4rem;
+    position: relative;
   }
   &__text {
     width: 74rem;
@@ -179,7 +180,6 @@
     }
   }
 }
-
 
 @media (max-width: 48em) {
   .baner-services {
@@ -294,6 +294,17 @@
     }
     &__title {
       width: 100%;
+      &::before {
+        content: '';
+        width: 9.2rem;
+        height: 8.2rem;
+        background-image: url('../img/sections/baner-services/baner-services-green-spot.webp');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
     }
     &__text {
       width: 100%;
