@@ -1,0 +1,71 @@
+.freelancer {
+  &__slide {
+    display: flex;
+    gap: 4rem;
+  }
+  &__element {
+    width: 53.3rem;
+    height: 37.9rem;
+    padding: 4rem 3rem 3rem;
+    border: 2px solid $white-color;
+    border-radius: 4rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    .element {
+      &__panel {
+        width: 100%;
+        padding: 2.5rem 0;
+        border-radius: 10rem;
+        color: $white-color;
+        text-align: center;
+        margin-bottom: 4rem;
+        &._first {
+          background-color: $grey-color;
+        }
+        &._second {
+          background-color: $green-color;
+        }
+      }
+      &__title {
+        font-family: NeueMachina;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+  &__controls {
+    display: none;
+  }
+}
+@media (max-width: 48em) {
+  .freelancer {
+    &__slide {
+      flex-direction: column;
+      gap: 4rem;
+    }
+    &__element {
+      width: 100%;
+      height: auto;
+      padding: 4rem;
+      .element {
+        &__panel {
+          padding: 2.8rem 0;
+          border-radius: 4rem;
+          margin-bottom: 5.6rem;
+        }
+        &__title {
+          margin-bottom: 2.4rem;
+        }
+      }
+    }
+    &__title {
+      .stroke-panel {
+        &::before {
+          height: calc(100% + 0.5rem);
+        }
+      }
+    }
+    &__controls {
+      display: flex;
+      margin-top: 4rem;
+    }
+  }
+}

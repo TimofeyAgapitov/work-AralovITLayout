@@ -25,7 +25,7 @@ body {
   font-size: 7.5rem;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 7.2rem;
 }
 .setup--h2 {
   font-size: 4.5rem;
@@ -49,6 +49,7 @@ body {
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;
+  line-height: 2.2rem;
 }
 
 @media (max-width: 48em) {
@@ -66,6 +67,7 @@ body {
   .setup--text-24px,
   .setup--text-18px {
     font-size: 2.8rem;
+    line-height: 3.6rem;
   }
 }
 

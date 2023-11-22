@@ -303,5 +303,20 @@ if (document.querySelector('.baner-main-swiper')) {
   new Swiper('.baner-main-swiper', {
     slidesPerView: 1,
     speed: 3000,
+    pagination: {
+      el: '.baner-main-pagination',
+    },
+  });
+}
+
+if (document.querySelector('.freelancer-swiper')) {
+  new Swiper('.freelancer-swiper', {
+    slidesPerView: 1,
+    speed: 1000,
+    spaceBetween: remToPx(4),
+    navigation: {
+      nextEl: '.freelancer__controls .btn-next',
+      prevEl: '.freelancer__controls .btn-prev',
+    },
   });
 }
