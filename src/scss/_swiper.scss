@@ -29,7 +29,7 @@
     }
   }
 }
-@media(max-width: 48em) {
+@media (max-width: 48em) {
   .swiper-button-next {
     &.btn-next {
       width: 8rem;
@@ -64,7 +64,7 @@
     }
   }
 }
-@media(max-width: 48em) {
+@media (max-width: 48em) {
   .swiper-button-prev {
     &.btn-prev {
       width: 8rem;
@@ -108,6 +108,7 @@
     &.our-teams-slide {
       width: 53.3rem;
       margin-right: 4rem;
+      padding-bottom: 5rem;
       &:last-child {
         margin-right: 0;
       }
@@ -385,17 +386,17 @@
     }
   }
 }
-@media(max-width: 48em) {
+@media (max-width: 48em) {
   .swiper {
     &-slide {
       &.baner-services-slide {
         width: 58rem;
         &:nth-child(2) {
-        padding-top: 0;
-      }
-      &:nth-child(3) {
-        padding-top: 0;
-      }
+          padding-top: 0;
+        }
+        &:nth-child(3) {
+          padding-top: 0;
+        }
       }
     }
   }

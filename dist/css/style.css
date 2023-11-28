@@ -163,7 +163,7 @@ body {
   font-size: 4.5rem;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 4.6rem;
 }
 
 .setup--h3 {
@@ -905,7 +905,7 @@ body {
   position: relative;
   width: 53.3rem;
   height: 51.1rem;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .component--teams:hover .teams__content .content__name {
@@ -932,6 +932,16 @@ body {
           transform: rotate(-45deg);
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
+}
+
+.component--teams:hover .teams__avatar {
+  -webkit-transform: translateY(5rem);
+      -ms-transform: translateY(5rem);
+          transform: translateY(5rem);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
 .component--teams .teams__background--desktop {
@@ -993,12 +1003,38 @@ body {
   height: 32.2rem;
   background-color: #f7f7f7;
   border-radius: 4rem;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
 .component--letters {
   position: relative;
   width: 53.3rem;
   height: 55rem;
+  cursor: pointer;
+}
+
+.component--letters:hover .letters__background svg path {
+  fill: #ffffff;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.component--letters:hover .letters__btn {
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.component--letters .letters__background svg path {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .component--letters .letters__background--desktop {
@@ -1065,6 +1101,10 @@ body {
   -webkit-transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
           transform: rotate(-90deg);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
 .component--contact-us {
@@ -1102,6 +1142,16 @@ body {
   transition: -webkit-transform 0.75s ease-in-out;
   transition: transform 0.75s ease-in-out;
   transition: transform 0.75s ease-in-out, -webkit-transform 0.75s ease-in-out;
+}
+
+.component--contact-us:hover .contact-us__circle > svg {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
 .component--contact-us .contact-us__content {
@@ -1164,6 +1214,10 @@ body {
 .component--contact-us .contact-us__circle > svg {
   width: 1.2rem;
   height: 1.2rem;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
 .component--contact-links {
@@ -1556,7 +1610,7 @@ body {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: calc(100% + 3rem);
-  height: calc(100% + 1rem);
+  height: 100%;
   border: 1px solid #050505;
   border-radius: 8rem;
 }
@@ -1636,6 +1690,7 @@ body {
 .swiper-slide.our-teams-slide {
   width: 53.3rem;
   margin-right: 4rem;
+  padding-bottom: 5rem;
 }
 
 .swiper-slide.our-teams-slide:last-child {
@@ -2390,6 +2445,7 @@ body::after {
   position: absolute;
   top: -2.2rem;
   left: 79.2rem;
+  z-index: -1;
 }
 
 .baner-main__robot img._mob {
@@ -2511,6 +2567,10 @@ body::after {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.baner-main__socials .social__element {
+  cursor: pointer;
 }
 
 .baner-main__socials .social__element > svg {
@@ -4339,7 +4399,7 @@ body::after {
 }
 
 .our-teams__controls {
-  margin-top: 6rem;
+  margin-top: 1rem;
 }
 
 .our-letters__title._mob {
@@ -5858,7 +5918,8 @@ body::after {
 }
 
 .providing-solutions__spot-effect {
-  width: 8.5rem;
+  width: 20rem;
+  height: 20rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -5867,8 +5928,16 @@ body::after {
           transform: translate(-50%, -50%);
 }
 
+.providing-solutions__spot-effect img {
+  height: 100%;
+}
+
 .providing-solutions__btn._mob {
   display: none;
+}
+
+.freelancer__swiper {
+  width: 110.6rem;
 }
 
 .freelancer__slide {
@@ -5884,7 +5953,7 @@ body::after {
   padding: 4rem 3rem 3rem;
   border: 2px solid #ffffff;
   border-radius: 4rem;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #eaeaea;
 }
 
 .freelancer__element .element__panel {
@@ -9321,7 +9390,7 @@ body::after {
   }
 
   .providing-solutions__quote {
-    gap: 6rem;
+    gap: 5.8rem;
     padding: 4rem 0;
     margin-bottom: 6rem;
   }
@@ -9383,6 +9452,10 @@ body::after {
 
   .providing-solutions__btn._mob {
     display: block;
+  }
+
+  .freelancer__swiper {
+    width: 100%;
   }
 
   .freelancer__slide {

@@ -318,5 +318,14 @@ if (document.querySelector('.freelancer-swiper')) {
       nextEl: '.freelancer__controls .btn-next',
       prevEl: '.freelancer__controls .btn-prev',
     },
+    breakpoints: {
+      769: {
+        slidesPerView: 1,
+        loop: true,
+        autoplay: {
+          delay: 2000,
+        },
+      },
+    },
   });
 }

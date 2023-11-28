@@ -171,3 +171,11 @@ if (document.querySelector('.order-callback-swiper')) {
     }
   }
 }
+
+if (document.querySelector('.component--swap-btn')) {
+  const swapButton = document.querySelector('.component--swap-btn');
+  swapButton.addEventListener('click', () => {
+    // Прокручиваем страницу к началу
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}

@@ -70,6 +70,7 @@
     position: absolute;
     top: -2.2rem;
     left: 79.2rem;
+    z-index: -1;
     img {
       &._mob {
         display: none;
@@ -166,6 +167,7 @@
     right: 0;
     .social {
       &__element {
+        cursor: pointer;
         & > svg {
           width: 6rem;
           height: 6rem;

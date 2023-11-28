@@ -72,11 +72,15 @@
       width: 23.6rem;
     }
     &-effect {
-      width: 8.5rem;
+      width: 20rem;
+      height: 20rem;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      img {
+        height: 100%;
+      }
     }
   }
   &__btn {
@@ -93,7 +97,7 @@
       gap: 6rem;
     }
     &__quote {
-      gap: 6rem;
+      gap: 5.8rem;
       padding: 4rem 0;
       margin-bottom: 6rem;
       &-image {
