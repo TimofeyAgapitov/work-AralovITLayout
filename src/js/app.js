@@ -27,8 +27,9 @@ $(document).ready(function () {
   });
 
   $('#ask-questions-accordion').accordionjs({
+    activeIndex: false,
     closeAble: true,
-    closeOther: false,
+    closeOther: true,
   });
 
   $('#baner-services-accordion').accordionjs({
@@ -178,4 +179,40 @@ if (document.querySelector('.component--swap-btn')) {
     // Прокручиваем страницу к началу
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+
+  const sections = document.querySelectorAll('section');
+
+  if (window.innerWidth > 768) {
+    // Проверяем, если количество секций больше двух, показываем блок
+    if (sections.length > 3) {
+      window.addEventListener('scroll', () => {
+        const windowHeight = window.innerHeight;
+        const scrollPosition = window.scrollY || window.pageYOffset;
+        const scrolled =
+          (scrollPosition /
+            (document.documentElement.scrollHeight - windowHeight)) *
+          100;
+
+        if (scrolled >= 33) {
+          swapButton.style.display = 'flex';
+        } else {
+          swapButton.style.display = 'none';
+        }
+      });
+    } else {
+      swapButton.style.display = 'none';
+    }
+  } else {
+    swapButton.style.display = 'none';
+  }
+}
+
+if (
+  document.querySelector('.baner-services') &&
+  document.querySelector('.header')
+) {
+  const header = document.querySelector('.header');
+  window.innerWidth > 768
+    ? header.classList.add('_services')
+    : header.classList.remove('_services');
 }

@@ -56,12 +56,12 @@
       &__title {
         font-family: NeueMachina;
         max-width: 53.3rem;
-        .stroke-panel {
-          &::before {
-            top: 40%;
-            height: calc(100% + 0.5rem);
-          }
-        }
+        // .stroke-panel {
+        //   &::before {
+        //     top: 40%;
+        //     height: calc(100% + 0.5rem);
+        //   }
+        // }
       }
     }
   }

@@ -2,8 +2,10 @@
   &._company {
     .company-callback {
       &__content {
+        width: 100%;
         display: flex;
-        gap: 15rem;
+        justify-content: space-between;
+        gap: 0;
         position: absolute;
         top: 0;
         left: 0;
@@ -48,11 +50,12 @@
             }
           }
           &-right {
+            width: 67.7rem;
             display: flex;
             flex-direction: column;
             gap: 4rem;
             padding-bottom: 8.4rem;
-            border-bottom: 1px solid $grey-color;
+            border-bottom: 1px solid rgba(119, 119, 119, 0.4);
             margin-top: 2.4rem;
             &__title {
               font-family: NeueMachina;
@@ -230,6 +233,7 @@
               }
             }
             &-right {
+              width: 100%;
               gap: 3.2rem;
               padding-bottom: 0;
               border-bottom: none;

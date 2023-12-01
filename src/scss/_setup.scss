@@ -103,6 +103,16 @@ body {
   gap: 1rem;
 }
 
+@media (max-width: 48em) {
+  .swiper {
+    &.setup--mobile-swiper {
+      margin-left: -2rem;
+      margin-right: -2rem;
+      padding: 0 2rem;
+    }
+  }
+}
+
 .clip-path-svg {
   width: 0;
   height: 0;

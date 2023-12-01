@@ -17,6 +17,7 @@
           display: flex;
           align-items: center;
           gap: 14.4rem;
+          padding-left: 8rem;
           .our-purpose {
             &__title {
               margin-bottom: 2rem;
@@ -39,7 +40,7 @@
           width: 56.3rem;
           height: 43.8rem;
           position: absolute;
-          top: -17rem;
+          top: -15rem;
           left: -3rem;
           background-image: url('../img/sections/baner-services/baner-services-white-panel.svg');
           background-size: contain;
@@ -197,6 +198,7 @@
           &__our-purpose {
             gap: 0;
             justify-content: space-between;
+            padding-left: 0;
             .our-purpose {
               &__title {
                 margin-bottom: 2rem;
@@ -315,16 +317,24 @@
       align-items: flex-end;
       justify-content: space-between;
       overflow: hidden;
+      padding-right: 2rem;
+      margin-right: -2rem;
       .statistic {
         &__boxes {
+          width: 73rem;
           flex: none;
           display: flex;
           flex-direction: row;
           flex-wrap: nowrap;
           gap: 2rem;
           overflow-x: auto;
+          padding-right: 2rem;
+          &::-webkit-scrollbar {
+            display: none;
+          }
         }
         &__box {
+          flex: none;
           display: flex;
           gap: 2rem;
         }

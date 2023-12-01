@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.min.css?_V=20231128201737" />
+  <link rel="stylesheet" href="css/style.min.css?_V=20231202003306" />
   <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_V=20231128201737"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_V=20231202003306"
   />
   <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_V=20231128201737"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_V=20231202003306"
   />
   <title>Главная</title>
 </head>
@@ -58,7 +58,7 @@
         <p class="phone__text setup--text-18px">+7 (999) 999-99-99</p>
       </div>
       <div class="component--green-btn green-btn @@status">
-    <p class="green-btn__text setup--text-18px" data-hover="Заказать звонок">Заказать звонок</p>
+    <p class="green-btn__text setup--text-18px" data-popup="#callback-popup" data-hover="Заказать звонок">Заказать звонок</p>
 </div>
       <div class="socials__links">
         <svg
@@ -129,7 +129,7 @@
           <p class="phone__text setup--text-18px">+7 (999) 999-99-99</p>
         </div>
         <div class="component--green-btn green-btn @@status">
-    <p class="green-btn__text setup--text-18px" data-hover="Заказать звонок">Заказать звонок</p>
+    <p class="green-btn__text setup--text-18px" data-popup="#callback-popup" data-hover="Заказать звонок">Заказать звонок</p>
 </div>
         <div class="socials__links">
           <svg
@@ -286,37 +286,10 @@
       <section class="our-services">
         <div class="our-services__container container">
           <div class="our-services__head setup--section-title">
-            <div class="our-services__title">Наши услуги:</div>
-            <div class="component--arrow-btn arrow-btn type-grey">
-  <p class="arrow-btn__text setup--text-18px">Смотреть все</p>
-  <svg
-    class="arrow-btn__icon desktop"
-    xmlns="http://www.w3.org/2000/svg"
-    width="52"
-    height="12"
-    viewBox="0 0 52 12"
-    fill="none"
-  >
-    <path
-      d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75V5.25ZM51.5303 6.53033C51.8232 6.23744 51.8232 5.76256 51.5303 5.46967L46.7574 0.696699C46.4645 0.403806 45.9896 0.403806 45.6967 0.696699C45.4038 0.989593 45.4038 1.46447 45.6967 1.75736L49.9393 6L45.6967 10.2426C45.4038 10.5355 45.4038 11.0104 45.6967 11.3033C45.9896 11.5962 46.4645 11.5962 46.7574 11.3033L51.5303 6.53033ZM1 6.75H51V5.25H1V6.75Z"
-      fill="#777777"
-    />
-  </svg>
-  <svg
-    class="arrow-btn__icon mobile"
-    xmlns="http://www.w3.org/2000/svg"
-    width="52"
-    height="9"
-    viewBox="0 0 52 9"
-    fill="none"
-  >
-    <path
-      d="M1 4C0.723858 4 0.5 4.22386 0.5 4.5C0.5 4.77614 0.723858 5 1 5V4ZM51.3535 4.85355C51.5488 4.65829 51.5488 4.34171 51.3535 4.14645L48.1716 0.964466C47.9763 0.769204 47.6597 0.769204 47.4645 0.964466C47.2692 1.15973 47.2692 1.47631 47.4645 1.67157L50.2929 4.5L47.4645 7.32843C47.2692 7.52369 47.2692 7.84027 47.4645 8.03553C47.6597 8.2308 47.9763 8.2308 48.1716 8.03553L51.3535 4.85355ZM1 5H51V4H1V5Z"
-      fill="#777777"
-    />
-  </svg>
+            <div class="our-services__title">Что входит:</div>
+            <div class="component--green-btn green-btn @@status">
+    <p class="green-btn__text setup--text-18px" data-popup="@@popup" data-hover="Заказать услугу">Заказать услугу</p>
 </div>
-
           </div>
           <div class="our-services__content">
             <div class="our-services__list">
@@ -668,7 +641,7 @@
           </div>
           <div class="content-left__btn">
             <div class="component--green-btn green-btn @@status">
-    <p class="green-btn__text setup--text-18px" data-hover="Контакты">Контакты</p>
+    <p class="green-btn__text setup--text-18px" data-popup="@@popup" data-hover="Контакты">Контакты</p>
 </div>
           </div>
         </div>
@@ -716,7 +689,7 @@
         <div class="order-callback__box">
           <div class="order-callback__btn">
             <div class="component--green-btn green-btn @@status">
-    <p class="green-btn__text setup--text-18px" data-hover="Оставить заявку">Оставить заявку</p>
+    <p class="green-btn__text setup--text-18px" data-popup="@@popup" data-hover="Оставить заявку">Оставить заявку</p>
 </div>
           </div>
           <div class="order-callback__policy">
@@ -794,7 +767,7 @@
           </p>
         </div>
       </div>
-      <div class="IT-support__btn">
+      <!-- <div class="IT-support__btn">
         <div class="component--swap-btn">
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -810,7 +783,7 @@
   </svg>
 </div>
 
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
@@ -886,10 +859,14 @@
           <li class="footer__item setup--text-24px">
             Абонентское обслуживание компьютеров
           </li>
-          <li class="footer__item _mob setup--text-24px">Защита от киберугроз</li>
+          <li class="footer__item _mob setup--text-24px">
+            Защита от киберугроз
+          </li>
         </ul>
         <div class="left__list-right">
-          <li class="footer__item _desc setup--text-24px">Защита от киберугроз</li>
+          <li class="footer__item _desc setup--text-24px">
+            Защита от киберугроз
+          </li>
           <li class="footer__item setup--text-24px">
             Масштабирование ресурсов
           </li>
@@ -905,8 +882,25 @@
       </ul>
     </div>
   </div>
+  <div class="swapButton">
+    <div class="component--swap-btn">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="28"
+    viewBox="0 0 16 28"
+    fill="none"
+  >
+    <path
+      d="M6.72852 26.4561C6.72852 27.0083 7.17623 27.4561 7.72852 27.4561C8.2808 27.4561 8.72852 27.0083 8.72852 26.4561L6.72852 26.4561ZM8.43562 0.293102C8.0451 -0.0974224 7.41194 -0.0974224 7.02141 0.293101L0.657449 6.65706C0.266925 7.04759 0.266925 7.68075 0.657449 8.07128C1.04797 8.4618 1.68114 8.4618 2.07166 8.07128L7.72852 2.41442L13.3854 8.07128C13.7759 8.4618 14.4091 8.4618 14.7996 8.07128C15.1901 7.68075 15.1901 7.04759 14.7996 6.65706L8.43562 0.293102ZM8.72852 26.4561L8.72852 1.00021L6.72852 1.00021L6.72852 26.4561L8.72852 26.4561Z"
+      fill="#03A081"
+    />
+  </svg>
+</div>
+
+  </div>
 </footer>
- <script src="./js/popup.js?_V=20231128201737"></script>
+ <script src="./js/popup.js?_V=20231202003306"></script>
 <!-- <div id="popup" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
@@ -1253,13 +1247,13 @@
   </div>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js?_V=20231128201737"></script>
-<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU&_V=20231128201737"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_V=20231128201737"></script>
-<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js?_V=20231128201737"></script>
-<script src="./js/accordion.min.js?_V=20231128201737"></script>
-<script src="./js/swiper.js?_V=20231128201737"></script>
-<script src="./js/app.js?_V=20231128201737"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js?_V=20231202003306"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU&_V=20231202003306"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_V=20231202003306"></script>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js?_V=20231202003306"></script>
+<script src="./js/accordion.min.js?_V=20231202003306"></script>
+<script src="./js/swiper.js?_V=20231202003306"></script>
+<script src="./js/app.js?_V=20231202003306"></script>
 
 
   </body>

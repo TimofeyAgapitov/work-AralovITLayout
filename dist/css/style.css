@@ -300,17 +300,17 @@ body {
 }
 
 .component--green-btn:hover .green-btn__text {
-  -webkit-transform: translateY(-4rem);
-      -ms-transform: translateY(-4rem);
-          transform: translateY(-4rem);
+  -webkit-transform: translateY(-4.5rem);
+      -ms-transform: translateY(-4.5rem);
+          transform: translateY(-4.5rem);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .component--green-btn:hover .green-btn__text::before {
-  -webkit-transform: translateY(0rem);
-      -ms-transform: translateY(0rem);
-          transform: translateY(0rem);
+  -webkit-transform: translateY(0.5rem);
+      -ms-transform: translateY(0.5rem);
+          transform: translateY(0.5rem);
 }
 
 .component--green-btn.disactive {
@@ -331,9 +331,9 @@ body {
   top: 4rem;
   left: 0;
   color: #03a081;
-  -webkit-transform: translateY(4rem);
-      -ms-transform: translateY(4rem);
-          transform: translateY(4rem);
+  -webkit-transform: translateY(4.5rem);
+      -ms-transform: translateY(4.5rem);
+          transform: translateY(4.5rem);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -409,13 +409,15 @@ body {
 }
 
 .component--swap-btn {
+  position: fixed;
+  bottom: 5rem;
+  right: 7rem;
+  z-index: 1;
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
   border: 2px solid #03a081;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -571,9 +573,9 @@ body {
 }
 
 .component--services .services__info {
-  -webkit-transform: translateY(55%);
-      -ms-transform: translateY(55%);
-          transform: translateY(55%);
+  -webkit-transform: translateY(52%);
+      -ms-transform: translateY(52%);
+          transform: translateY(52%);
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
@@ -935,9 +937,9 @@ body {
 }
 
 .component--teams:hover .teams__avatar {
-  -webkit-transform: translateY(5rem);
-      -ms-transform: translateY(5rem);
-          transform: translateY(5rem);
+  -webkit-transform: translateY(2.5rem);
+      -ms-transform: translateY(2.5rem);
+          transform: translateY(2.5rem);
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
@@ -1604,13 +1606,13 @@ body {
 .stroke-panel::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 58%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: calc(100% + 3rem);
-  height: 100%;
+  height: 80%;
   border: 1px solid #050505;
   border-radius: 8rem;
 }
@@ -2129,6 +2131,10 @@ body::after {
   margin-bottom: 3rem;
 }
 
+.header._services {
+  margin-bottom: 4.2rem;
+}
+
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2433,11 +2439,6 @@ body::after {
 .baner-main__heading .heading__title {
   font-family: NeueMachina;
   max-width: 53.3rem;
-}
-
-.baner-main__heading .heading__title .stroke-panel::before {
-  top: 40%;
-  height: calc(100% + 0.5rem);
 }
 
 .baner-main__robot {
@@ -2966,6 +2967,7 @@ body::after {
       -ms-flex-align: center;
           align-items: center;
   gap: 14.4rem;
+  padding-left: 8rem;
 }
 
 .baner-services__content .content-right__our-purpose .our-purpose__title {
@@ -2992,7 +2994,7 @@ body::after {
   width: 56.3rem;
   height: 43.8rem;
   position: absolute;
-  top: -17rem;
+  top: -15rem;
   left: -3rem;
   background-image: url("../img/sections/baner-services/baner-services-white-panel.svg");
   background-size: contain;
@@ -3824,7 +3826,7 @@ body::after {
 }
 
 .baner-company__green-panel .green-panel__btn .component--green-btn p {
-  color: #050505;
+  color: #03a081 !important;
 }
 
 .baner-company__white-panel {
@@ -4047,6 +4049,10 @@ body::after {
 
 .baner-company__footer-icon {
   display: none;
+}
+
+.baner-company__number {
+  font-family: NeueMachina;
 }
 
 .baner-reviews__content {
@@ -4617,6 +4623,10 @@ body::after {
   margin-right: auto;
 }
 
+.prices-list-accordion__title._ask-questions {
+  font-size: 3.2rem;
+}
+
 .prices-list-accordion__btn {
   -webkit-box-flex: 0;
       -ms-flex: none;
@@ -4925,6 +4935,7 @@ body::after {
 }
 
 .basic-direction__text {
+  font-family: NeueMachina;
   color: #ffffff;
 }
 
@@ -5031,6 +5042,7 @@ body::after {
 }
 
 .reliable-professional__title {
+  font-family: NeueMachina;
   margin-bottom: 4rem;
 }
 
@@ -5060,6 +5072,10 @@ body::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.service-price__content-title {
+  font-family: NeueMachina;
 }
 
 .service-price__content-inner {
@@ -5234,7 +5250,12 @@ body::after {
 }
 
 .what-includes__title {
+  font-family: NeueMachina;
   margin-bottom: 2.2rem;
+}
+
+.what-includes__text {
+  width: 63.8rem;
 }
 
 .what-includes__content {
@@ -5563,10 +5584,14 @@ body::after {
 }
 
 .order-callback._company .company-callback__content {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 15rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -5628,6 +5653,7 @@ body::after {
 }
 
 .order-callback._company .company-callback__content .content-right {
+  width: 67.7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5637,7 +5663,7 @@ body::after {
           flex-direction: column;
   gap: 4rem;
   padding-bottom: 8.4rem;
-  border-bottom: 1px solid #777777;
+  border-bottom: 1px solid rgba(119, 119, 119, 0.4);
   margin-top: 2.4rem;
 }
 
@@ -6042,6 +6068,12 @@ body::after {
         -ms-flex-align: start;
             align-items: flex-start;
     gap: 4rem;
+  }
+
+  .swiper.setup--mobile-swiper {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    padding: 0 2rem;
   }
 
   .component--green-btn {
@@ -7414,6 +7446,7 @@ body::after {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding-left: 0;
   }
 
   .baner-services__content .content-right__our-purpose .our-purpose__title {
@@ -7572,9 +7605,12 @@ body::after {
         -ms-flex-pack: justify;
             justify-content: space-between;
     overflow: hidden;
+    padding-right: 2rem;
+    margin-right: -2rem;
   }
 
   .baner-services__statistic .statistic__boxes {
+    width: 73rem;
     -webkit-box-flex: 0;
         -ms-flex: none;
             flex: none;
@@ -7589,9 +7625,17 @@ body::after {
         flex-wrap: nowrap;
     gap: 2rem;
     overflow-x: auto;
+    padding-right: 2rem;
+  }
+
+  .baner-services__statistic .statistic__boxes::-webkit-scrollbar {
+    display: none;
   }
 
   .baner-services__statistic .statistic__box {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -8040,7 +8084,7 @@ body::after {
     width: 100%;
     height: 28rem;
     background-image: url("../img/sections/baner-company/baner-company-white-panel-mob.svg");
-    padding: 5rem 5.2rem 6rem;
+    padding: 4rem 5.2rem 8rem;
     position: static;
     margin-bottom: 6rem;
   }
@@ -8136,7 +8180,7 @@ body::after {
   }
 
   .baner-company__footer-element._el1 {
-    padding-left: 6rem;
+    padding-left: 5rem;
   }
 
   .baner-company__footer-element._el1::before {
@@ -8463,6 +8507,10 @@ body::after {
   }
 
   .our-services__head .component--arrow-btn {
+    display: none;
+  }
+
+  .our-services__head .component--green-btn {
     display: none;
   }
 
@@ -8990,6 +9038,10 @@ body::after {
     margin-bottom: 4rem;
   }
 
+  .what-includes__text {
+    width: 100%;
+  }
+
   .what-includes__content {
     -ms-grid-columns: 71rem;
     grid-template-columns: 71rem;
@@ -9075,6 +9127,7 @@ body::after {
   .article-info__title {
     font-size: 8rem;
     margin-bottom: 6rem;
+    line-height: 104%;
   }
 
   .article-info__btn {
@@ -9131,6 +9184,7 @@ body::after {
     font-family: NeueMachina;
     font-size: 4.4rem;
     padding: 3.6rem 0;
+    line-height: 110%;
   }
 
   .article-info__text._size {
@@ -9195,6 +9249,7 @@ body::after {
   }
 
   .order-callback._company .company-callback__content .content-right {
+    width: 100%;
     gap: 3.2rem;
     padding-bottom: 0;
     border-bottom: none;

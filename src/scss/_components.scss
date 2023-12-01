@@ -32,10 +32,10 @@
     }
     .green-btn {
       &__text {
-        transform: translateY(-4rem);
+        transform: translateY(-4.5rem);
         transition: all 0.5s ease-in-out;
         &::before {
-          transform: translateY(0rem);
+          transform: translateY(0.5rem);
         }
       }
     }
@@ -55,7 +55,7 @@
         top: 4rem;
         left: 0;
         color: $green-color;
-        transform: translateY(4rem);
+        transform: translateY(4.5rem);
         transition: all 0.5s ease-in-out;
       }
     }
@@ -176,11 +176,15 @@
 }
 
 .component--swap-btn {
+  position: fixed;
+  bottom: 5rem;
+  right: 7rem;
+  z-index: 1;
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
   border: 2px solid $green-color;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -329,7 +333,7 @@
       margin-bottom: 4rem;
     }
     &__info {
-      transform: translateY(55%);
+      transform: translateY(52%);
       transition: transform 0.5s ease-in-out;
     }
   }
@@ -807,7 +811,7 @@
         }
       }
       &__avatar {
-        transform: translateY(5rem);
+        transform: translateY(2.5rem);
         transition: transform 0.5s ease-in-out;
       }
     }
