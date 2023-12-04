@@ -93,6 +93,7 @@
   .header {
     padding-top: 3rem;
     margin-bottom: 3.6rem;
+    background-color: #eaeaea;
     &__menu {
       display: none;
       &._burger {
@@ -189,7 +190,7 @@
       }
       &-content {
         position: fixed;
-        top: 10rem;
+        top: 9rem;
         left: -100%;
         width: 100%;
         min-height: 100%;

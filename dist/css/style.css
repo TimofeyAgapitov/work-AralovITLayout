@@ -315,6 +315,7 @@ body {
 
 .component--green-btn.disactive {
   opacity: 0.5;
+  pointer-events: none;
 }
 
 .component--green-btn .green-btn__text {
@@ -425,6 +426,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
 }
 
 .component--swap-btn > svg {
@@ -1357,12 +1360,12 @@ body {
           justify-content: center;
   position: relative;
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .component--clients:hover {
-  background-color: #03a081;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  background-image: url("../img/components/component-client/clients-bg.svg");
 }
 
 .component--clients:hover .clients__logotype img {
@@ -1372,7 +1375,7 @@ body {
 }
 
 .component--clients:hover .clients__name {
-  display: block;
+  opacity: 1;
 }
 
 .component--clients .clients__logotype img {
@@ -1380,9 +1383,9 @@ body {
 }
 
 .component--clients .clients__name {
-  display: none;
+  opacity: 0;
   position: absolute;
-  bottom: -0.1rem;
+  bottom: 0.1rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
@@ -1391,33 +1394,6 @@ body {
   padding: 1rem 0 0;
   text-align: center;
   color: #03a081;
-  background-color: #eaeaea;
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
-}
-
-.component--clients .clients__name::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 99.45%;
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 0 0 5rem 0;
-  -webkit-box-shadow: 1rem 1rem 0 0.5rem #eaeaea;
-          box-shadow: 1rem 1rem 0 0.5rem #eaeaea;
-}
-
-.component--clients .clients__name::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 99.45%;
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 0 0 0 5rem;
-  -webkit-box-shadow: -1rem 1rem 0 0.5rem #eaeaea;
-          box-shadow: -1rem 1rem 0 0.5rem #eaeaea;
 }
 
 .accordion-price-box {
@@ -4532,6 +4508,10 @@ body::after {
           transform: translateX(-50%);
 }
 
+.our-contacts__panel p {
+  padding-bottom: 1rem;
+}
+
 .our-clients__swiper._mob {
   display: none;
 }
@@ -6131,8 +6111,6 @@ body::after {
     width: 8rem;
     height: 8rem;
     border: 1.5px solid #03a081;
-    -webkit-backdrop-filter: blur(1px);
-            backdrop-filter: blur(1px);
   }
 
   .component--swap-btn > svg {
@@ -6870,6 +6848,7 @@ body::after {
   .header {
     padding-top: 3rem;
     margin-bottom: 3.6rem;
+    background-color: #eaeaea;
   }
 
   .header__menu {
@@ -7015,7 +6994,7 @@ body::after {
 
   .header__burger-content {
     position: fixed;
-    top: 10rem;
+    top: 9rem;
     left: -100%;
     width: 100%;
     min-height: 100%;
