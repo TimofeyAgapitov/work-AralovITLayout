@@ -7238,17 +7238,8 @@ body::after {
     line-height: 120%;
   }
 
-  .baner-teams__title ._important {
-    padding: 0.8rem;
-    border: 1px solid #050505;
-    border-radius: 8rem;
-    position: relative;
-  }
-
-  .baner-teams__title ._important::before {
-    width: 6rem;
-    height: 6rem;
-    left: calc(100% + 4rem);
+  .baner-teams__title .stroke-panel::before {
+    height: 80%;
   }
 
   .baner-teams__title p:nth-child(2) {
@@ -7978,19 +7969,8 @@ body::after {
     position: static;
   }
 
-  .baner-company__title span._important {
-    position: relative;
-  }
-
-  .baner-company__title span._important::before {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0.8rem;
-    border: 1px solid #050505;
-    border-radius: 8rem;
+  .baner-company__title .stroke-panel::before {
+    height: 80%;
   }
 
   .baner-company__decoration {
