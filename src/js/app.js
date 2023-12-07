@@ -182,29 +182,49 @@ if (document.querySelector('.component--swap-btn')) {
 
   const sections = document.querySelectorAll('section');
 
-  if (window.innerWidth > 768) {
-    // Проверяем, если количество секций больше двух, показываем блок
-    if (sections.length > 3) {
-      window.addEventListener('scroll', () => {
-        const windowHeight = window.innerHeight;
-        const scrollPosition = window.scrollY || window.pageYOffset;
-        const scrolled =
-          (scrollPosition /
-            (document.documentElement.scrollHeight - windowHeight)) *
-          100;
+  // Проверяем, если количество секций больше двух, показываем блок
+  if (sections.length > 3) {
+    window.addEventListener('scroll', () => {
+      const windowHeight = window.innerHeight;
+      const scrollPosition = window.scrollY || window.pageYOffset;
+      const scrolled =
+        (scrollPosition /
+          (document.documentElement.scrollHeight - windowHeight)) *
+        100;
 
-        if (scrolled >= 33) {
-          swapButton.style.display = 'flex';
-        } else {
-          swapButton.style.display = 'none';
-        }
-      });
-    } else {
-      swapButton.style.display = 'none';
-    }
+      if (scrolled >= 33) {
+        swapButton.style.display = 'flex';
+      } else {
+        swapButton.style.display = 'none';
+      }
+    });
   } else {
     swapButton.style.display = 'none';
   }
+
+  // if (window.innerWidth > 768) {
+  //   // Проверяем, если количество секций больше двух, показываем блок
+  //   if (sections.length > 3) {
+  //     window.addEventListener('scroll', () => {
+  //       const windowHeight = window.innerHeight;
+  //       const scrollPosition = window.scrollY || window.pageYOffset;
+  //       const scrolled =
+  //         (scrollPosition /
+  //           (document.documentElement.scrollHeight - windowHeight)) *
+  //         100;
+
+  //       if (scrolled >= 33) {
+  //         swapButton.style.display = 'flex';
+  //       } else {
+  //         swapButton.style.display = 'none';
+  //       }
+  //     });
+  //   } else {
+  //     swapButton.style.display = 'none';
+  //   }
+  // } else {
+  //   swapButton.style.display = 'none';
+  // }
 }
 
 if (

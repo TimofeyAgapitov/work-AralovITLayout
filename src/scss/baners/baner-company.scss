@@ -22,6 +22,11 @@
   &__title {
     font-family: NeueMachina;
     width: 56.8rem;
+    span {
+      &._mob {
+        display: none;
+      }
+    }
   }
   &__decoration {
     width: 39rem;
@@ -283,6 +288,14 @@
       .stroke-panel {
         &::before {
           height: calc(80%);
+        }
+      }
+      span {
+        &._desc {
+          display: none;
+        }
+        &._mob {
+          display: inline-block;
         }
       }
       // span._important {

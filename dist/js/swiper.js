@@ -98,6 +98,7 @@ if (document.querySelector('.grid-teams-swiper')) {
   new Swiper('.grid-teams-swiper', {
     slidesPerView: 1,
     spaceBetween: remToPx(4),
+    // autoHeight: true,
     grid: {
       rows: 5,
     },
