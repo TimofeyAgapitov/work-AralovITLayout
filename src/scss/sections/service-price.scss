@@ -29,6 +29,9 @@
     }
     &-btn {
       margin-left: auto;
+      &._mob {
+        display: none;
+      }
     }
     &-result {
       display: flex;
@@ -60,7 +63,13 @@
         }
       }
       &-btn {
-        display: none;
+        &._desc {
+          display: none;
+        }
+        &._mob {
+          display: inline-block;
+          margin-top: 4rem;
+        }
       }
       &-result {
         justify-content: flex-start;

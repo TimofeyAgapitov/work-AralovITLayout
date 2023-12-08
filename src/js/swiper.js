@@ -237,9 +237,9 @@ if (document.querySelector('.baner-services-swiper')) {
         },
         spaceBetween: remToPx(0),
         speed: 1000,
-        pagination: {
-          el: '.baner-services-pagination',
-        },
+        // pagination: {
+        //   el: '.baner-services-pagination',
+        // },
       },
     },
   });

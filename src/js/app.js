@@ -227,12 +227,31 @@ if (document.querySelector('.component--swap-btn')) {
   // }
 }
 
-if (
-  document.querySelector('.baner-services') &&
-  document.querySelector('.header')
-) {
+if ( document.querySelector('.baner-services') && document.querySelector('.header')) {
   const header = document.querySelector('.header');
   window.innerWidth > 768
     ? header.classList.add('_services')
     : header.classList.remove('_services');
+}
+
+if (document.querySelector('.baner-details-services__swiper-desc')) {
+  const slides = document.querySelectorAll(
+    '.baner-details-services__swiper-desc .baner-details-services__slide'
+  );
+
+  function removeActiveClass() {
+    slides.forEach((slide) => {
+      slide.classList.remove('_active');
+    });
+  }
+
+  // Добавляем обработчики событий для каждого блока
+  slides.forEach((slide) => {
+    slide.addEventListener('mouseover', function () {
+      // Удаляем класс active у всех блоков
+      removeActiveClass();
+      // Добавляем класс active только к текущему блоку
+      this.classList.add('_active');
+    });
+  });
 }
